@@ -1,0 +1,53 @@
+# NETLIFY CMS Config Options
+# More here: https://www.netlifycms.org/docs/configuration-options/
+
+# Authentication Options
+backend:
+  name: github
+  repo: arid-software/buckley-sitzman-com
+  branch: main
+
+# Store images uploaded w/ Netlify CMS
+media_folder: "img"
+display_url: "https://buckleysitzman.com"
+site_url: "https://buckleysitzman.com"
+search: false
+publish_mode: editorial_workflow
+
+collections:
+  - name: "services"
+    label: "Services"
+    label_singular: "Service"
+    folder: "src/services"
+    create: false
+    fields:
+      - label: "Name"
+        name: "title"
+        widget: "string"
+      - label: "Permalink"
+        name: "permalink"
+        widget: "hidden"
+        default: false
+      - label: "Items"
+        name: "items"
+        widget: "list"
+        collapsed: false
+        summary: "{{fields.title}}"
+        allow_add: true
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "people"
+    label: "People"
+    label_singular: "Person"
+    folder: "src/people"
+    identifier_field: "name"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Job Title", name: "job_title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Bio", name: "body", widget: "markdown" }
+      - { label: "Permalink", name: "permalink", widget: "hidden", default: false }

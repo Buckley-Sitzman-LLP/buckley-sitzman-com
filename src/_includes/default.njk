@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Buckley & Sitzman, LLP | {{ renderData.title or metadata.title or title or "Home" }}
+    </title>
+    <meta charset="utf-8" />
+    {% if description %}
+      <meta name="description" content="{{description}}"/>
+    {% endif %}
+
+    <meta property="og:image"
+    content="https://aridsoftware.com{{renderData.feature_image or feature_image or "/img/logo.png" }}" />
+    <meta property="og:type" content="{{content_type or "website"}}" />
+    <meta property="og:title" content="Buckley & Sitzman, LLP | {{ renderData.title or metadata.title or title or "Home" }}" />
+    <meta property="og:description" content="{{description or title}}" />
+    <meta property="og:url" content="https://buckleysitzman.com{{page.url}}" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="buckleysitzman.com" />
+    <meta property="twitter:url" content="https://buckleysitzman.com{{page.url}}" />
+    <meta property="twitter:image"
+    content="https://buckleysitzman.com{{renderData.feature_image or feature_image or "/img/logo.png" }}" />
+    <meta property="twitter:title" content="Buckley & Sitzman, LLP | {{ renderData.title or metadata.title or title or "Home" }}" />
+    <meta property="twitter:description" content="{{description or title or "Home"}}" />
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/logo.png"/>
+    <link rel="stylesheet" href="/style.css?v={% version %}"/>
+    <script src="/js/alpine.js?v={% version %}"></script>
+
+    <script
+      async
+      defer
+      data-website-id="08aff773-ab29-47c1-872b-29b675e2f237"
+      src="https://arid-umami.herokuapp.com/umami.js"
+      data-domains="buckleysitzman.com"></script>
+
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    <div class="flex flex-col justify-between min-h-screen">
+      <div class="relative pt-6 pb-12 sm:pb-16 md:pb-20">
+        <div x-data="{menu_open: false}">
+          <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+            <nav class="relative flex items-center justify-between sm:h-10 lg:justify-end">
+              <div class="flex items-center flex-1 lg:absolute lg:inset-y-0 lg:left-0">
+                <div class="flex items-center justify-between w-full lg:w-auto">
+                  <a href="/" aria-label="Home">
+                    <img class="h-8 w-auto sm:h-10" src="/img/logo.png" alt="Logo">
+                  </a>
+                  <div class="-mr-2 flex items-center lg:hidden">
+                    <!-- Mobile Menu Expand -->
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-lg text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" id="main-menu" aria-label="Main menu" aria-haspopup="true" @click="menu_open = true">
+                      <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden lg:flex lg:space-x-10">
+                <a href="/" class="font-medium text-gray-500
+                  hover:text-arid_orange-500 transition duration-150 ease-in-out">
+                  Home
+                </a>
+                <a href="/pay-my-bill" class="font-medium text-gray-500
+                hover:text-arid_orange-500 transition duration-150 ease-in-out">
+                  Pay My Bill
+                </a>
+                <a href="/services" class="font-medium text-gray-500
+                  hover:text-arid_orange-500 transition duration-150 ease-in-out">
+                  Services
+                </a>
+                <a href="/meet-our-team" class="font-medium text-gray-500
+                  hover:text-arid_orange-500 transition duration-150 ease-in-out">
+                  Meet Our Team
+                </a>
+                <a href="/careers" class="font-medium text-gray-500
+                hover:text-arid_orange-500 transition duration-150 ease-in-out">
+                  Careers
+                </a>
+                <a href="/contact-us" class="font-medium text-gray-500
+                hover:text-arid_orange-500 transition duration-150 ease-in-out">
+                  Contact Us
+                </a>
+              </div>
+            </nav>
+          </div>
+
+          <!--
+            Mobile menu, show/hide based on menu open state.
+          -->
+          <div
+            x-show="menu_open"
+            x-transition:enter="duration-150 ease-out"
+            x-transition:enter-start="opacity-0 scale-95"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="duration-100 ease-in"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-95"
+            class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden z-50"
+          >
+            <div class="rounded-lg shadow-md">
+              <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+                <div class="px-5 pt-4 flex items-center justify-between">
+                  <div>
+                    <img class="h-8 w-auto sm:h-10" src="/img/logo.png" alt="Logo">
+                  </div>
+              <div class="-mr-2">
+                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu" @click="menu_open = false">
+                  <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+                </div>
+                <div class="px-2 pt-2 pb-3">
+                  <a href="/" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+                    Home
+                  </a>
+                  <a href="/pay-my-bill" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+                    Pay My Bill
+                  </a>
+                  <a href="/services" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+                    Services
+                  </a>
+                  <a href="/meet-our-team" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+                    Meet Our Team
+                  </a>
+                  <a href="/careers" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+                    Careers
+                  </a>
+                  <a href="/contact-us" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+                    Contact Us
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 flex-1">
+          {{ content | safe }}
+        </main>
+
+      </div>
+
+      <footer class="bg-white">
+        <p>Footer here</p>
+      </footer>
+    </div>
+  </body>
+</html>
