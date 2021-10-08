@@ -43,11 +43,24 @@ collections:
     label_singular: "Person"
     folder: "src/people"
     identifier_field: "name"
-    create: true
+    create: false
     slug: "{{slug}}"
     fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Job Title", name: "job_title", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Bio", name: "body", widget: "markdown" }
-      - { label: "Permalink", name: "permalink", widget: "hidden", default: false }
+      - label: "Name"
+        name: "title"
+        widget: "string"
+      - label: "Permalink"
+        widget: "hidden"
+        default: false
+        label: "Members"
+        widget: "list"
+        collapsed: false
+        summary: "{{fields.name}}"
+        allow_add: true
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Job Title", name: "job_title", widget: "string" }
+          - { label: "Email", name: "email_address", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Bio", name: "body", widget: "markdown" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: false }
