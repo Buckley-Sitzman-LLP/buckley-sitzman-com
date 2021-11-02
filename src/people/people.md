@@ -71,4 +71,37 @@ members:
       Tyler, who is a Lincoln native, where he currently resides with his wife Cortney, their two beautiful children and dog, Milo. He loves to spend time with his friends and family, and also loves to play golf. Tyler is an avid sports fan as well as a dedicated supporter of Nebraska athletics.
     image: /img/tyler.jpeg
     email_address: tdenker@bsncpa.com
+  - permalink: false
+    name: Madisyn L. Matthews
+    job_title: Accountant
+    image: /img/madisyn.jpeg
+    body: Madisyn grew up in Minden, Nebraska.  She attended Doane University, in
+      Crete, NE, where she obtained a Bachelor of Arts degree in Accounting and
+      Business Administration in May 2019. She joined Buckley & Sitzman
+      full-time in September of 2019. Madisyn resides in Lincoln with her
+      husband and two dogs. She enjoys walking and playing with her dogs, having
+      game night with friends, and listening to some classic Toby Keith music.
+  - permalink: false
+    name: Aubrey Kendall
+    job_title: Payroll Specialist & Staff Accountant
+    image: /img/aubrey.jpeg
+    body: >-
+      Aubrey joined Buckley & Sitzman in August 2015.  Aubrey graduated from the
+      University of Nebraska-Lincoln in 2014 with a Bachelors of Arts Degree in
+      Professional Accounting.  She provides services in accounting and payroll.
+
+
+      Aubrey grew up in the Omaha area and moved to Lincoln in 2011, where she resides with her husband Tim, and daughter Emma.  She likes spending time with friends and family.  Aubrey enjoys teaching Taekwondo, Husker Football, and shopping.
+  - permalink: false
+    name: Cristen Barnes
+    job_title: Administrative Assistant
+    image: /img/cristen.jpeg
+    body: >-
+      Cristen joined Buckley & Sitzman in August 2016. Cristen graduated from
+      the University of Central Missouri in 2009 with a Bachelors of Science
+      Degree in Fashion and Textile Merchandising. She provides secretarial
+      support and general office management services to our team.
+
+
+      Cristen grew up in  Missouri and moved to Lincoln in 2015, where she resides with her husband Steven and 2 labs Shelby & Buster. She loves making her house a home. Cristen enjoys shopping, concerts, and gardening.
 ---
