@@ -1,5 +1,7 @@
 # Buckley Sitzman Site
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/73ecf749-2877-4199-8f15-ab6d162ce1db/deploy-status)](https://app.netlify.com/sites/thirsty-bassi-038c1d/deploys)
+
 ## Install and Setup
 
 Run `yarn install` to get all dependencies running. You may also need to do

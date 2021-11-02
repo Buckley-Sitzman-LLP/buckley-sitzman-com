@@ -12,7 +12,6 @@ media_folder: "img"
 display_url: "https://buckleysitzman.com"
 site_url: "https://buckleysitzman.com"
 search: false
-publish_mode: editorial_workflow
 
 collections:
   - name: "services"
