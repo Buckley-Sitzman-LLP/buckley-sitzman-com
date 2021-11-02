@@ -42,16 +42,18 @@ collections:
     label_singular: "Person"
     folder: "src/people"
     identifier_field: "name"
-    create: false
+    create: true
     slug: "{{slug}}"
     fields:
       - label: "Name"
         name: "title"
         widget: "string"
       - label: "Permalink"
+        name: "permalink"
         widget: "hidden"
         default: false
-        label: "Members"
+      - label: "Members"
+        name: "members"
         widget: "list"
         collapsed: false
         summary: "{{fields.name}}"
