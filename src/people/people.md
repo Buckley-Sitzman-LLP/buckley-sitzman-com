@@ -30,17 +30,27 @@ members:
     job_title: Partner
     email_address: svallabhbhai@bsncpa.com
     body: >-
-      Suman was born in Panama, and moved to Nebraska in 1993, where he resides
-      with his wife and two children.
+      Suman serves a diverse clientele, including everything from individual
+      taxpayers to multi-state corporations in a variety of industries and
+      professions. He does work on behalf of professional athletes, hotel and
+      restaurant operators, non-profit organizations, and many other industries.
 
 
-      Suman graduated from the University of Louisville in May 1991 with a Bachelor of Science in Business Administration. He then earned his Masters Degree in Professional Accounting in May 1997 from the University of Nebraska-Omaha. He joined the firm in December 1997. He is a member of the American Institute of Certified Public Accountants (AICPA) and the Nebraska Society of Certified Public Accountants. He is also a Certified QuickBooks professional adviser.
+      Suman was born in Panama, and moved to Nebraska in 1993, where he resides with his wife and two children. He loves to spending time with his family and friends.
 
 
-      He loves to spending time with his family and friends. He is a certified instructor in Taekwondo, Hapkido, and Philippines combative. He has competed and earned several championships at the local, regional and national levels. He also volunteers in a variety of capacities in numerous non-profit organizations, including the YMCA and the Scottish Rite Foundation.
+      Suman is a certified instructor in Taekwondo, Hapkido, and Philippines combative. He has competed and earned several championships at the local, regional and national levels. He also volunteers in a variety of capacities in numerous non-profit organizations, including the YMCA and the Scottish Rite Foundation.
 
 
-      He has a diverse clientele, consisting of everything from individual taxpayers to multi-state corporations in a variety of industries and professions, such as: professional athletes, hotel and restaurant operations, non-profit organizations, etc.
+      #### BS in Business Administration, University of Louisville, 1991
+
+      #### Master of Accounting (MAcc), University of Nebraska-Omaha, 1997
+
+      #### Member of American Institute of Certified Public Accountants (AICPA)
+
+      #### Member of Nebraska Society of Certified Public Accountants
+
+      #### Certified Quickbooks Professional Advisor
     image: /img/suman.jpeg
   - permalink: false
     name: Grant H. Buckley, CPA
