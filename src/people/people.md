@@ -57,17 +57,22 @@ members:
     job_title: Partner
     image: /img/grant.jpeg
     body: >-
-      Grant is a native of Lincoln, Nebraska, and has also lived in Omaha. Grant
-      graduated from the University of Nebraska-Lincoln with a Bachelor of
-      Science in Business Administration in May of 2009. He then earned a
-      Masters Degree in Professional Accountancy from the University of
-      Nebraska-Lincoln in May of 2010. After over three years at Deloitte &
-      Touche, he joined Buckley & Sitzman in 2013. He is a member of the
-      American Institute of Certified Public Accountants (AICPA) and the
-      Nebraska Society of Certified Public Accountants.
+      Grant loves to spend time with his family and friends. His wife, Kelsey,
+      is a Dentist, and they share two beautiful daughters. They enjoy playing
+      golf and tennis together, as well as vacationing. He is an avid Husker fan
+      and is also a big Yankees baseball fan.
 
 
-      Grant loves to spend time with his family and friends. His wife, Kelsey, is a Dentist, and they share two beautiful daughters. They enjoy playing golf and tennis together, as well as vacationing. He is an avid Husker fan and is also a big Yankees baseball fan.
+      #### BS in Business Administration, University of Nebraska-Lincoln, 2009
+
+
+      #### Masters of Professional Accountancy (MPA) University of Nebraska-Lincoln, 2010
+
+
+      #### Member of American Institute of Certified Public Accountants (AICPA)
+
+
+      #### Member of Nebraska Society of Certified Public Accountants
     email_address: gbuckley@bsncpa.com
   - permalink: false
     name: Tyler M. Denker, CPA
