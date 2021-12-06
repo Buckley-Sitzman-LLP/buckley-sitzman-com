@@ -78,28 +78,36 @@ members:
     name: Tyler M. Denker, CPA
     job_title: Partner
     body: >-
-      Tyler joined Buckley & Sitzman in September of 2013. He began his
-      accounting career in 2010 at Deloitte & Touche, following graduation from
-      the University of Nebraska-Lincoln, where he received both a Bachelor of
-      Science in Business Administration as well as a Masters Degree in
-      Professional Accountancy. Tyler is a current member of the American
-      Institute of Certified Public Accountants (AICPA) and the Nebraska Society
-      of Certified Public Accountants.
+      Tyler is a Lincoln native and currently resides there with his wife
+      Cortney, their two beautiful children, and their beloved dog, Milo. He
+      loves to spend time with his friends and family, and also loves to play
+      golf. Tyler is an avid sports fan as well as a dedicated supporter of
+      Nebraska athletics.
 
 
-      Tyler, who is a Lincoln native, where he currently resides with his wife Cortney, their two beautiful children and dog, Milo. He loves to spend time with his friends and family, and also loves to play golf. Tyler is an avid sports fan as well as a dedicated supporter of Nebraska athletics.
+      #### BS in Business Administration, University of Nebraska-Lincoln, 2009
+
+
+      #### Masters of Professional Accountancy (MPA) University of Nebraska-Lincoln, 2010
+
+
+      #### Member of American Institute of Certified Public Accountants (AICPA)
+
+
+      #### Member of Nebraska Society of Certified Public Accountants
     image: /img/tyler.jpeg
     email_address: tdenker@bsncpa.com
   - permalink: false
     name: Madisyn L. Matthews
     job_title: Accountant
     image: /img/madisyn.jpeg
-    body: Madisyn grew up in Minden, Nebraska.  She attended Doane University, in
-      Crete, NE, where she obtained a Bachelor of Arts degree in Accounting and
-      Business Administration in May 2019. She joined Buckley & Sitzman
-      full-time in September of 2019. Madisyn resides in Lincoln with her
+    body: >-
+      Madisyn grew up in Minden, Nebraska and now resides in Lincoln with her
       husband and two dogs. She enjoys walking and playing with her dogs, having
       game night with friends, and listening to some classic Toby Keith music.
+
+
+      #### BA in Accounting & Business Administration, Doane University, 2019
   - permalink: false
     name: Aubrey Kendall
     job_title: Payroll Specialist & Staff Accountant
