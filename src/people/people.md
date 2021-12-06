@@ -6,19 +6,23 @@ members:
     name: Lester F. Buckley, CPA
     job_title: Partner
     body: >-
-      A third-generation accounting professional practicing in Lincoln,
-      Nebraska, Les graduated with a B.S. in Business Administration in May
-      1977. After nearly four years with a national accounting firm, he joined
-      Buckley & Sitzman in March of 1981 and became a partner in the firm later
-      that year. He is a member of the American Institute of Certified Public
-      Accountants (AICPA) and the Nebraska Society of Certified Public
-      Accountants.
+      A third-generation accounting professional, Les is licensed to practice
+      accounting in the states of Nebraska and Iowa. He provides tax, audit and
+      consulting services to a diverse clientele including banks,
+      agri-businesses, physicians, computer software companies, transportation
+      and warehousing companies, non-profit organizations and individuals.
 
 
       Les loves to spend time with his wife Nancy and their three children, their spouses and grandchildren. He also loves to play golf and bicycle. He has served in a volunteer capacity with many non-profit organizations over the years, including as board member and Treasurer of the Lancaster County Chapter of the American Red Cross, as well as a member of the Community Action board.
 
 
-      Les is licensed to practice accounting in the states of Nebraska and Iowa and provides tax, audit and consulting services to a diverse clientele including banks, agri-businesses, physicians, computer software companies, transportation and warehousing companies, non-profit organizations and individuals.
+      #### BS in Business Administration, ??, 1977
+
+
+      #### Member of American Institute of Certified Public Accountants (AICPA)
+
+
+      #### Member of Nebraska Society of Certified Public Accountants
     email_address: lbuckley@bsncpa.com
     image: /img/lester.jpeg
   - permalink: false
