@@ -125,11 +125,10 @@ members:
     job_title: Administrative Assistant
     image: /img/cristen.jpeg
     body: >-
-      Cristen joined Buckley & Sitzman in August 2016. Cristen graduated from
-      the University of Central Missouri in 2009 with a Bachelors of Science
-      Degree in Fashion and Textile Merchandising. She provides secretarial
-      support and general office management services to our team.
+      Cristen grew up in Missouri and moved to Lincoln in 2015, where she
+      resides with her husband Steven and two labs Shelby and Buster. She loves
+      making her house a home and enjoys shopping, concerts, and gardening.
 
 
-      Cristen grew up in  Missouri and moved to Lincoln in 2015, where she resides with her husband Steven and 2 labs Shelby & Buster. She loves making her house a home. Cristen enjoys shopping, concerts, and gardening.
+      #### BS in Fashion and Textile Merchandising, University of Central Missouri, 2009
 ---
