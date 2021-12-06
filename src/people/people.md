@@ -113,12 +113,13 @@ members:
     job_title: Payroll Specialist & Staff Accountant
     image: /img/aubrey.jpeg
     body: >-
-      Aubrey joined Buckley & Sitzman in August 2015.  Aubrey graduated from the
-      University of Nebraska-Lincoln in 2014 with a Bachelors of Arts Degree in
-      Professional Accounting.  She provides services in accounting and payroll.
+      Aubrey grew up in the Omaha area and moved to Lincoln in 2011, where she
+      resides with her husband Tim and daughter Emma. She likes spending time
+      with friends and family. She also teaches Taekwondo and enjoys Husker
+      Football and shopping.
 
 
-      Aubrey grew up in the Omaha area and moved to Lincoln in 2011, where she resides with her husband Tim, and daughter Emma.  She likes spending time with friends and family.  Aubrey enjoys teaching Taekwondo, Husker Football, and shopping.
+      #### BA in Professional Accounting, University of Nebraska-Lincoln, 2014
   - permalink: false
     name: Cristen Barnes
     job_title: Administrative Assistant
