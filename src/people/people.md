@@ -6,14 +6,12 @@ members:
     name: Lester F. Buckley, CPA
     job_title: Partner
     body: >-
-      A third-generation accounting professional, Les is licensed to practice
-      accounting in the states of Nebraska and Iowa. He provides tax, audit and
-      consulting services to a diverse clientele including banks,
-      agri-businesses, physicians, computer software companies, transportation
-      and warehousing companies, non-profit organizations and individuals.
-
-
-      Les loves to spend time with his wife Nancy and their three children, their spouses and grandchildren. He also loves to play golf and bicycle. He has served in a volunteer capacity with many non-profit organizations over the years, including as board member and Treasurer of the Lancaster County Chapter of the American Red Cross, as well as a member of the Community Action board.
+      Les loves to spend time with his wife Nancy and their three children,
+      their spouses and grandchildren. He also loves to play golf and bicycle.
+      He has served in a volunteer capacity with many non-profit organizations
+      over the years, including as board member and Treasurer of the Lancaster
+      County Chapter of the American Red Cross, as well as a member of the
+      Community Action board.
 
 
       #### BS in Business Administration, ??, 1977
@@ -30,25 +28,25 @@ members:
     job_title: Partner
     email_address: svallabhbhai@bsncpa.com
     body: >-
-      Suman serves a diverse clientele, including everything from individual
-      taxpayers to multi-state corporations in a variety of industries and
-      professions. He does work on behalf of professional athletes, hotel and
-      restaurant operators, non-profit organizations, and many other industries.
+      Suman was born in Panama, and moved to Nebraska in 1993, where he resides
+      with his wife and two children. He loves to spending time with his family
+      and friends.
 
 
-      Suman was born in Panama, and moved to Nebraska in 1993, where he resides with his wife and two children. He loves to spending time with his family and friends.
-
-
-      Suman is a certified instructor in Taekwondo, Hapkido, and Philippines combative. He has competed and earned several championships at the local, regional and national levels. He also volunteers in a variety of capacities in numerous non-profit organizations, including the YMCA and the Scottish Rite Foundation.
+      He is a certified instructor in Taekwondo, Hapkido, and Philippines combative. He has competed and earned several championships at the local, regional and national levels. He also volunteers in a variety of capacities in numerous non-profit organizations, including the YMCA and the Scottish Rite Foundation.
 
 
       #### BS in Business Administration, University of Louisville, 1991
 
+
       #### Master of Accounting (MAcc), University of Nebraska-Omaha, 1997
+
 
       #### Member of American Institute of Certified Public Accountants (AICPA)
 
+
       #### Member of Nebraska Society of Certified Public Accountants
+
 
       #### Certified Quickbooks Professional Advisor
     image: /img/suman.jpeg
