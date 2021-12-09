@@ -14,7 +14,7 @@ members:
       Community Action board.
 
 
-      #### BS in Business Administration, ??, 1977
+      #### BS in Business Administration, University of Nebraska-Lincoln, 1977
 
 
       #### Member of American Institute of Certified Public Accountants (AICPA)
