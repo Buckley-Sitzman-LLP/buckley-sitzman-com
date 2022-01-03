@@ -20,7 +20,8 @@ layout: default
             proactively planning for future goals.
           </p>
           <div class="mt-10">
-            <a href="/contact-us" class="inline-flex items-center uppercase py-3 px-4 rounded-md
+            <a href="/contact-us" class="inline-flex items-center uppercase py-6
+                     px-8 rounded-md text-lg
                      hover:bg-blue-600 bg-blue-500 text-white font-medium
                      focus:outline-none focus:ring-2 focus:ring-offset-2
                      focus:ring-blue-400 focus:ring-offset-gray-900">
@@ -60,7 +61,7 @@ layout: default
 </div>
 
 <div class="bg-white">
-  <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+  <div class="mx-auto pt-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:pt-24">
     <div class="space-y-12">
       <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
         {%- set persons = collections.people | first %}
@@ -103,7 +104,7 @@ layout: default
             <template x-teleport="body">
               <div
                 x-show="open"
-                @keydown.escape.prevent.stop="open=false"
+                @keydown.escape="open=false"
                 role="dialog"
                 aria-modal="true"
                 x-id="['{{person.name}}-modal']"
@@ -149,6 +150,16 @@ layout: default
 
                       {{person.body | markdown | safe}}
                     </div>
+                    <div class="mt-10 text-center">
+                      <button
+                        type="button"
+                        class="bg-white text-sm text-gray-500 hover:text-gray-700
+                               focus:outline-none focus:ring-none"
+                        @click="open = false"
+                      >
+                        Close
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -164,13 +175,22 @@ layout: default
 <div class="relative my-16 px-4 sm:px-6 lg:px-8">
   <div class="prose prose-lg lg:text-xl text-gray-500 mx-auto">
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+      We work tirelessly to ensure the best outcomes for our clients. Ready to
+      see what the accountants and staff at <b>Buckley &amp; Sitzman, LLP</b>
+      can do for you and your business?
+    </p>
+  </div>
+  <div class="max-w-prose text-center mx-auto">
+    <p class="mt-10">
+      <a
+        href="/contact-us"
+        class="inline-flex text-white items-center uppercase py-3 px-4 rounded-md
+               hover:bg-blue-600 bg-blue-500 font-medium
+               focus:outline-none focus:ring-2 focus:ring-offset-2
+               focus:ring-blue-400 focus:ring-offset-gray-900"
+      >
+        Contact Us
+      </a>
     </p>
   </div>
 </div>
