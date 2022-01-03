@@ -3,6 +3,7 @@ title: Services
 permalink: false
 items:
   - title: Tax Planning and Preparation
+    summary: Reduce your tax liabilities and maximize cash flow.
     body: At Buckley & Sitzman, LLP, we guide our clients through a full range of
       tax planning and preparation decisions with strategies that minimize your
       tax liabilities, maximize your cash flow and keep you on track to your
@@ -11,6 +12,7 @@ items:
       well as recently altered tax laws. We are knowledgeable and up to date on
       the tax laws and can make sense of your receipts, bills and notices
   - title: Bookkeeping and Payroll
+    summary: We'll take the bookkeeping. You focus on your core business.
     body: >-
       Accurate record-keeping is essential to a successful business yet can also
       be complicated and time consuming. Buckley & Sitzman, LLP can help you
@@ -20,6 +22,7 @@ items:
 
       We can replace your back office with accounting, payroll, and bookkeeping support. When it comes to complex issues, rely on us.
   - title: Assurance and Advisory
+    summary: Ensure the short and long-term health of your business
     body: >-
       At Buckley & Sitzman, LLP, we focus on building close client relationships
       that add long-term value. This includes assuring the solidity of financial
@@ -46,12 +49,14 @@ items:
 
       * Business succession
   - title: Estate and Trust Planning
+    summary: Build financial security for your loved ones.
     body: Effective estate and trust planning can ensure financial security for
       loved ones. For businesses, it can maintain a smooth succession of
       ownership. Buckley & Sitzman, LLP's role is to help you navigate the
       complex and shifting tax laws to facilitate the transfer of assets and
       minimize the tax liability of your beneficiaries.
   - title: IRS Representation
+    summary: Gain peace of mind and assuredness of outcome during IRS audits
     body: Professional representation can be vital during an audit, and our
       experience with tax authorities enables us to guide clients in their
       dealings with federal and state agencies. If you have been chosen for an
@@ -59,6 +64,7 @@ items:
       many of your worries at bay. We are ready and willing to answer any and
       all questions the IRS may be asking of you.
   - title: Entity Selection and Restructuring
+    summary: Make sure your business is set up for your financial success
     body: Your business entity has a large impact on your taxes and other
       liabilities. From your company's inception through its growth and
       development, Buckley & Sitzman, LLP can advise you on choosing an entity
@@ -66,6 +72,7 @@ items:
       expertise, you will always be receiving the most advantageous entity type
       for the functions your business performs.
   - title: Financial Projections and Forecasts
+    summary: Be prepared for what's to come.
     body: No one can predict the future perfectly, but we can all benefit from
       planning for it. Buckley & Sitzman, LLP  will work with you to produce
       financial projections that can help you manage your business plan and
@@ -75,6 +82,7 @@ items:
       your needs, our work can range from top-level reports to detailed
       financial models.
   - title: Debt and Finance Advising
+    summary: Manage and pay off your debts in the most advantageous way for you.
     body: Whether your needs are corporate or personal, Buckley & Sitzman, LLP's
       team can assist you in sorting out the different options available for
       debt management and financing that will lower your payments and/or reduce
@@ -83,6 +91,7 @@ items:
       the amounts of your current debts, our expertise may be able to save you
       money and/or lower your payments.
   - title: Accounting Services
+    summary: Maintain profitability and capitalize on new opportunities with up-to-date financial information.
     body: >-
       From start-ups to established enterprises, businesses rely on accurate and
       insightful financial information in order to maintain profitability and
@@ -110,6 +119,7 @@ items:
 
       * Corporate tax planning and return preparation
   - title: Audits, Reviews, and Compilations
+    summary: Verify and assure the financial health of your company.
     body: >-
       Buckley & Sitzman, LLP's financial statement services comprise all three
       levels of assurance depending on your company's needs.
@@ -132,6 +142,7 @@ items:
 
       Compilations are usually requested for internal purposes and are based upon information provided by a company's management. They do not offer assurance but may involve some adjustment to accounting records.
   - title: Financial and Retirement Planning
+    summary: Reach your financial goals and prepare for retirement
     body: Buckley & Sitzman, LLP's goal is to help you reach your financial goals
       and maintain financial independence through a comfortable retirement. We
       can guide you through tough decision-making processes such as asset
@@ -143,10 +154,11 @@ items:
       return. The road to retirement is a long one and we can help you to take
       the proper steps to reach your goals.
   - title: Quickbooks Accounting Assistance
+    summary: Get help with Quickbooks
     body: >-
       QuickBooks can provide useful and timely information in the form of
       financial statements, reports and graphs. We don't just help you use the
-      software, we help you use it more efficiently and more effectively.Buckley
+      software, we help you use it more efficiently and more effectively. Buckley
       & Sitzman, LLP offers the following solutions to help meet your QuickBooks
       needs:  
 
@@ -161,6 +173,7 @@ items:
 
       * Review
   - title: Cash Flow and Budgeting Analysis
+    summary: Verify and validate cash flow to stay on top of your business' finances
     body: Good cash management can improve a company's liquidity, reduce costs, and
       increase profitability. Buckley & Sitzman, LLP can help you maintain
       optimal cash flow levels by tracking sources and uses, forecasting, and
@@ -173,6 +186,7 @@ items:
       help and guidance, you will always be on top of your finances and ready
       for the future.
   - title: Mergers, Acquisitions, and Sales
+    summary: Make the right decision when it comes to growing, selling, or merging your business.
     body: Business transactions and transitions are complicated affairs, and whether
       you're buying, selling, or considering a potential merger, Buckley &
       Sitzman, LLP can provide professional know-how to help you successfully
