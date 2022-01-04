@@ -3,6 +3,45 @@ title: Services
 layout: default
 ---
 
+<div class="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
+  <div class="mx-auto max-w-7xl lg:px-8">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+      <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
+        <div class="lg:py-16">
+          <h1 class="mt-4 text-4xl tracking-tight font-extrabold text-blue-400
+            sm:mt-5 sm:text-6xl lg:mt-6 xl:text-5xl">
+            <span class="block">Account for your present</span>
+            <span class="pb-3 block text-yellow-400 sm:pb-5">Maximize your future</span>
+          </h1>
+          <p class="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
+            For nearly 100 years and four generations, <b>Buckley &amp; Sitzman,
+            LLP</b> has guided clients like you through the dynamic accounting
+            landscape, helping them to maintain financial viability while
+            proactively planning for future goals.
+          </p>
+          <div class="mt-10">
+            <a href="/contact-us" class="inline-flex items-center uppercase py-6
+                     px-8 rounded-md text-lg
+                     hover:bg-blue-600 bg-blue-500 text-white font-medium
+                     focus:outline-none focus:ring-2 focus:ring-offset-2
+                     focus:ring-blue-400 focus:ring-offset-gray-900">
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
+        <div class="mx-auto max-w-md px-4 sm:px-6 lg:px-0">
+          <img
+            class="w-full max-w-md h-auto"
+            src="/img/header-illustration.svg" alt=""
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="mt-16 text-center">
   <h1 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
     {{title}}
@@ -12,13 +51,14 @@ layout: default
 <div class="relative py-12 px-4 sm:px-6 lg:px-8">
   <div class="prose prose-lg lg:text-xl text-gray-500 mx-auto">
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+      At Buckley &amp; Sitzman, LLP, we guide our clients through a full range
+      of tax planning and preparation decisions with strategies that minimize
+      your tax liabilities, maximize your cash flow and keep you on track to
+      your financial goals. Our expertise, experience, analysis and thorough
+      research allow us to optimize financial opportunities to be found in
+      existing as well as recently altered tax laws. We are knowledgeable and up
+      to date on the tax laws and can make sense of your receipts, bills and
+      notices.
     </p>
   </div>
 </div>
@@ -29,7 +69,7 @@ layout: default
     {%- set services = collections.services | first -%}
     {%- for service in services.data.items -%}
       <li class="">
-        <div class="prose mx-auto">
+        <div class="prose prose-lg mx-auto">
           <h2>
             {{service.title}}
           </h2>
@@ -42,17 +82,25 @@ layout: default
   </ul>
 </div>
 
-
-<div class="relative py-12 px-4 sm:px-6 lg:px-8">
+<div class="relative my-16 px-4 sm:px-6 lg:px-8">
   <div class="prose prose-lg lg:text-xl text-gray-500 mx-auto">
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+      We work tirelessly to ensure the best outcomes for our clients. Ready to
+      see what the accountants and staff at <b>Buckley &amp; Sitzman, LLP</b>
+      can do for you and your business?
+    </p>
+  </div>
+  <div class="max-w-prose text-center mx-auto">
+    <p class="mt-10">
+      <a
+        href="/contact-us"
+        class="inline-flex text-white items-center uppercase py-3 px-4 rounded-md
+               hover:bg-blue-600 bg-blue-500 font-medium
+               focus:outline-none focus:ring-2 focus:ring-offset-2
+               focus:ring-blue-400 focus:ring-offset-gray-900"
+      >
+        Contact Us
+      </a>
     </p>
   </div>
 </div>
