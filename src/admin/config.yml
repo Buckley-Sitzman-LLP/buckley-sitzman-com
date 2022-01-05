@@ -59,9 +59,9 @@ collections:
         allow_add: true
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Summary", name: "summary", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
           - { label: "Link", name: "link", widget: "string" }
+          - { label: "Image", name: "image", widget: "image", required: false}
 
   - name: "people"
     label: "People"
