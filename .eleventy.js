@@ -90,6 +90,11 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/services/*.md");
   });
 
+  // Get all job postings
+  eleventyConfig.addCollection("job_postings", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/job_postings/*.md");
+  });
+
   // Minify HTML by removing whitespace, etc.
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (

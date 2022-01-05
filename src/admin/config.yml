@@ -38,6 +38,31 @@ collections:
           - { label: "Summary", name: "summary", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
 
+  - name: "postings"
+    label: "Job Postings"
+    label_singular: "Job Posting"
+    folder: "src/job_postings"
+    create: false
+    fields:
+      - label: "Name"
+        name: "title"
+        widget: "string"
+      - label: "Permalink"
+        name: "permalink"
+        widget: "hidden"
+        default: false
+      - label: "Items"
+        name: "items"
+        widget: "list"
+        collapsed: false
+        summary: "{{fields.title}}"
+        allow_add: true
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Summary", name: "summary", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Link", name: "link", widget: "string" }
+
   - name: "people"
     label: "People"
     label_singular: "Person"
