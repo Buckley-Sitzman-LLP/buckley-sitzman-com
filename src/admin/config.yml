@@ -45,7 +45,7 @@ collections:
     create: false
     fields:
       - label: "Name"
-        name: "title"
+        name: "name"
         widget: "string"
       - label: "Permalink"
         name: "permalink"
@@ -55,10 +55,10 @@ collections:
         name: "items"
         widget: "list"
         collapsed: false
-        summary: "{{fields.title}}"
+        summary: "{{fields.name}}"
         allow_add: true
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Job Title", name: "name", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
           - { label: "Link", name: "link", widget: "string" }
           - { label: "Image", name: "image", widget: "image", required: false}

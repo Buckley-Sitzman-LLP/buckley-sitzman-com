@@ -52,56 +52,85 @@ layout: default
   <div class="relative px-4 sm:px-6 lg:px-8">
     <div class="prose prose-lg lg:text-xl text-gray-500 mx-auto">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-        est laborum.
+      Our mission is to help clients maintain financial viability in the
+      present, while taking a proactive approach to achieve future goals. This
+      requires open communication to reach an understanding of our clients'
+      needs through research and sound analysis.  We have been a staple of the
+      business community for years, and pride ourselves on the level of esteem
+      we have earned.  Our dedication to hard work has earned the respect of the
+      business and financial community that we serve. Your finances are
+      personal. We want to build a strong relationship and understand your
+      needs. Whether you are a current or prospective client, rest assured that
+      individuals and businesses who choose <b>Buckley &amp; Sitzman, LLP</b>
+      receive competent and timely advice.
       </p>
       <div class="my-10">
         {% image "/img/tmp/brooke-cagle-g1Kr4Ozfoac-unsplash.jpeg", "Staff Photo", "rounded-lg shadow-xl ring-1 ring-black ring-opacity-5" %}
       </div>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-        est laborum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-        est laborum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-        est laborum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-        est laborum.
+        We value attention to detail, cooperative and collaborative attitudes,
+        and relevant knowledge and experience. We offer a flexible schedule,
+        paid time off, professional development assistance, and a friendly and
+        collegial work environment.
       </p>
     </div>
   </div>
 </div>
+
+<div class="bg-white py-16">
+  <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+    <h2 class="text-base text-center font-semibold tracking-wider text-blue-700 uppercase">
+      Current Openings
+    </h2>
+    <p class="mt-2 text-3xl text-center font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+      Everything you might need
+    </p>
+    <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+      <b>Buckley &amp; Sitzman, LLP</b> provides a wide range of
+      <a class="underline" href="/services">services</a> to individuals and
+      businesses in a variety of industries. We strive to meet each client's
+      specific needs in planning for the future and meeting their goals in an
+      ever-changing financial and regulatory environment. Our professional
+      services include:
+    </p>
+    <div class="mt-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16
+        sm:gap-y-0 sm:gap-x-16">
+        {%- set job_postings = collections.job_postings | first -%}
+        {%- for posting in job_postings.data.items -%}
+          <div class="flex-1 flex-col space-y-8">
+            {% if posting.image %}
+              <div class="aspect-w-3 aspect-h-2">
+                {% image posting.image, posting.name, "w-full h-full
+                object-cover rounded-lg shadow-xl" %}
+              </div>
+            {% endif %}
+            <div class="text-lg text-center text-blue-600 leading-6 font-medium space-y-1">
+              <h3>{{posting.name}}</h3>
+            </div>
+            <div class="prose text-gray-500">
+              {{ posting.body | markdown | safe }}
+            </div>
+            <div class="mt-10 flex justify-center">
+              <a
+                href="{{posting.link}}"
+                target="_blank"
+                class="w-3/4 flex justify-center text-white font-medium
+                       uppercase py-3 px-4 rounded-md hover bg-blue-500
+                       hover:bg-blue-600 font-medium focus:outline-none
+                       focus:ring-2 focus:ring-offset-2 focus:ring-blue-500
+                       focus:ring-offset-white"
+              >
+                Apply
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="bg-white pb-16 sm:pb-24 lg:pb-32">
   <div class="mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
@@ -109,13 +138,17 @@ layout: default
       <p class="text-left text-xl text-gray-500">
         Ready to start the next step of your career with <b>Buckley &amp;
           Sitzman, LLP</b> and join one of the best accounting firms to work at
-        in Lincoln?
+        in Lincoln? Think you might be a good fit for our team?
       </p>
       <p class="mt-10 text-center">
-        <a href="/contact-us" class="inline-flex items-center uppercase py-3 px-4 rounded-md
-                             hover:bg-blue-600 bg-blue-500 text-white font-medium
-                             focus:outline-none focus:ring-2 focus:ring-offset-2
-                             focus:ring-blue-400 focus:ring-offset-gray-900">
+        <a
+          href="/contact-us"
+          target="_blank"
+          class="inline-flex items-center uppercase py-3 px-16 rounded-md
+                 hover:bg-blue-600 bg-blue-500 text-white font-medium
+                 focus:outline-none focus:ring-2 focus:ring-offset-2
+                 focus:ring-blue-400 focus:ring-offset-white"
+        >
           Contact Us
         </a>
       </p>
