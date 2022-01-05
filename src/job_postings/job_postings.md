@@ -10,7 +10,7 @@ items:
 
       This position will involve preparing and reviewing personal, business and non-profit tax returns, advising individual and business clients on current tax planning strategies, and supporting other members of our team by providing exceptional client service.
     link: https://www.indeed.com/job/senior-tax-accountant-e3ce03d166da4a42
-    image: /img/lester.jpeg
+    image: /img/office-worker.jpg
   - name: Bookkeeper
     body: >-
       Buckley & Sitzman is looking for a Bookkeeper who takes pride in their
@@ -22,7 +22,7 @@ items:
 
       The ideal person will be a patient and organized worker with experience and knowledge in the accounting industry. We will value your attention to detail, cooperative attitude, and the ability to do your job consistently. The candidate will appreciate working with colleagues in a friendly environment that has a strong sense of family.
     link: https://www.indeed.com/job/bookkeeper-c9d0530c2a0bd970
-    image: /img/lester.jpeg
+    image: /img/tax-stock-photo.jpeg
   - name: Tax Accounting Intern
     body: >-
       We are currently seeking students to take part in our Busy Season 2021 or
@@ -34,5 +34,5 @@ items:
 
       Our internship training involves learning our tax approach and software to gain experience preparing both individual and business tax returns, and supporting other members of our team by providing exceptional client service.
     link: https://www.indeed.com/job/tax-accounting-intern-aaeaa89af0d0fece
-    image: /img/lester.jpeg
+    image: /img/writing.jpeg
 ---
