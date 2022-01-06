@@ -8,10 +8,10 @@ layout: default
     <div class="lg:grid lg:grid-cols-2 lg:gap-8">
       <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
         <div class="lg:py-16">
-          <h1 class="mt-4 text-4xl tracking-tight font-extrabold text-blue-400
+          <h1 class="mt-4 text-4xl tracking-tight font-extrabold text-blue-500
             sm:mt-5 sm:text-6xl lg:mt-6 xl:text-5xl">
             <span class="block">Account for your present</span>
-            <span class="pb-3 block text-yellow-400 sm:pb-5">Maximize your future</span>
+            <span class="pb-3 block text-yellow-500 sm:pb-5">Maximize your future</span>
           </h1>
           <p class="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
             For nearly 100 years and four generations, <b>Buckley &amp; Sitzman,
@@ -22,9 +22,9 @@ layout: default
           <div class="mt-10">
             <a href="/contact-us" class="inline-flex items-center uppercase py-6
                      px-8 rounded-md text-lg
-                     hover:bg-blue-600 bg-blue-500 text-white font-medium
+                     hover:bg-yellow-600 bg-yellow-500 text-white font-medium
                      focus:outline-none focus:ring-2 focus:ring-offset-2
-                     focus:ring-blue-400 focus:ring-offset-gray-900">
+                     focus:ring-yellow-400 focus:ring-offset-gray-900">
               Get in Touch
             </a>
           </div>
@@ -85,9 +85,6 @@ layout: default
     <h2 class="text-base text-center font-semibold tracking-wider text-blue-700 uppercase">
       Current Openings
     </h2>
-    <p class="mt-2 text-3xl text-center font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-      Come work with us
-    </p>
     <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
       <b>Buckley &amp; Sitzman, LLP</b> has the following positions open. You
       can also learn more <a class="underline" href="/meet-our-team">about our
@@ -96,24 +93,26 @@ layout: default
       and on maintaining a friendly and collaborative environment.
     </p>
     <div class="mt-12">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16
+      <div class="auto-flow-fr grid-flow-row grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16
         sm:gap-y-0 sm:gap-x-16">
         {%- set job_postings = collections.job_postings | first -%}
         {%- for posting in job_postings.data.items -%}
-          <div class="flex-1 flex-col space-y-8">
-            {% if posting.image %}
-              <div class="aspect-w-3 aspect-h-2">
-                {% image posting.image, posting.name, "w-full h-full
-                object-cover rounded-lg shadow-xl" %}
+          <div class="flex flex-col justify-between bg-gray-50 shadow-xl p-8 rounded-lg">
+            <div class="flex-1 flex-col space-y-8">
+              <div class="text-xl text-center text-gray-600 leading-6 font-semibold space-y-1">
+                <h3>{{posting.name}}</h3>
               </div>
-            {% endif %}
-            <div class="text-lg text-center text-blue-600 leading-6 font-medium space-y-1">
-              <h3>{{posting.name}}</h3>
+              {% if posting.image %}
+                <div class="aspect-w-3 aspect-h-2">
+                  {% image posting.image, posting.name, "w-full h-full
+                  object-cover rounded-md" %}
+                </div>
+              {% endif %}
+              <div class="prose text-gray-500">
+                {{ posting.body | markdown | safe }}
+              </div>
             </div>
-            <div class="prose text-gray-500">
-              {{ posting.body | markdown | safe }}
-            </div>
-            <div class="mt-10 flex justify-center">
+            <div class="mt-16 flex justify-center">
               <a
                 href="{{posting.link}}"
                 target="_blank"
@@ -147,9 +146,9 @@ layout: default
           href="/contact-us"
           target="_blank"
           class="inline-flex items-center uppercase py-3 px-16 rounded-md
-                 hover:bg-blue-600 bg-blue-500 text-white font-medium
+                 hover:bg-yellow-600 bg-yellow-500 text-white font-medium
                  focus:outline-none focus:ring-2 focus:ring-offset-2
-                 focus:ring-blue-400 focus:ring-offset-white"
+                 focus:ring-yellow-400 focus:ring-offset-white"
         >
           Contact Us
         </a>
