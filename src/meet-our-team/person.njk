@@ -5,6 +5,47 @@ pagination:
   data: collections.people
   size: 1
   alias: person
+eleventyComputed:
+  title: "{{person.name}}"
 ---
 
-<h1>{{person.name}}</h1>
+<div class="max-w-2xl mx-auto mt-16 px-8 flex-col space-y-16">
+  <div>
+    {% image person.image, person.name, "w-full h-auto shadow-lg rounded-lg" %}
+  </div>
+  <div>
+    <div class="prose lg:prose-lg">
+      {{person.body | markdown | safe}}
+    </div>
+  </div>
+</div>
+
+<div class="relative my-16 px-4 sm:px-6 lg:px-8">
+  <div class="prose prose-lg lg:text-xl text-gray-500 mx-auto">
+    <p>
+      Our goal is always to provide the best service we can at justifiable
+      rates. Our professional staff are committed to using the full
+      capabilities of technology to provide you the best service we can.
+      Working with us also always includes contact with partners as we seek
+      to give you the best outcomes possible.
+    </p>
+    <p>
+      We work tirelessly to ensure the best outcomes for our clients. Ready to
+      see what the accountants and staff at <b>Buckley &amp; Sitzman, LLP</b>
+      can do for you and your business?
+    </p>
+  </div>
+  <div class="max-w-prose text-center mx-auto">
+    <p class="mt-10">
+      <a
+        href="/meet-our-team"
+        class="inline-flex text-black items-center uppercase py-3 px-4 rounded-md
+               hover:bg-secondary-600 bg-secondary-500 font-medium
+               focus:outline-none focus:ring-2 focus:ring-offset-2
+               focus:ring-secondary-400 focus:ring-offset-gray-900"
+      >
+        Meet the Rest of Our Team
+      </a>
+    </p>
+  </div>
+</div>
