@@ -10,7 +10,7 @@
     {% endif %}
 
     <meta property="og:image"
-    content="https://aridsoftware.com{{renderData.feature_image or feature_image or "/img/logo.png" }}" />
+    content="https://aridsoftware.com{{renderData.feature_image or feature_image or "/img/logo.svg" }}" />
     <meta property="og:type" content="{{content_type or "website"}}" />
     <meta property="og:title" content="Buckley & Sitzman, LLP | {{ renderData.title or metadata.title or title or "Home" }}" />
     <meta property="og:description" content="{{description or title}}" />
@@ -20,14 +20,14 @@
     <meta property="twitter:domain" content="buckleysitzman.com" />
     <meta property="twitter:url" content="https://buckleysitzman.com{{page.url}}" />
     <meta property="twitter:image"
-    content="https://buckleysitzman.com{{renderData.feature_image or feature_image or "/img/logo.png" }}" />
+    content="https://buckleysitzman.com{{renderData.feature_image or feature_image or "/img/logo.svg" }}" />
     <meta property="twitter:title" content="Buckley & Sitzman, LLP | {{ renderData.title or metadata.title or title or "Home" }}" />
     <meta property="twitter:description" content="{{description or title or "Home"}}" />
 
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="icon" type="image/png" sizes="96x96" href="/img/logo.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon.svg"/>
     <link rel="stylesheet" href="/style.css?v={% version %}"/>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
@@ -49,7 +49,7 @@
               <div class="flex items-center flex-1 lg:absolute lg:inset-y-0 lg:left-0">
                 <div class="flex items-center justify-between w-full lg:w-auto">
                   <a href="/" aria-label="Home">
-                    <img class="h-8 w-auto sm:h-10" src="/img/logo.png" alt="Logo">
+                    <img class="w-96" src="/img/logo.svg" alt="Logo">
                   </a>
                   <div class="-mr-2 flex items-center lg:hidden">
                     <!-- Mobile Menu Expand -->
@@ -107,7 +107,7 @@
               <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
                 <div class="px-5 pt-4 flex items-center justify-between">
                   <div>
-                    <img class="h-8 w-auto sm:h-10" src="/img/logo.png" alt="Logo">
+                    <img class="w-96" src="/img/logo.svg" alt="Logo">
                   </div>
               <div class="-mr-2">
                 <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu" @click="menu_open = false">
