@@ -1,9 +1,9 @@
 {
-  "name": "arid-software-com",
+  "name": "buckley-sitzman-com",
   "version": "1.0.0",
-  "description": "Arid Software Home-Page",
+  "description": "Buckley Sitzman Home-Page",
   "main": "index.js",
-  "repository": "https://github.com/arid-software/arid-software-com",
+  "repository": "https://github.com/arid-software/buckley-sitzman-com",
   "author": "Andrew Ek <andrew@aridsoftware.com>",
   "license": "MIT",
   "private": true,

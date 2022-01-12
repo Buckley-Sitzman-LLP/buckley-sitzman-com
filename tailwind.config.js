@@ -47,30 +47,6 @@ module.exports = {
           700: "#F5AF00",
           800: "#A37500",
           900: "#523A00"
-        },
-        teal: colors.teal,
-        cyan: colors.cyan,
-        sky: colors.sky,
-        blue: colors.blue,
-        yellow: colors.yellow,
-      },
-      typography: {
-        DEFAULT: {
-          css: {
-            blockquote: {
-              "font-style": "normal",
-              "quotes": "none"
-            },
-            h1: {
-              "margin-bottom": "0rem",
-            },
-            a: {
-              "text-decoration": "none",
-              "&:hover": {
-                "text-decoration": "underline"
-              }
-            },
-          },
         }
       },
     },
