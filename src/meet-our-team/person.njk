@@ -1,0 +1,10 @@
+---
+permalink: "meet-our-team/{{person.short_name | slug}}/"
+layout: default
+pagination:
+  data: collections.people
+  size: 1
+  alias: person
+---
+
+<h1>{{person.name}}</h1>

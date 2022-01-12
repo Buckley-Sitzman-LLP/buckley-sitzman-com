@@ -15,15 +15,15 @@ layout: default
   </div>
 </div>
 
-<div class="bg-white">
+<div class="relative bg-white">
   <div class="mx-auto pt-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:pt-24">
     <div class="space-y-12">
-      <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
-        {%- set persons = collections.people | first %}
-        {%- for person in persons.data.members -%}
+      <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-8
+        sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-12">
+        {%- for person in collections.people -%}
           <li x-data="{open: false}">
             <div class="space-y-4">
-              <div class="aspect-w-3 aspect-h-2 overflow-y-hidden">
+              <div class="aspect-w-3 aspect-h-5 overflow-y-hidden">
                 {% image person.image, person.name, "w-full h-full object-cover shadow-lg rounded-lg" %}
               </div>
 
@@ -64,7 +64,7 @@ layout: default
                 aria-modal="true"
                 x-id="['{{person.name}}-modal']"
                 :aria-labelledby="$id('{{person.name}}-modal')"
-                class="fixed inset-0 z-10"
+                class="absolute inset-0 z-10"
               >
                 <!-- overlay -->
                 <div
@@ -82,8 +82,9 @@ layout: default
                            justify-center">
                   <div
                     @click.stop
+                    x.trap.noscroll.inert="open"
                     class="max-w-2xl w-full rounded-lg bg-white p-12
-                            overflow-y-auto shadow-xl transform transition-all"
+                           overflow-y-auto shadow-xl transform transition-all"
                   >
                     <div class="block absolute top-0 right-0 pt-8 pr-8">
                       <button type="button" class="bg-white rounded-md
@@ -96,24 +97,19 @@ layout: default
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                       </button>
                     </div>
-                    <div class="mt-12 prose">
-                      {% image person.image, person.name, "w-full h-full object-cover shadow-lg rounded-lg" %}
+                    <div class="mt-0 prose">
+                      <div class="aspect-w-1 aspect-h-1 overflow-y-hidden">
+                        {% image person.image, person.name, "w-full h-full
+                        object-cover object-top shadow-lg rounded-lg" %}
+                      </div>
                       <h2 class="text-3xl font-medium"
                           :id="$id('{{person.name}}-modal')">
                         {{person.name}}
                       </h2>
 
-                      {{person.body | markdown | safe}}
-                    </div>
-                    <div class="mt-10 text-center">
-                      <button
-                        type="button"
-                        class="bg-white text-sm text-gray-500 hover:text-gray-700
-                               focus:outline-none focus:ring-none"
-                        @click="open = false"
-                      >
-                        Close
-                      </button>
+                      <div class="max-h-80 pr-2 overflow-y-scroll">
+                        {{person.body | markdown | safe}}
+                      </div>
                     </div>
                   </div>
                 </div>

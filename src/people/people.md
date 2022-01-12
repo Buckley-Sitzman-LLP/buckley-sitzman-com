@@ -4,6 +4,7 @@ permalink: false
 members:
   - permalink: false
     name: Lester F. Buckley, CPA
+    short_name: Lester Buckley
     job_title: Partner
     body: >-
       A third-generation accounting professional practicing in Lincoln,
@@ -23,6 +24,7 @@ members:
     image: /img/lester.jpeg
   - permalink: false
     name: Suman Vallabhbhai CPA, CGMA
+    short_name: Suman Vallabhbhai
     job_title: Partner
     email_address: svallabhbhai@bsncpa.com
     body: >-
@@ -40,6 +42,7 @@ members:
     image: /img/suman.jpeg
   - permalink: false
     name: Grant H. Buckley, CPA
+    short_name: Grant Buckley
     job_title: Partner
     image: /img/grant.jpeg
     body: >-
@@ -57,6 +60,7 @@ members:
     email_address: gbuckley@bsncpa.com
   - permalink: false
     name: Tyler M. Denker, CPA
+    short_name: Tyler Denker
     job_title: Partner
     body: >-
       Tyler joined Buckley & Sitzman in September of 2013. He began his
@@ -68,11 +72,12 @@ members:
       of Certified Public Accountants.
 
 
-      Tyler, who is a Lincoln native, where he currently resides with his wife Cortney, their two beautiful children and dog, Milo. He loves to spend time with his friends and family, and also loves to play golf. Tyler is an avid sports fan as well as a dedicated supporter of Nebraska athletics.
+      Tyler is a Lincoln native, where he currently resides with his wife Cortney, their two beautiful children and dog, Milo. He loves to spend time with his friends and family, and also loves to play golf. Tyler is an avid sports fan as well as a dedicated supporter of Nebraska athletics.
     image: /img/tyler.jpeg
     email_address: tdenker@bsncpa.com
   - permalink: false
     name: Madisyn L. Matthews
+    short_name: Madisyn Matthews
     job_title: Accountant
     image: /img/madisyn.jpeg
     body: Madisyn grew up in Minden, Nebraska.  She attended Doane University, in
@@ -83,6 +88,7 @@ members:
       game night with friends, and listening to some classic Toby Keith music.
   - permalink: false
     name: Aubrey Kendall
+    short_name: Aubrey Kendall
     job_title: Payroll Specialist & Staff Accountant
     image: /img/aubrey.jpeg
     body: >-
@@ -94,6 +100,7 @@ members:
       Aubrey grew up in the Omaha area and moved to Lincoln in 2011, where she resides with her husband Tim, and daughter Emma.  She likes spending time with friends and family.  Aubrey enjoys teaching Taekwondo, Husker Football, and shopping.
   - permalink: false
     name: Cristen Barnes
+    short_name: Cristen Barnes
     job_title: Administrative Assistant
     image: /img/cristen.jpeg
     body: >-

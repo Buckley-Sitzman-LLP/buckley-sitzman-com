@@ -82,17 +82,17 @@ module.exports = function(eleventyConfig) {
   /*********************** COLLECTIONS ***********************************/
   // Get all people
   eleventyConfig.addCollection("people", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/people/*.md");
+    return collectionApi.getFilteredByGlob("src/people/*.md")[0].data.members;
   });
 
   // Get all services
   eleventyConfig.addCollection("services", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/services/*.md");
+    return collectionApi.getFilteredByGlob("src/services/*.md")[0].data.items;
   });
 
   // Get all job postings
   eleventyConfig.addCollection("job_postings", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/job_postings/*.md");
+    return collectionApi.getFilteredByGlob("src/job_postings/*.md")[0].data.items;
   });
 
   // Minify HTML by removing whitespace, etc.

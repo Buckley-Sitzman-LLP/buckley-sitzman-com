@@ -21,8 +21,7 @@ layout: default
 <div class="mx-auto px-4">
   <ul role="list" class="space-y-12">
 
-    {%- set services = collections.services | first -%}
-    {%- for service in services.data.items -%}
+    {%- for service in collections.services -%}
       <li class="">
         <div class="prose prose-lg mx-auto">
           <h2>
