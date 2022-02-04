@@ -71,27 +71,9 @@ items:
       type and later restructuring if advantageous. With our knowledge and
       expertise, you will always be receiving the most advantageous entity type
       for the functions your business performs.
-  - title: Financial Projections and Forecasts
-    summary: Be prepared for what's to come.
-    body: No one can predict the future perfectly, but we can all benefit from
-      planning for it. Buckley & Sitzman, LLP  will work with you to produce
-      financial projections that can help you manage your business plan and
-      spending. Forecasting for the future is imperative to your company's
-      success. We make it a point to keep current with market trends and updates
-      so that your business can be prepared for what is to come. Depending on
-      your needs, our work can range from top-level reports to detailed
-      financial models.
-  - title: Debt and Finance Advising
-    summary: Manage and pay off your debts in the most advantageous way for you.
-    body: Whether your needs are corporate or personal, Buckley & Sitzman, LLP's
-      team can assist you in sorting out the different options available for
-      debt management and financing that will lower your payments and/or reduce
-      the total amount of interest paid. Re-balancing your debts can also result
-      in tax deduction savings. Even if you are able to handle the payments and
-      the amounts of your current debts, our expertise may be able to save you
-      money and/or lower your payments.
   - title: Accounting Services
-    summary: Maintain profitability and capitalize on new opportunities with up-to-date financial information.
+    summary: Maintain profitability and capitalize on new opportunities with
+      up-to-date financial information.
     body: >-
       From start-ups to established enterprises, businesses rely on accurate and
       insightful financial information in order to maintain profitability and
@@ -158,9 +140,9 @@ items:
     body: >-
       QuickBooks can provide useful and timely information in the form of
       financial statements, reports and graphs. We don't just help you use the
-      software, we help you use it more efficiently and more effectively. Buckley
-      & Sitzman, LLP offers the following solutions to help meet your QuickBooks
-      needs:  
+      software, we help you use it more efficiently and more effectively.
+      Buckley & Sitzman, LLP offers the following solutions to help meet your
+      QuickBooks needs:  
 
 
       * Personal Training
@@ -186,7 +168,8 @@ items:
       help and guidance, you will always be on top of your finances and ready
       for the future.
   - title: Mergers, Acquisitions, and Sales
-    summary: Make the right decision when it comes to growing, selling, or merging your business.
+    summary: Make the right decision when it comes to growing, selling, or merging
+      your business.
     body: Business transactions and transitions are complicated affairs, and whether
       you're buying, selling, or considering a potential merger, Buckley &
       Sitzman, LLP can provide professional know-how to help you successfully
