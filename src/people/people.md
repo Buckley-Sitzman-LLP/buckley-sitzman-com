@@ -76,7 +76,7 @@ members:
     image: /img/tyler.jpeg
     email_address: tdenker@bsncpa.com
   - permalink: false
-    name: Madisyn L. Matthews
+    name: Madisyn L. Matthews, CPA
     short_name: Madisyn Matthews
     job_title: Accountant
     image: /img/madisyn.jpeg
