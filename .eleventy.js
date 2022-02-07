@@ -14,7 +14,7 @@ async function imageShortcode(src, alt, klass="", sizes="(min-width: 1024px) 100
     widths: [300, 600, 900, null],
     urlPath: "/img/",
     outputDir: "./_site/img",
-    formats: ["webp", "jpeg", "svg", "png"],
+    formats: ["webp", "jpeg"],
   });
 
   let imageAttributes = {
@@ -36,11 +36,7 @@ module.exports = function(eleventyConfig) {
 
   // Copy files over to _site
   eleventyConfig.addPassthroughCopy("./src/assets/");
-  eleventyConfig.addPassthroughCopy("./img");
   eleventyConfig.addPassthroughCopy("./src/admin");
-  eleventyConfig.addPassthroughCopy({
-    "./node_modules/alpinejs/dist/alpine.js": "./js/alpine.js"
-  });
 
   eleventyConfig.addShortcode("version", function() {
     return String(Date.now());
