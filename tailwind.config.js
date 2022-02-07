@@ -10,6 +10,11 @@ module.exports = {
       sans: ["Poppins", "Helvetica", "Arial", "sans-serif"]
     },
     extend: {
+      maxHeight: {
+        '128': '32rem',
+        '144': '36rem',
+        '160': '40rem'
+      },
       colors: {
         primary: {
           50: "#E9EAEC",
