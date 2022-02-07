@@ -46,10 +46,10 @@ layout: default
         </p>
         <div class="mt-10 text-center text-base">
           <a href="/meet-our-team" class="inline-flex items-center uppercase py-3 px-4 rounded-md
-                   hover:bg-secondary-600 bg-secondary-500 text-black font-medium
+                   bg-secondary-500 text-black font-medium
                    focus:outline-none focus:ring-2 focus:ring-offset-2
                    focus:ring-secondary-400 focus:ring-offset-secondary-600
-                   hover:scale-110">
+                   hover:scale-105 transition ease-in-out">
             Meet Our Team
           </a>
         </div>
@@ -65,7 +65,8 @@ layout: default
       <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
         <div class="aspect-w-3 aspect-h-5 sm:aspect-w-3 sm:aspect-h-5 lg:aspect-none lg:h-full">
           {% image "/img/lester.jpeg", "Lester F. Buckley", "rounded-xl
-          shadow-xl object-cover lg:h-full lg:w-full hover:shadow-2xl" %}
+          shadow-xl object-cover lg:h-full lg:w-full hover:shadow-2xl
+          transition transition-shadow ease-in-out" %}
         </div>
       </div>
     </div>
@@ -112,7 +113,7 @@ layout: default
 
         {%- for service in collections.services -%}
           <div
-            class="pt-6 group hover:shadow-xl cursor-pointer"
+            class="pt-6 group transition transition-shadow ease-in-out hover:shadow-xl cursor-pointer"
             x-data="{expanded: false}"
             @click="expanded = !expanded"
             @click.outside="expanded = false"
@@ -121,7 +122,8 @@ layout: default
               <div class="-mt-6">
                 <div>
                   <span class="inline-flex items-center justify-center p-3
-                    bg-primary-900 rounded-md shadow-lg group-hover:shadow-xl">
+                    bg-primary-900 rounded-md shadow-lg group-hover:scale-105
+                    transition ease-in-out">
                     <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
                   </span>
                 </div>
@@ -156,7 +158,7 @@ layout: default
       </p>
       <p class="mt-10">
         <a href="/contact-us" class="inline-flex items-center uppercase py-3 px-4 rounded-md
-                 hover:bg-secondary-600 bg-secondary-500 text-black font-medium
+                 hover:scale-105 transition ease-in-out bg-secondary-500 text-black font-medium
                  focus:outline-none focus:ring-2 focus:ring-offset-2
                  focus:ring-secondary-400 focus:ring-offset-secondary-600">
           Contact us
