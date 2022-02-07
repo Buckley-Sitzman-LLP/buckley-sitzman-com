@@ -78,7 +78,7 @@ members:
   - permalink: false
     name: Madisyn L. Matthews, CPA
     short_name: Madisyn Matthews
-    job_title: Accountant
+    job_title: ""
     image: /img/madisyn.jpeg
     body: Madisyn grew up in Minden, Nebraska.  She attended Doane University, in
       Crete, NE, where she obtained a Bachelor of Arts degree in Accounting and
@@ -89,7 +89,7 @@ members:
   - permalink: false
     name: Aubrey Kendall
     short_name: Aubrey Kendall
-    job_title: Payroll Specialist & Staff Accountant
+    job_title: ""
     image: /img/aubrey.jpeg
     body: >-
       Aubrey joined Buckley & Sitzman in August 2015.  Aubrey graduated from the
@@ -101,7 +101,7 @@ members:
   - permalink: false
     name: Cristen Barnes
     short_name: Cristen Barnes
-    job_title: Administrative Assistant
+    job_title: ""
     image: /img/cristen.jpeg
     body: >-
       Cristen joined Buckley & Sitzman in August 2016. Cristen graduated from
