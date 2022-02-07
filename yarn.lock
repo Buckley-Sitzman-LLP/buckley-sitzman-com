@@ -1071,11 +1071,6 @@ electron-to-chromium@^1.4.17:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.43.tgz#665c0cd8d5e7cce0ba78d90a514c8c813ca3bdbe"
   integrity sha512-PO3kEfcxPrti/4STbXvCkNIF4fgWvCKl2508e6UI7KomCDffpIfeBZLXsh5DK/XGsjUw3kwq6WEsi0MJTlGAdg==
 
-eleventy@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/eleventy/-/eleventy-1.0.6.tgz#938fa5c85e9c6372010ac1852a41d86b9dac4561"
-  integrity sha512-IzaPK0P5eF/jm5qdOzrzq2947FFRKpZwHT8AR1WpGI4tTpkLnzwQF02p9m0o5XQQ4dypBExp69fUHViEiHUWpQ==
-
 emoji-regex@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
