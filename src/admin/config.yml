@@ -86,7 +86,7 @@ collections:
         allow_add: true
         fields:
           - { label: "Name", name: "name", widget: "string" }
-          - { label: "Job Title", name: "job_title", widget: "string" }
+          - { label: "Job Title", name: "job_title", widget: "string", required: false }
           - { label: "Email", name: "email_address", widget: "string", required: false }
           - { label: "Image", name: "image", widget: "image" }
           - { label: "Bio", name: "body", widget: "markdown" }
