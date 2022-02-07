@@ -4,12 +4,14 @@ permalink: false
 items:
   - title: Tax Planning and Preparation
     summary: Reduce your tax liabilities and maximize cash flow.
-    body: At Buckley & Sitzman, LLP, we guide our clients through a full range of
+    body: >-
+      At Buckley & Sitzman, LLP, we guide our clients through a full range of
       tax planning and preparation decisions with strategies that minimize your
       tax liabilities, maximize your cash flow and keep you on track to your
-      financial goals. Our expertise, experience, analysis and thorough research
-      allow us to optimize financial opportunities to be found in existing as
-      well as recently altered tax laws.
+      financial goals. 
+
+
+      Our expertise, experience, analysis and thorough research allow us to optimize financial opportunities to be found in existing as well as recently altered tax laws.
   - title: Bookkeeping and Payroll
     summary: We'll take the bookkeeping. You focus on your core business.
     body: >-
