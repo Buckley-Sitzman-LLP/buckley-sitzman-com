@@ -1,11 +1,10 @@
 const colors = require("tailwindcss/colors")
 
 module.exports = {
-  purge: [
+  content: [
     "_site/**/*.html",
     "_site/**/*.js",
   ],
-  darkMode: false, // or "media" or "class"
   theme: {
     fontFamily: {
       sans: ["Inter var", "Helvetica", "Arial", "sans-serif"]
