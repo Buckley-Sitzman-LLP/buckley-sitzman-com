@@ -21,7 +21,7 @@ members:
 
       Les is licensed to practice accounting in the states of Nebraska and Iowa and provides tax, audit and consulting services to a diverse clientele including banks, agri-businesses, physicians, computer software companies, transportation and warehousing companies, non-profit organizations and individuals.
     email_address: lbuckley@bsncpa.com
-    image: /img/lester.jpeg
+    image: /img/people/lester.jpeg
   - permalink: false
     name: Suman Vallabhbhai CPA, CGMA
     short_name: Suman Vallabhbhai
@@ -39,12 +39,12 @@ members:
 
 
       He has a diverse clientele, consisting of everything from individual taxpayers to multi-state corporations in a variety of industries and professions, such as: professional athletes, hotel and restaurant operations, non-profit organizations, etc.
-    image: /img/suman.jpeg
+    image: /img/people/suman.jpeg
   - permalink: false
     name: Grant H. Buckley, CPA
     short_name: Grant Buckley
     job_title: Partner
-    image: /img/grant.jpeg
+    image: /img/people/grant.jpeg
     body: >-
       Grant is a native of Lincoln, Nebraska, and has also lived in Omaha. Grant
       graduated from the University of Nebraska-Lincoln with a Bachelor of
@@ -73,13 +73,13 @@ members:
 
 
       Tyler is a Lincoln native, where he currently resides with his wife Cortney, their two beautiful children and dog, Milo. He loves to spend time with his friends and family, and also loves to play golf. Tyler is an avid sports fan as well as a dedicated supporter of Nebraska athletics.
-    image: /img/tyler.jpeg
+    image: /img/people/tyler.jpeg
     email_address: tdenker@bsncpa.com
   - permalink: false
     name: Madisyn L. Matthews, CPA
     short_name: Madisyn Matthews
     job_title: ""
-    image: /img/madisyn.jpeg
+    image: /img/people/madisyn.jpeg
     body: Madisyn grew up in Minden, Nebraska.  She attended Doane University, in
       Crete, NE, where she obtained a Bachelor of Arts degree in Accounting and
       Business Administration in May 2019. She joined Buckley & Sitzman
@@ -90,7 +90,7 @@ members:
     name: Aubrey Kendall
     short_name: Aubrey Kendall
     job_title: ""
-    image: /img/aubrey.jpeg
+    image: /img/people/aubrey.jpeg
     body: >-
       Aubrey joined Buckley & Sitzman in August 2015.  Aubrey graduated from the
       University of Nebraska-Lincoln in 2014 with a Bachelors of Arts Degree in
@@ -102,7 +102,7 @@ members:
     name: Cristen Barnes
     short_name: Cristen Barnes
     job_title: ""
-    image: /img/cristen.jpeg
+    image: /img/people/cristen.jpeg
     body: >-
       Cristen joined Buckley & Sitzman in August 2016. Cristen graduated from
       the University of Central Missouri in 2009 with a Bachelors of Science
