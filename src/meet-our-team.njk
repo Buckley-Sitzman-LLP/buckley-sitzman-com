@@ -14,7 +14,11 @@ feature_image: "/img/splashes/laptop_and_hands.jpeg"
             <div class="space-y-4">
               <div class="aspect-w-3 aspect-h-5 overflow-y-hidden">
                 <a href="/meet-our-team/{{person.short_name | slug}}/">
-                  {% image person.image, person.name, "w-full h-full object-cover shadow-lg rounded-lg" %}
+                  <img
+                    src="{{person.image}}"
+                    alt="{{person.name}}"
+                    class="w-full h-full object-cover shadow-lg rounded-lg"
+                  />
                 </a>
               </div>
 

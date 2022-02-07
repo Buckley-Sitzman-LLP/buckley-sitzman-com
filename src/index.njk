@@ -37,7 +37,11 @@ layout: default
     </div>
     <!-- TODO: Better alt text once we add in the new image -->
     <div class="my-12 md:my-20">
-      {% image "/img/splashes/women_chatting.jpeg", "Staff Photo", "rounded-lg shadow-xl ring-1 ring-black ring-opacity-5" %}
+      <img
+        src="/img/splashes/women_chatting.jpeg" i
+        alt="Staff Photo"
+        class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
+      />
     </div>
     <div class="max-w-prose mx-auto text-xl text-gray-700">
       <p class="mt-12 md:mt-24">
@@ -66,9 +70,12 @@ layout: default
       <div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
       <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
         <div class="aspect-w-3 aspect-h-5 sm:aspect-w-3 sm:aspect-h-5 lg:aspect-none lg:h-full">
-          {% image "/img/people/lester.jpeg", "Lester F. Buckley", "rounded-xl
-          shadow-xl object-cover lg:h-full lg:w-full hover:shadow-2xl
-          transition transition-shadow ease-in-out" %}
+          <img
+            src="/img/people/lester.jpeg"
+            alt="Lester F. Buckley"
+            class="rounded-xl shadow-xl object-cover lg:h-full lg:w-full
+                   hover:shadow-2xl transition transition-shadow ease-in-out"
+          />
         </div>
       </div>
     </div>

@@ -1,32 +1,9 @@
 const htmlmin = require("html-minifier");
 const {DateTime} = require("luxon");
 const util = require("util")
-const Image = require("@11ty/eleventy-img");
 const MarkdownIt = require("markdown-it");
 
 const markdown = new MarkdownIt();
-
-// Preprocess Images on demand - https://www.11ty.dev/docs/plugins/image/#use-this-in-your-templates
-async function imageShortcode(src, alt, klass="", sizes="(min-width: 1024px) 100vw, 50vw") {
-  const newSrc = `.${src}`
-
-  let metadata = await Image(newSrc, {
-    widths: [300, 600, 900, null],
-    urlPath: "/img/",
-    outputDir: "./_site/img",
-    formats: ["webp", "jpeg"],
-  });
-
-  let imageAttributes = {
-    class: klass,
-    alt,
-    sizes,
-    loading: "lazy",
-    decoding: "async",
-  };
-
-  return Image.generateHTML(metadata, imageAttributes);
-}
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -107,12 +84,6 @@ module.exports = function(eleventyConfig) {
     }
     return content;
   });
-
-  // Generate responsive images, pre-processed and sized perfectly.
-  //
-  // Usage:
-  // {% image "/path/to/img", "alt-text", "classes to apply", "sizes" %}
-  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
   return {
     templateFormats: ["md", "njk", "html"],
