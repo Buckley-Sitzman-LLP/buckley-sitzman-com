@@ -14,6 +14,7 @@ module.exports = function(eleventyConfig) {
   // Copy files over to _site
   eleventyConfig.addPassthroughCopy("./src/assets/");
   eleventyConfig.addPassthroughCopy("./src/admin");
+  eleventyConfig.addPassthroughCopy("./img");
 
   eleventyConfig.addShortcode("version", function() {
     return String(Date.now());
