@@ -10,7 +10,7 @@
     {% endif %}
 
     <meta property="og:image"
-    content="https://aridsoftware.com{{renderData.feature_image or feature_image or "/img/logo.svg" }}" />
+    content="https://buckleysitzman.com{{renderData.feature_image or feature_image or "/img/logo.svg" }}" />
     <meta property="og:type" content="{{content_type or "website"}}" />
     <meta property="og:title" content="Buckley & Sitzman, LLP | {{ renderData.title or metadata.title or title or "Home" }}" />
     <meta property="og:description" content="{{description or title}}" />
@@ -26,7 +26,11 @@
 
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon.svg"/>
     <link rel="stylesheet" href="/style.css?v={% version %}"/>
 

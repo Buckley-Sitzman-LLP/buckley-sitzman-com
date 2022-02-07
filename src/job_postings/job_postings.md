@@ -21,7 +21,7 @@ items:
 
 
       The ideal person will be a patient and organized worker with experience and knowledge in the accounting industry. We will value your attention to detail, cooperative attitude, and the ability to do your job consistently. The candidate will appreciate working with colleagues in a friendly environment that has a strong sense of family.
-    link: https://www.indeed.com/job/bookkeeper-c9d0530c2a0bd970
+    link: ""
     image: /img/tax-stock-photo.jpeg
   - name: Tax Accounting Intern
     body: >-

@@ -5,7 +5,7 @@ layout: default
 
 <div class="relative my-16">
   <div class="relative px-4 sm:px-6 lg:px-8">
-    <div class="prose prose-lg lg:text-xl text-gray-500 mx-auto">
+    <div class="prose prose-lg lg:text-xl text-gray-700 mx-auto">
       <p>
         We value attention to detail, cooperative and collaborative attitudes,
         and relevant knowledge and experience. We offer a flexible schedule,
@@ -21,12 +21,8 @@ layout: default
     <h2 class="text-base text-center font-semibold tracking-wider text-primary-900 uppercase">
       Current Openings
     </h2>
-    <p class="mt-5 max-w-prose mx-auto text-xl text-gray-700">
-      <b>Buckley &amp; Sitzman, LLP</b> has the following positions open. You
-      can also learn more <a class="underline" href="/meet-our-team">about our
-        team</a> and about the <a class="underline" href="/services">services we
-        offer</a>. We pride ourselves on doing excellent work for our clients
-      and on maintaining a friendly and collaborative environment.
+    <p>
+      To apply for an opening, please
     </p>
     <div class="mt-12">
       <div class="auto-flow-fr grid-flow-row grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16
@@ -34,7 +30,7 @@ layout: default
         {%- for posting in collections.job_postings -%}
           <div class="flex flex-col justify-between bg-gray-50 shadow-xl p-8 rounded-lg">
             <div class="flex-1 flex-col space-y-8">
-              <div class="text-xl text-center text-gray-600 leading-6 font-semibold space-y-1">
+              <div class="text-xl text-center text-gray-800 leading-6 font-semibold space-y-1">
                 <h3>{{posting.name}}</h3>
               </div>
               {% if posting.image %}
@@ -47,19 +43,21 @@ layout: default
                 {{ posting.body | markdown | safe }}
               </div>
             </div>
-            <div class="mt-16 flex justify-center">
-              <a
-                href="{{posting.link}}"
-                target="_blank"
-                class="inline-flex items-center uppercase py-3 px-4 rounded-md
-                       hover:scale-105 transition ease-in-out bg-secondary-500
-                       text-black font-medium focus:outline-none focus:ring-2
-                       focus:ring-offset-2 focus:ring-secondary-400
-                       focus:ring-offset-secondary-600"
-              >
-                Apply
-              </a>
-            </div>
+            {% if posting.link %}
+              <div class="mt-16 flex justify-center">
+                <a
+                  href="{{posting.link}}"
+                  target="_blank"
+                  class="inline-flex items-center uppercase py-3 px-4 rounded-md
+                         hover:scale-105 transition ease-in-out bg-secondary-500
+                         text-black font-medium focus:outline-none focus:ring-2
+                         focus:ring-offset-2 focus:ring-secondary-400
+                         focus:ring-offset-secondary-600"
+                >
+                  Apply
+                </a>
+              </div>
+            {% endif %}
           </div>
         {% endfor %}
       </div>
@@ -74,7 +72,7 @@ layout: default
       <p class="text-left text-xl text-gray-700">
         Ready to start the next step of your career with <b>Buckley &amp;
           Sitzman, LLP</b> and join one of the best accounting firms to work at
-        in Lincoln? Think you might be a good fit for our team?
+        in Lincoln?
       </p>
       <p class="mt-10 text-center">
         <a
