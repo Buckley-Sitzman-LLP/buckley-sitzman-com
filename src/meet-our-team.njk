@@ -3,34 +3,26 @@ title: Meet Our Team
 layout: default
 ---
 
-<div class="mt-16 relative px-4 sm:px-6 lg:px-8">
-  <div class="prose prose-lg lg:text-xl text-gray-500 mx-auto">
-    <p>
-      Our goal is always to provide the best service we can at justifiable
-      rates. Our professional staff are committed to using the full
-      capabilities of technology to provide you the best service we can.
-      Working with us also always includes contact with partners as we seek
-      to give you the best outcomes possible.
-    </p>
-  </div>
-</div>
-
 <div class="relative bg-white">
   <div class="mx-auto pt-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:pt-24">
     <div class="space-y-12">
       <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-8
-        sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-12">
+        sm:gap-y-12 sm:space-y-0 md:grid-cols-4 md:gap-x-4 lg:gap-x-12">
         {%- for person in collections.people -%}
           <li x-data="{open: false}">
             <div class="space-y-4">
               <div class="aspect-w-3 aspect-h-5 overflow-y-hidden">
-                {% image person.image, person.name, "w-full h-full object-cover shadow-lg rounded-lg" %}
+                <a href="/meet-our-team/{{person.short_name | slug}}/">
+                  {% image person.image, person.name, "w-full h-full object-cover shadow-lg rounded-lg" %}
+                </a>
               </div>
 
               <div class="space-y-2">
                 <div class="text-lg leading-6 font-medium space-y-1">
                   <h3>{{person.name}}</h3>
-                  <p class="text-blue-700">{{person.job_title}}</p>
+                  {% if person.job_title %}
+                    <p class="text-base text-primary-900">{{person.job_title}}</p>
+                  {% endif %}
                 </div>
 
                 <ul role="list" class="flex space-x-8">
@@ -73,10 +65,11 @@ layout: default
     <p class="mt-10">
       <a
         href="/contact-us"
-        class="inline-flex text-black items-center uppercase py-3 px-4 rounded-md
-               hover:bg-secondary-600 bg-secondary-500 font-medium
-               focus:outline-none focus:ring-2 focus:ring-offset-2
-               focus:ring-secondary-400 focus:ring-offset-gray-900"
+        class="inline-flex items-center uppercase py-3 px-4 rounded-md
+               hover:scale-105 transition ease-in-out bg-secondary-500
+               text-black font-medium focus:outline-none focus:ring-2
+               focus:ring-offset-2 focus:ring-secondary-400
+               focus:ring-offset-secondary-600"
       >
         Contact Us
       </a>

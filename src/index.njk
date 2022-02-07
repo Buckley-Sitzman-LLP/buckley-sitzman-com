@@ -2,6 +2,10 @@
 layout: default
 ---
 
+<div class="mx-auto">
+  <img src="/img/hex_logo.svg">
+</div>
+
 <div class="py-24">
   <div class="mx-auto max-w-md px-4 sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
     <div>
@@ -100,7 +104,7 @@ layout: default
     <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
       Everything you might need
     </p>
-    <p class="mt-5 max-w-prose text-left mx-auto text-xl text-gray-500">
+    <p class="mt-5 max-w-prose text-left mx-auto text-xl text-gray-700">
       <b>Buckley &amp; Sitzman, LLP</b> provides a wide range of
       <a class="underline" href="/services">services</a> to individuals and
       businesses in a variety of industries. We strive to meet each client's
@@ -113,25 +117,24 @@ layout: default
 
         {%- for service in collections.services -%}
           <div
-            class="pt-6 group transition transition-shadow ease-in-out hover:shadow-xl cursor-pointer"
+            class="pt-6 group cursor-pointer"
             x-data="{expanded: false}"
             @click="expanded = !expanded"
             @click.outside="expanded = false"
           >
-            <div class="flow-root bg-gray-50 h-full rounded-lg px-6 pb-8">
+            <div class="group-hover:scale-105 transition ease-in-out flow-root bg-gray-50 h-full rounded-lg px-6 pb-8">
               <div class="-mt-6">
                 <div>
                   <span class="inline-flex items-center justify-center p-3
-                    bg-primary-900 rounded-md shadow-lg group-hover:scale-105
-                    transition ease-in-out">
-                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+                    bg-secondary-500 rounded-md shadow-lg">
+                    <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
                   </span>
                 </div>
-                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                <h3 class="mt-8 text-lg font-medium text-primary-900 tracking-tight">
                   {{service.title}}
                 </h3>
 
-                <p class="mt-5 text-base text-gray-500">
+                <p class="mt-5 text-base text-gray-700">
                   {{service.summary}}
                 </p>
 
@@ -157,10 +160,14 @@ layout: default
           LLP</b> can help you or your business with?
       </p>
       <p class="mt-10">
-        <a href="/contact-us" class="inline-flex items-center uppercase py-3 px-4 rounded-md
-                 hover:scale-105 transition ease-in-out bg-secondary-500 text-black font-medium
-                 focus:outline-none focus:ring-2 focus:ring-offset-2
-                 focus:ring-secondary-400 focus:ring-offset-secondary-600">
+        <a
+          href="/contact-us"
+          class="inline-flex items-center uppercase py-3 px-4 rounded-md
+                 hover:scale-105 transition ease-in-out bg-secondary-500
+                 text-black font-medium focus:outline-none focus:ring-2
+                 focus:ring-offset-2 focus:ring-secondary-400
+                 focus:ring-offset-secondary-600"
+        >
           Contact us
         </a>
       </p>

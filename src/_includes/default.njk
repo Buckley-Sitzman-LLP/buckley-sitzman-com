@@ -45,138 +45,139 @@
     {% block head %}{% endblock %}
   </head>
   <body>
-    <div class="bg-white flex flex-col justify-between min-h-screen">
-      <div class="relative">
-        <header class="pt-8 border-b border-gray-200 pb-8" x-data="{menu_open: false}">
-          <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
-            <nav class="relative flex items-center justify-between sm:h-10 lg:justify-end">
-              <div class="flex items-center flex-1 lg:absolute lg:inset-y-0 lg:left-0">
-                <div class="flex items-center justify-between w-full lg:w-auto">
-                  <a href="/" aria-label="Home">
-                    <img class="w-96" src="/img/logo.svg" alt="Logo">
-                  </a>
-                  <div class="-mr-2 flex items-center lg:hidden">
-                    <!-- Mobile Menu Expand -->
-                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-lg text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" id="main-menu" aria-label="Main menu" aria-haspopup="true" @click="menu_open = true">
-                      <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="hidden lg:flex lg:space-x-10">
-                <a href="/" class="font-medium text-gray-500
-                  hover:text-arid_orange-500 transition duration-150 ease-in-out">
-                  Home
-                </a>
-                <a href="/pay-my-bill" class="font-medium text-gray-500
-                hover:text-arid_orange-500 transition duration-150 ease-in-out">
-                  Pay My Bill
-                </a>
-                <a href="/services" class="font-medium text-gray-500
-                  hover:text-arid_orange-500 transition duration-150 ease-in-out">
-                  Services
-                </a>
-                <a href="/meet-our-team" class="font-medium text-gray-500
-                  hover:text-arid_orange-500 transition duration-150 ease-in-out">
-                  Meet Our Team
-                </a>
-                <a href="/careers" class="font-medium text-gray-500
-                hover:text-arid_orange-500 transition duration-150 ease-in-out">
-                  Careers
-                </a>
-                <a href="/contact-us" class="font-medium text-gray-500
-                hover:text-arid_orange-500 transition duration-150 ease-in-out">
-                  Contact Us
-                </a>
-              </div>
-            </nav>
-          </div>
-
-          <!--
-            Mobile menu, show/hide based on menu open state.
-          -->
-          <div
-            x-show="menu_open"
-            x-transition:enter="duration-150 ease-out"
-            x-transition:enter-start="opacity-0 scale-95"
-            x-transition:enter-end="opacity-100 scale-100"
-            x-transition:leave="duration-100 ease-in"
-            x-transition:leave-start="opacity-100 scale-100"
-            x-transition:leave-end="opacity-0 scale-95"
-            class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden z-50"
-          >
-            <div class="rounded-lg shadow-md">
-              <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
-                <div class="px-5 pt-4 flex items-center justify-between">
-                  <div>
-                    <img class="w-96" src="/img/logo.svg" alt="Logo">
-                  </div>
-              <div class="-mr-2">
-                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu" @click="menu_open = false">
+    <header class="sticky top-0 bg-white z-10 pt-8 border-b border-gray-200 pb-8" x-data="{menu_open: false}">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+        <nav class="relative flex items-center justify-between sm:h-10 lg:justify-end">
+          <div class="flex items-center flex-1 lg:absolute lg:inset-y-0 lg:left-0">
+            <div class="flex items-center justify-between w-full lg:w-auto">
+              <a class="flex inline-flex" href="/" aria-label="Home">
+                <img class="hidden xl:flex w-10" src="/img/hex_logo.svg">
+                <img class="lg:ml-6 w-96 lg:w-64 xl:w-96" src="/img/logo.svg" alt="Logo">
+              </a>
+              <div class="-mr-2 flex items-center lg:hidden">
+                <!-- Mobile Menu Expand -->
+                <button type="button" class="inline-flex items-center justify-center p-2 rounded-lg text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" id="main-menu" aria-label="Main menu" aria-haspopup="true" @click="menu_open = true">
                   <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
                 </button>
               </div>
-                </div>
-                <div class="px-2 pt-2 pb-3">
-                  <a href="/" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
-                    Home
-                  </a>
-                  <a href="/pay-my-bill" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
-                    Pay My Bill
-                  </a>
-                  <a href="/services" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
-                    Services
-                  </a>
-                  <a href="/meet-our-team" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
-                    Meet Our Team
-                  </a>
-                  <a href="/careers" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
-                    Careers
-                  </a>
-                  <a href="/contact-us" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
-                    Contact Us
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
-        </header>
+          <div class="hidden lg:flex lg:space-x-10">
+            <a
+              href="/"
+              class="font-medium text-gray-500 hover:text-secondary-500
+                     border-b-4 border-b-transparent
+                     hover:border-b-secondary-500 transition duration-150
+                     ease-in-out"
+            >
+              Home
+            </a>
+            <a
+              href="/pay-my-bill"
+              class="font-medium text-gray-500 hover:text-secondary-500
+                     border-b-4 border-b-transparent
+                     hover:border-b-secondary-500 transition duration-150
+                     ease-in-out"
+            >
+              Pay My Bill
+            </a>
+            <a
+              href="/services"
+              class="font-medium text-gray-500 hover:text-secondary-500
+                     border-b-4 border-b-transparent
+                     hover:border-b-secondary-500 transition duration-150
+                     ease-in-out"
+            >
+              Services
+            </a>
+            <a
+              href="/meet-our-team"
+              class="font-medium text-gray-500 hover:text-secondary-500
+                     border-b-4 border-b-transparent
+                     hover:border-b-secondary-500 transition duration-150
+                     ease-in-out"
+            >
+              Meet Our Team
+            </a>
+            <a
+              href="/careers"
+              class="font-medium text-gray-500 hover:text-secondary-500
+                     border-b-4 border-b-transparent
+                     hover:border-b-secondary-500 transition duration-150
+                     ease-in-out"
+            >
+              Careers
+            </a>
+            <a
+              href="/contact-us"
+              class="font-medium text-gray-500 hover:text-secondary-500
+                     border-b-4 border-b-transparent
+                     hover:border-b-secondary-500 transition duration-150
+                     ease-in-out"
+            >
+              Contact Us
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <!--
+        Mobile menu, show/hide based on menu open state.
+      -->
+      <div
+        x-show="menu_open"
+        x-transition:enter="duration-150 ease-out"
+        x-transition:enter-start="opacity-0 scale-95"
+        x-transition:enter-end="opacity-100 scale-100"
+        x-transition:leave="duration-100 ease-in"
+        x-transition:leave-start="opacity-100 scale-100"
+        x-transition:leave-end="opacity-0 scale-95"
+        class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden z-50"
+      >
+        <div class="rounded-lg shadow-md">
+          <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+            <div class="px-5 pt-4 flex items-center justify-between">
+              <div>
+                <img class="w-96" src="/img/logo.svg" alt="Logo">
+              </div>
+          <div class="-mr-2">
+            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu" @click="menu_open = false">
+              <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+            </div>
+            <div class="px-2 pt-2 pb-3">
+              <a href="/" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+                Home
+              </a>
+              <a href="/pay-my-bill" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+                Pay My Bill
+              </a>
+              <a href="/services" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+                Services
+              </a>
+              <a href="/meet-our-team" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+                Meet Our Team
+              </a>
+              <a href="/careers" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+                Careers
+              </a>
+              <a href="/contact-us" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="bg-white flex flex-col justify-between min-h-screen">
+      <div class="relative">
 
         <main class="flex-1">
-          <div class="py-16 lg:py-0 bg-primary-900 sm:pt-16 lg:pt-8 lg:pb-14">
-            <div class="mx-auto max-w-7xl lg:px-8">
-              <div class="lg:grid lg:grid-cols-2 lg:gap-8">
-                <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:flex lg:items-center">
-                  <div class="lg:py-16">
-                    <h1 class="lg:mt-4 text-4xl tracking-tight font-extrabold text-blue-500
-                      sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                      <span class="block">Account for your present</span>
-                      <span class="pb-3 block text-secondary-500 sm:pb-5">Maximize your future</span>
-                    </h1>
-                    <p class="text-lg text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
-                      For nearly 100 years and four generations, <b>Buckley &amp; Sitzman,
-                      LLP</b> has guided clients like you through the dynamic accounting
-                      landscape, helping them to maintain financial viability while
-                      proactively planning for future goals.
-                    </p>
-                  </div>
-                </div>
-                <div class="lg:mt-12 lg:m-0">
-                  <div class="mx-auto max-w-md px-4 sm:px-6 lg:px-0">
-                    <img
-                      class="hidden lg:block w-full max-w-md h-auto"
-                      src="/img/header-illustration.svg" alt=""
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div class="mt-24 md:mt-16 lg:mt-12 text-center">
             <h1 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
               {{title}}
@@ -213,7 +214,8 @@
                   <button type="submit" class="w-full bg-secondary-500 flex
                     items-center justify-center border border-transparent
                     rounded-md py-2 px-4 text-base font-medium text-black
-                    hover:bg-secondary-600 focus:ring-2 focus:ring-offset-2 focus:ring-secondary-500">
+                    hover:scale-110 focus:ring-2 focus:ring-offset-2
+                    focus:ring-secondary-500 transition ease-in-out">
                     Subscribe
                   </button>
                 </div>

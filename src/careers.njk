@@ -7,26 +7,6 @@ layout: default
   <div class="relative px-4 sm:px-6 lg:px-8">
     <div class="prose prose-lg lg:text-xl text-gray-500 mx-auto">
       <p>
-        Our mission is to help clients maintain financial viability in the
-        present, while taking a proactive approach to achieve future goals. This
-        requires open communication to reach an understanding of our clients'
-        needs through research and sound analysis.  We have been a staple of the
-        business community for years, and pride ourselves on the level of esteem
-        we have earned.
-      </p>
-      <p>
-        Our dedication to hard work has earned the respect of the
-        business and financial community that we serve. Your finances are
-        personal. We want to build a strong relationship and understand your
-        needs. Whether you are a current or prospective client, rest assured that
-        individuals and businesses who choose <b>Buckley &amp; Sitzman, LLP</b>
-        receive competent and timely advice.
-      </p>
-      <!-- TODO: Better alt text once we add in the new image -->
-      <div class="my-10">
-        {% image "/img/tmp/brooke-cagle-g1Kr4Ozfoac-unsplash.jpeg", "Staff Photo", "rounded-lg shadow-xl ring-1 ring-black ring-opacity-5" %}
-      </div>
-      <p>
         We value attention to detail, cooperative and collaborative attitudes,
         and relevant knowledge and experience. We offer a flexible schedule,
         paid time off, professional development assistance, and a friendly and
@@ -38,10 +18,10 @@ layout: default
 
 <div class="bg-white py-8">
   <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-    <h2 class="text-base text-center font-semibold tracking-wider text-blue-700 uppercase">
+    <h2 class="text-base text-center font-semibold tracking-wider text-primary-900 uppercase">
       Current Openings
     </h2>
-    <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+    <p class="mt-5 max-w-prose mx-auto text-xl text-gray-700">
       <b>Buckley &amp; Sitzman, LLP</b> has the following positions open. You
       can also learn more <a class="underline" href="/meet-our-team">about our
         team</a> and about the <a class="underline" href="/services">services we
@@ -63,7 +43,7 @@ layout: default
                   object-cover rounded-md" %}
                 </div>
               {% endif %}
-              <div class="prose text-gray-500">
+              <div class="prose text-gray-700">
                 {{ posting.body | markdown | safe }}
               </div>
             </div>
@@ -71,11 +51,11 @@ layout: default
               <a
                 href="{{posting.link}}"
                 target="_blank"
-                class="w-3/4 flex justify-center text-black font-medium
-                       uppercase py-3 px-4 rounded-md hover bg-secondary-500
-                       hover:bg-secondary-600 font-medium focus:outline-none
-                       focus:ring-2 focus:ring-offset-2 focus:ring-blue-500
-                       focus:ring-offset-white"
+                class="inline-flex items-center uppercase py-3 px-4 rounded-md
+                       hover:scale-105 transition ease-in-out bg-secondary-500
+                       text-black font-medium focus:outline-none focus:ring-2
+                       focus:ring-offset-2 focus:ring-secondary-400
+                       focus:ring-offset-secondary-600"
               >
                 Apply
               </a>
@@ -91,7 +71,7 @@ layout: default
 <div class="bg-white pb-16 px-6 sm:pb-24 lg:pb-32">
   <div class="mx-auto max-w-md sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
     <div class="mt-24 mx-auto max-w-prose">
-      <p class="text-left text-xl text-gray-500">
+      <p class="text-left text-xl text-gray-700">
         Ready to start the next step of your career with <b>Buckley &amp;
           Sitzman, LLP</b> and join one of the best accounting firms to work at
         in Lincoln? Think you might be a good fit for our team?
@@ -100,10 +80,11 @@ layout: default
         <a
           href="/contact-us"
           target="_blank"
-          class="inline-flex items-center uppercase py-3 px-16 rounded-md
-                 hover:bg-secondary-600 bg-secondary-500 text-black font-medium
-                 focus:outline-none focus:ring-2 focus:ring-offset-2
-                 focus:ring-yellow-400 focus:ring-offset-white"
+          class="inline-flex items-center uppercase py-3 px-4 rounded-md
+                 hover:scale-105 transition ease-in-out bg-secondary-500
+                 text-black font-medium focus:outline-none focus:ring-2
+                 focus:ring-offset-2 focus:ring-secondary-400
+                 focus:ring-offset-secondary-600"
         >
           Contact Us
         </a>
