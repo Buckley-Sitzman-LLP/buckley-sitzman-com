@@ -2,14 +2,14 @@
 name: Job Postings
 permalink: false
 items:
-  - name: Senior Tax Accountant
+  - name: Tax or Audit Accountant
     body: >-
       As Buckley & Sitzman continues to grow, we are looking to add a new
       full-time Senior Tax Accountant to our team.
 
 
       This position will involve preparing and reviewing personal, business and non-profit tax returns, advising individual and business clients on current tax planning strategies, and supporting other members of our team by providing exceptional client service.
-    link: https://www.indeed.com/job/senior-tax-accountant-e3ce03d166da4a42
+    link: ""
     image: /img/office-worker.jpg
   - name: Bookkeeper
     body: >-
@@ -25,14 +25,14 @@ items:
     image: /img/tax-stock-photo.jpeg
   - name: Tax Accounting Intern
     body: >-
-      We are currently seeking students to take part in our Busy Season 2021 or
-      Busy Season 2022 internship program.
+      We are currently seeking students to take part in our Busy Season
+      internship program.
 
 
       We offer students the opportunity to explore different career paths, work on meaningful client engagement, interact with firm partners, managers, and staff, participate in office meetings and social events, and gain an inside look into our unique firm culture.
 
 
       Our internship training involves learning our tax approach and software to gain experience preparing both individual and business tax returns, and supporting other members of our team by providing exceptional client service.
-    link: https://www.indeed.com/job/tax-accounting-intern-aaeaa89af0d0fece
+    link: ""
     image: /img/writing.jpeg
 ---
