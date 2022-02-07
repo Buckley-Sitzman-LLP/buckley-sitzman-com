@@ -60,7 +60,7 @@ collections:
         fields:
           - { label: "Job Title", name: "name", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-          - { label: "Link", name: "link", widget: "string" }
+          - { label: "Link", name: "link", widget: "string", required: false }
           - { label: "Image", name: "image", widget: "image", required: false}
 
   - name: "people"
