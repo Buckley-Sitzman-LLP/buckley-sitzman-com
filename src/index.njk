@@ -9,11 +9,8 @@ layout: default
     <div>
       <h2 class="text-base text-center font-semibold tracking-wider
         text-secondary-500 uppercase">
-        History and Mission
+        Personal Accounting Service from a Local Firm
       </h2>
-      <p class="text-center mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-        Here for the long haul
-      </p>
       <div class="max-w-prose mx-auto text-xl text-gray-700">
         <p class="mt-5">
           <b>Buckley &amp; Sitzman, LLP</b> was founded in <time datetime="1927"> 1927 </time> by Lester M.
@@ -45,11 +42,9 @@ layout: default
     </div>
     <div class="max-w-prose mx-auto text-xl text-gray-700">
       <p class="mt-12 md:mt-24">
-        Our goal is always to provide the best service we can at justifiable
-        rates. Our professional staff are committed to using the full
-        capabilities of technology to provide you the best service we can.
-        Working with us also always includes contact with partners as we seek
-        to give you the best outcomes possible.
+        We work tirelessly to ensure the best outcomes for our clients, and to
+        help clients maintain financial viability in the present while taking a
+        proactive approach to future goals.
       </p>
       <div class="mt-10 text-center text-base">
         <a href="/meet-our-team" class="inline-flex items-center uppercase py-3 px-4 rounded-md
@@ -88,7 +83,7 @@ layout: default
                 <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
               </svg>
               <p class="mt-6 text-2xl font-medium text-gray-200">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.
               </p>
             </div>
             <footer class="mt-6">
@@ -109,52 +104,25 @@ layout: default
       Services
     </h2>
     <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-      Everything you might need
+      Keep Things Simple and Focus on the Right Things
     </p>
     <p class="mt-5 max-w-prose text-left mx-auto text-xl text-gray-700">
-      <b>Buckley &amp; Sitzman, LLP</b> provides a wide range of
-      <a class="underline" href="/services">services</a> to individuals and
-      businesses in a variety of industries. We strive to meet each client's
-      specific needs in planning for the future and meeting their goals in an
-      ever-changing financial and regulatory environment. Our professional
-      services include:
+      <b>Buckley &amp; Sitzman, LLP</b> provides a wide range of services to
+      individuals and businesses in a variety of industries. We strive to meet
+      each client's specific needs in planning for the future and meeting their
+      goals in an ever-changing financial and regulatory environment.
     </p>
-    <div class="mt-12">
-      <div class="grid grid-flow-row grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-
-        {%- for service in collections.services -%}
-          <div
-            class="pt-6 group cursor-pointer"
-            x-data="{expanded: false}"
-            @click="expanded = !expanded"
-            @click.outside="expanded = false"
-          >
-            <div class="group-hover:scale-105 transition ease-in-out flow-root bg-gray-50 h-full rounded-lg px-6 pb-8">
-              <div class="-mt-6">
-                <div>
-                  <span class="inline-flex items-center justify-center p-3
-                    bg-secondary-500 rounded-md shadow-lg">
-                    <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
-                  </span>
-                </div>
-                <h3 class="mt-8 text-lg font-medium text-primary-900 tracking-tight">
-                  {{service.title}}
-                </h3>
-
-                <p class="mt-5 text-base text-gray-700">
-                  {{service.summary}}
-                </p>
-
-                <div class="mt-5 flex flex-col space-y-2 text-left text-sm text-gray-500" x-show="expanded" x-collapse>
-                  {{service.body | markdown | safe}}
-                </div>
-
-              </div>
-            </div>
-          </div>
-        {% endfor %}
-
-      </div>
+    <p class="mt-5 max-w-prose text-left mx-auto text-xl text-gray-700">
+      We have expertise across many industries, and are ready to help you.
+    </p>
+    <div class="mt-10 text-center text-base">
+      <a href="/services" class="inline-flex items-center uppercase py-3 px-4 rounded-md
+               bg-secondary-500 text-black font-medium
+               focus:outline-none focus:ring-2 focus:ring-offset-2
+               focus:ring-secondary-400 focus:ring-offset-secondary-600
+               hover:scale-105 transition ease-in-out">
+        See Our Services
+      </a>
     </div>
   </div>
 </div>
