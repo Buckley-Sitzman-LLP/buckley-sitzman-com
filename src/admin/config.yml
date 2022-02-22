@@ -92,3 +92,27 @@ collections:
           - { label: "Image", name: "image", widget: "image" }
           - { label: "Bio", name: "body", widget: "markdown" }
           - { label: "Permalink", name: "permalink", widget: "hidden", default: false }
+
+  - name: "other_people"
+    label: "Other People"
+    label_singular: "Other Person"
+    folder: "src/other_people"
+    identifier_field: "name"
+    create: true
+    fields:
+      - label: "Name"
+        name: "title"
+        widget: "string"
+      - label: "Permalink"
+        name: "permalink"
+        widget: "hidden"
+        default: false
+      - label: "Members"
+        name: "members"
+        widget: "list"
+        collapsed: false
+        summary: "{{fields.name}}"
+        allow_add: true
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: false }
