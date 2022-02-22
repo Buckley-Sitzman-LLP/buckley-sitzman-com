@@ -59,6 +59,10 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/people/*.md")[0].data.members;
   });
 
+  eleventyConfig.addCollection("other_people", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/other_people/*.md")[0].data.members;
+  });
+
   // Get all services
   eleventyConfig.addCollection("services", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/services/*.md")[0].data.items;
