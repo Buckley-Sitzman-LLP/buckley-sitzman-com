@@ -68,7 +68,6 @@ collections:
     label_singular: "Person"
     folder: "src/people"
     identifier_field: "name"
-    media_folder: "img/people"
     create: false
     slug: "{{slug}}"
     fields:

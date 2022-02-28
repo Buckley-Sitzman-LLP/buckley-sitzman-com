@@ -172,7 +172,8 @@ members:
       Aubrey grew up in the Omaha area, where she resides with her husband Tim, and two daughters.  Aubrey enjoys spending time with family and friends, Husker Football, and shopping.
   - permalink: false
     name: Michelle Hinton
-    image: img/people/michelle.jpeg
+    short_name: Michelle Hinton
+    image: /img/people/michelle.jpeg
     body: >-
       Michelle joined Buckley & Sitzman in September 2021 with over 30 years of
       experience in accounting and tax.  Michelle is a Lincoln native who took a
@@ -185,7 +186,8 @@ members:
       Michelle lives in Lincoln with her chocolate lab and two cats.  She has two young adult daughters, one who lives in Omaha and one in Lincoln at UNL.  Michelle has spent many years volunteering at her children’s schools with the PTO and booster clubs, serving mostly as treasurer.  She enjoys golf, Husker sports, and supporting local high school and community theater.
   - permalink: false
     name: Greg Buckley
-    image: img/people/michelle.jpeg
+    short_name: Greg Buckley
+    image: /img/people/greg.jpg
     body: >-
       Greg joined Buckley & Sitzman in 2021.  He previously worked for a
       national accounting firm.  Greg, a Lincoln native, graduated with a B.S.
@@ -197,7 +199,6 @@ members:
 
 
       Greg is married with a daughter and loves to spend time with family and friends.  He is an avid runner and loves to travel.
-
 
 
 
