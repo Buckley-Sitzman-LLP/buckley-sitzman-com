@@ -159,6 +159,31 @@ members:
       enjoys walking her dogs, game night with friends, and Ryan Reynolds
       movies.
   - permalink: false
+    name: Greg Buckley, CPA
+    short_name: Greg Buckley
+    image: /img/people/greg.jpg
+    body: >-
+      Greg joined Buckley & Sitzman in 2021.  He previously worked for a
+      national accounting firm.  Greg, a Lincoln native, graduated with a B.S.
+      in Business Administration and also holds a Masters Degree in Professional
+      Accountancy.
+
+
+      Greg works with individuals and business owners in areas of tax planning and preparation, accounting and assurance, and consulting services.  He has experience in a variety of industries including real estate, banking, and non-profit organizations.
+
+
+      Greg is married with a daughter and loves to spend time with family and friends.  He is an avid runner and loves to travel.
+
+
+
+      **Education**
+
+
+      University of Nebraska-Lincoln, BSBA – Accounting and Finance
+
+
+      University of Nebraska-Lincoln, Masters Degree in Professional Accountancy
+  - permalink: false
     name: Aubrey Kendall
     short_name: Aubrey Kendall
     job_title: ""
@@ -184,31 +209,6 @@ members:
 
 
       Michelle lives in Lincoln with her chocolate lab and two cats.  She has two young adult daughters, one who lives in Omaha and one in Lincoln at UNL.  Michelle has spent many years volunteering at her children’s schools with the PTO and booster clubs, serving mostly as treasurer.  She enjoys golf, Husker sports, and supporting local high school and community theater.
-  - permalink: false
-    name: Greg Buckley
-    short_name: Greg Buckley
-    image: /img/people/greg.jpg
-    body: >-
-      Greg joined Buckley & Sitzman in 2021.  He previously worked for a
-      national accounting firm.  Greg, a Lincoln native, graduated with a B.S.
-      in Business Administration and also holds a Masters Degree in Professional
-      Accountancy.
-
-
-      Greg works with individuals and business owners in areas of tax planning and preparation, accounting and assurance, and consulting services.  He has experience in a variety of industries including real estate, banking, and non-profit organizations.
-
-
-      Greg is married with a daughter and loves to spend time with family and friends.  He is an avid runner and loves to travel.
-
-
-
-      **Education**
-
-
-      University of Nebraska-Lincoln, BSBA – Accounting and Finance
-
-
-      University of Nebraska-Lincoln, Masters Degree in Professional Accountancy
   - permalink: false
     name: Cristen Barnes
     short_name: Cristen Barnes
