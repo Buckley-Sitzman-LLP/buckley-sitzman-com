@@ -196,19 +196,15 @@ members:
 
       Aubrey grew up in the Omaha area, where she resides with her husband Tim, and two daughters.  Aubrey enjoys spending time with family and friends, Husker Football, and shopping.
   - permalink: false
-    name: Michelle Hinton
-    short_name: Michelle Hinton
-    image: /img/people/michelle.jpeg
+    name: Michelle Farley
+    short_name: Michelle Farley
+    job_title: ""
+    image: /img/people/michelle_f.jpeg
     body: >-
-      Michelle joined Buckley & Sitzman in September 2021 with over 30 years of
-      experience in accounting and tax.  Michelle is a Lincoln native who took a
-      ten-year detour to Florida for high school and college, and she graduated
-      from the University of South Florida in Tampa, Florida, with a Bachelor of
-      Arts degree in Accounting in 1988.  She provides services in accounting,
-      payroll, and tax.
+      Michelle Farley was born and raised in Boone, Iowa. She went to college at DMACC and majored in accounting while playing on the Golf Team. While attending college, she worked for Genesis Development as the Accounts Payable Specialist. In 2009, she moved to Omaha and worked for Interpublic Group of Companies (IPG) as a Print Invoice Controller and in 2013, she was promoted to Collections Analyst for the company. In 2016, she started working for the Foundation for Lincoln City Libraries as the Administrative Assistant up until 2022.
 
 
-      Michelle lives in Lincoln with her chocolate lab and two cats.  She has two young adult daughters, one who lives in Omaha and one in Lincoln at UNL.  Michelle has spent many years volunteering at her children’s schools with the PTO and booster clubs, serving mostly as treasurer.  She enjoys golf, Husker sports, and supporting local high school and community theater.
+      Michelle currently resides in Lincoln, NE with her husband, Doug Carlson, and two dogs, Keegan & Pepper.
   - permalink: false
     name: Cristen Barnes
     short_name: Cristen Barnes
