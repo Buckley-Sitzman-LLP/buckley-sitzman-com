@@ -134,16 +134,54 @@ members:
     short_name: Tyler Denker
     job_title: Partner
     body: >-
-      Tyler joined Buckley & Sitzman in September of 2013. He began his
-      accounting career in 2010 at Deloitte & Touche, following graduation from
-      the University of Nebraska-Lincoln, where he received both a Bachelor of
-      Science in Business Administration as well as a Masters Degree in
-      Professional Accountancy. Tyler is a current member of the American
-      Institute of Certified Public Accountants (AICPA) and the Nebraska Society
-      of Certified Public Accountants.
+      Tyler joined Buckley &amp; Sitzman in 2013, after starting his public accounting career in Omaha, with a Big
+      Four International accounting firm. Tyler, who is a Lincoln native, is happy to once again call Lincoln
+      home where he’s started to raise his own family, with his wife Cortney and three amazing children.
 
 
-      Tyler is a Lincoln native, where he currently resides with his wife Cortney, their two beautiful children and dog, Milo. He loves to spend time with his friends and family, and also loves to play golf. Tyler is an avid sports fan as well as a dedicated supporter of Nebraska athletics.
+      When not at the office, you’ll likely find Tyler spending time with his family or friends, if not at the golf
+      course. Tyler, who is a graduate of the University of Nebraska-Lincoln, is a dedicated supporter of all
+      Nebraska athletics, and doesn’t miss many opportunities to head downtown to support the Huskers,
+      despite their recent struggles. Outside of work, Tyler also enjoys traveling, spending time at the lake
+      and is an avid sports fan, as evidenced by his ownership in the Green Bay Packers.
+
+
+      Since starting at Buckley &amp; Sitzman, Tyler has worked closely with business owners throughout
+      numerous different industries, while also working directly with individuals, related to tax and estate
+      planning, tax preparation and consulting. While starting his career on the audit and assurance side of
+      public accounting, Tyler has continued to utilize that experience and expertise to work with both for-
+      profit and non-profit businesses, providing audit, review and compilation services. No matter the
+      industry or the service being provided, Tyler focuses on the client first to ensure the relationships are
+      built based on trust. The personal relationships that are built along with the services being provided are
+      one of the many things Tyler enjoys most about working with his clients.
+
+
+      **Professional Memberships and Credentials**
+
+      - American Institute of Certified Public Accountants (AICPA)
+
+      - Nebraska Society of Certified Publics Accountants (NESCPA)
+
+      - Association of Certified Fraud Examiners (ACFE)
+
+      - Certified Public Accountant
+
+      - Certified Fraud Examiner
+
+
+      **Education**
+
+      - University of Nebraska-Lincoln, BSBA Accounting (minors-Finance &amp; Sociology)
+
+      - University of Nebraska-Lincoln, Masters Degree in Professional Accountancy
+
+
+      **Community**
+
+      - Board Member &amp; Past Treasurer, Lincoln Children’s Museum
+
+      - Co-Chair &amp; Committee Member for United Way’s Annual Fundraiser
+
     image: /img/people/tyler.jpeg
     email_address: tdenker@bsncpa.com
   - permalink: false
@@ -195,6 +233,20 @@ members:
 
 
       Aubrey grew up in the Omaha area, where she resides with her husband Tim, and two daughters.  Aubrey enjoys spending time with family and friends, Husker Football, and shopping.
+  - permalink: false
+    name: Alaina Goninan
+    short_name: Alaina Goninan
+    job_title: ""
+    image: /img/people/alaina.jpeg
+    body: >-
+      Alaina joined Buckley &amp; Sitzman in 2022 after graduating with her Master’s degree. She attended
+      Southern New Hampshire University online while working full time. While at Southern New Hampshire
+      University she obtained an Associate’s degree in Accounting in 2018, a Bachelor’s degree in Accounting
+      in 2020, and most recently a Master’s Degree in Accounting.
+
+
+      Alaina grew up in Lincoln, Nebraska where she resides with her two dogs. She enjoys traveling and
+      spending time with her family whether it is going to races or staying in for a movie.
   - permalink: false
     name: Michelle Farley
     short_name: Michelle Farley
