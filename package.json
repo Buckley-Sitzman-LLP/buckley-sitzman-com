@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Buckley Sitzman Home-Page",
   "main": "index.js",
-  "repository": "https://github.com/arid-software/buckley-sitzman-com",
-  "author": "Andrew Ek <andrew@aridsoftware.com>",
+  "repository": "https://github.com/Buckley-Sitzman-LLP/buckley-sitzman-com",
+  "author": "Andrew Ek <andrewek@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
