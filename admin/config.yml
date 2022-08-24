@@ -4,7 +4,7 @@
 # Authentication Options
 backend:
   name: github
-  repo: arid-software/buckley-sitzman-com
+  repo: Buckley-Sitzman-LLP/buckley-sitzman-com
   branch: main
 
 # Store images uploaded w/ Netlify CMS
