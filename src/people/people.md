@@ -204,13 +204,19 @@ members:
       Greg joined Buckley & Sitzman in 2021.  He previously worked for a
       national accounting firm.  Greg, a Lincoln native, graduated with a B.S.
       in Business Administration and also holds a Masters Degree in Professional
-      Accountancy.
+      Accountancy. He is a member of of the American Institute for Certified
+      Public Accountants (AICPA) and the Nebraska Society of Certified Public
+      Accountants (NESCPA).
 
 
-      Greg works with individuals and business owners in areas of tax planning and preparation, accounting and assurance, and consulting services.  He has experience in a variety of industries including real estate, banking, and non-profit organizations.
+      Greg works with individuals and business owners in areas of tax planning
+      and preparation, accounting and assurance, and consulting services.  He
+      has experience in a variety of industries including real estate, banking,
+      and non-profit organizations.
 
 
-      Greg is married with a daughter and loves to spend time with family and friends.  He is an avid runner and loves to travel.
+      Greg is married with a daughter and loves to spend time with family and
+      friends.  He is an avid runner and loves to travel.
 
 
 
