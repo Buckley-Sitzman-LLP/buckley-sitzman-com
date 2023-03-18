@@ -3,7 +3,7 @@ title: Other People
 permalink: false
 members:
   - permalink: false
-    name: Catherine McMichael, CPA
+    name: Catherine McMichael
   - permalink: false
     name: Joanne Chartraw
   - permalink: false
