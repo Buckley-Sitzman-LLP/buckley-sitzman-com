@@ -9,7 +9,7 @@ members:
   - permalink: false
     name: Joo Sik Kim, CPA
   - permalink: false
-    name: Sarah DeRienzo, CPA
+    name: Sarah DeRienzo
   - permalink: false
     name: Tristan Cheeseman (Intern)
   - permalink: false
