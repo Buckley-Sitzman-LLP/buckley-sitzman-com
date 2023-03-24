@@ -185,6 +185,36 @@ members:
     image: /img/people/tyler.jpeg
     email_address: tdenker@bsncpa.com
   - permalink: false
+    name: Mark Nave, CPA
+    short_name: Mark Nave
+    job_title: Partner
+    image: /img/people/mark_nave.jpeg
+    body: >-
+      Mark joined Buckley &amp; Sitzman in December 2022. He began his
+      accounting career in 2010 following graduation from the Hastings
+      College, where he received a Bachelor of Arts in Professional
+      Accountancy, while captaining the men’s soccer team.
+
+
+      Mark, is a Lincoln native, where he currently resides with his wife
+      Brooke, and their three beautiful children. When not at the office,
+      you’ll likely find Mark spending time with his family or friends,
+      enjoying his kid’s sporting events, or at the golf course.
+
+
+      Mark is a current member of the American Institute of Certified Public
+      Accountants (AICPA) and the Nebraska Society of Certified Public
+      Accountants.
+
+
+      During his professional career, Mark has worked closely with business
+      owners throughout numerous different industries, while also working
+      directly with individuals, related to tax planning, tax preparation and
+      consulting. While starting his career on the audit and assurance side
+      of public accounting, Mark has continued to utilize that experience
+      and expertise to work with both for- profit and non-profit businesses,
+      providing audit, review and compilation services.
+  - permalink: false
     name: Madisyn L. Matthews, CPA
     short_name: Madisyn Matthews
     job_title: ""
