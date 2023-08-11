@@ -9,6 +9,12 @@ items:
 
 
       This position will involve preparing and reviewing personal, business and non-profit tax returns, advising individual and business clients on current tax planning strategies, and supporting other members of our team by providing exceptional client service.
+
+
+      [Apply for Senior Tax Accountant](https://www.indeed.com/job/senior-tax-accountant-c80857b54016227f?_gl=1*1a75vve*_gcl_au*MjcxMTQyNjE4LjE2OTE2ODI3MzI.)
+
+
+      [Apply for Staff Accountant (Tax/Audit)](https://www.indeed.com/job/staff-accountant-tax-audit-ec74efdaedfa1236)
     link: ""
     image: /img/splashes/office-worker.jpg
   - name: Bookkeeper
@@ -33,6 +39,9 @@ items:
 
 
       Our internship training involves learning our tax approach and software to gain experience preparing both individual and business tax returns, and supporting other members of our team by providing exceptional client service.
+
+
+      [Apply for Tax Accounting Intern](https://www.indeed.com/job/tax-accounting-intern-ec3dc2990b56e2f5)
     link: ""
     image: /img/splashes/writing.jpeg
 ---
