@@ -11,7 +11,7 @@ members:
   - permalink: false
     name: Sarah DeRienzo
   - permalink: false
-    name: Tristan Cheeseman (Intern)
+    name: Ben Gregan (Intern)
   - permalink: false
-    name: Jackson Mullin (Intern)
+    name: Zach Turner (Intern)
 ---
