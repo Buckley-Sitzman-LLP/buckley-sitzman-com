@@ -294,6 +294,28 @@ members:
 
       Michelle currently resides in Lincoln, NE with her husband, Doug Carlson, and two dogs, Keegan & Pepper.
   - permalink: false
+    name: Jarred Russel
+    short_name: Jarred Russel
+    job_title: ""
+    image: ""
+    body: >-
+      Jarred joined Buckley & Sitzman in 2023 after spending a few years with a Big Four international accounting firm. He was born and raised in Cheyenne, Wyoming, but came to Hastings College to run cross-country and track, where graduated in 2021 with a degree in both Accounting and Business Administration (and a minor in focus in Diplomacy and International Relations).
+
+
+      Jarred continues to run, and also plays volleyball, enjoys video games,
+      and studies a number of influential thinkers across the ages. He lives in
+      Lincoln, Nebraska.
+  - permalink: false
+    name: Cameron Cox
+    short_name: Cameron Cox
+    job_title: ""
+    image: ""
+    body: >-
+      Cameron grew up in North Platte, Nebraska, and joined Buckley & Sitzman in 2023 after graduating from Chadron State College with a degree in Accounting. He previously worked for a year in public accounting while finishing his degree, and lives in Lincoln.
+
+
+      When not at work, Cameron likes to spend quality time with family and friends, as well as do physical activities like running, lifting weights, and playing tennis. He's a passionate fan of Husker sports.
+  - permalink: false
     name: Cristen Barnes
     short_name: Cristen Barnes
     job_title: ""
