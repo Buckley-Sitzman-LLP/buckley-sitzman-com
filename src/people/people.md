@@ -333,7 +333,7 @@ members:
     name: Jarred Russell
     short_name: Jarred Russell
     job_title: ""
-    image: ""
+    image: /img/people/jarred_russell.jpg
     body: >-
       Jarred joined Buckley & Sitzman in 2023 after spending a few years with a
       Big Four international accounting firm. He was born and raised in
@@ -350,7 +350,7 @@ members:
     name: Cameron Cox
     short_name: Cameron Cox
     job_title: ""
-    image: ""
+    image: /img/people/cameron_cox.jpg
     body: >-
       Cameron grew up in North Platte, Nebraska, and joined Buckley & Sitzman in
       2023 after graduating from Chadron State College with a degree in
