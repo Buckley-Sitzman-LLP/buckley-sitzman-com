@@ -11,7 +11,13 @@ members:
   - permalink: false
     name: Gabrielle Garrison
   - permalink: false
+    name: Brandi Kettelhut
+  - permalink: false
+    name: Jude Dunwoody (Intern)
+  - permalink: false
     name: Ben Gregan (Intern)
+  - permalink: false
+    name: Ryan Kramer (Intern)
   - permalink: false
     name: Zach Turner (Intern)
 ---
