@@ -238,6 +238,7 @@ members:
       of public accounting, Mark has continued to utilize that experience
       and expertise to work with both for- profit and non-profit businesses,
       providing audit, review and compilation services.
+    email_address: mnave@bsncpa.com
   - permalink: false
     name: Madisyn L. Matthews, CPA
     short_name: Madisyn Matthews
@@ -296,22 +297,6 @@ members:
       and two daughters.  Aubrey enjoys spending time with family and friends,
       Husker Football, and shopping.
   - permalink: false
-    name: Alaina Goninan
-    short_name: Alaina Goninan
-    job_title: ""
-    image: /img/people/alaina.jpeg
-    body: >-
-      Alaina joined Buckley &amp; Sitzman in 2022 after graduating with her
-      Master’s degree. She attended Southern New Hampshire University online
-      while working full time. While at Southern New Hampshire University she
-      obtained an Associate’s degree in Accounting in 2018, a Bachelor’s degree
-      in Accounting in 2020, and most recently a Master’s Degree in Accounting.
-
-
-      Alaina grew up in Lincoln, Nebraska where she resides with her two dogs.
-      She enjoys traveling and spending time with her family whether it is going
-      to races or staying in for a movie.
-  - permalink: false
     name: Michelle Farley
     short_name: Michelle Farley
     job_title: ""
@@ -361,20 +346,4 @@ members:
       When not at work, Cameron likes to spend quality time with family and
       friends. He also enjoys physical activities like running, lifting weights,
       and playing tennis. He's a passionate fan of Husker sports.
-  - permalink: false
-    name: Cristen Barnes
-    short_name: Cristen Barnes
-    job_title: ""
-    image: /img/people/cristen.jpeg
-    body: >-
-      Cristen joined Buckley & Sitzman in August 2016. Cristen graduated from
-      the University of Central Missouri in 2009 with a Bachelors of Science
-      Degree in Fashion and Textile Merchandising. She provides secretarial
-      support and general office management services to our team.
-
-
-      Cristen grew up in  Missouri and moved to Lincoln in 2015, where she
-      resides with her husband Steven, their son Cash, and their two labs Shelby
-      & Buster. Cristen enjoys being at home, shopping, live music, and
-      gardening.
 ---

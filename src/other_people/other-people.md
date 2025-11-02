@@ -5,19 +5,23 @@ members:
   - permalink: false
     name: Joanne Chartraw
   - permalink: false
-    name: Joo Sik Kim, CPA
+    name: Gabrielle Garrison
+  - permalink: false
+    name: Michele Jakub
   - permalink: false
     name: Tammy Kennedy
   - permalink: false
-    name: Gabrielle Garrison
+    name: Mark Mahdi
   - permalink: false
-    name: Brandi Kettelhut
+    name: Joo Sik Kim, CPA
   - permalink: false
-    name: Jude Dunwoody (Intern)
+    name: Nikki Turner
+  - permalink: false
+    name: Zach Turner
   - permalink: false
     name: Ben Gregan (Intern)
   - permalink: false
     name: Ryan Kramer (Intern)
   - permalink: false
-    name: Zach Turner (Intern)
+    name: Evan Werner (Intern)
 ---
