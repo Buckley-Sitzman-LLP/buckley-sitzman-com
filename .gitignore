@@ -10,3 +10,5 @@ package-lock.json
 ___FWB_8_14_Mobile_Presentation.pdf
 ___FWB_8_14_Presentation.pdf
 yarn-error.log
+.yarn/
+.yarnrc.yml
