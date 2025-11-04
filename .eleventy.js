@@ -1,3 +1,6 @@
+// TODO: Delete this after the upgrade
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+
 const htmlmin = require("html-minifier");
 const {DateTime} = require("luxon");
 const util = require("util")
@@ -98,4 +101,9 @@ module.exports = function(eleventyConfig) {
       input: "src",
     }
   };
+
+  // TODO: Delete this after the upgrade
+	// If you have other `addPlugin` calls, it’s important that UpgradeHelper is added last.
+	eleventyConfig.addPlugin(UpgradeHelper);
+
 };
