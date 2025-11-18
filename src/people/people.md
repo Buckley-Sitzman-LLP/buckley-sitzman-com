@@ -256,32 +256,57 @@ members:
     short_name: Greg Buckley
     image: /img/people/greg.jpg
     body: >-
-      Greg joined Buckley & Sitzman in 2021.  He previously worked for a
-      national accounting firm.  Greg, a Lincoln native, graduated with a B.S.
-      in Business Administration and also holds a Masters Degree in Professional
-      Accountancy. He is a member of of the American Institute for Certified
-      Public Accountants (AICPA) and the Nebraska Society of Certified Public
-      Accountants (NESCPA).
+      Greg works closely with individuals and business owners in the areas of
+      tax planning and research, accounting and assurance, consulting, and
+      valuation services.  His practice spans a broad range of industries,
+      including real estate, construction, banking, and nonprofit
+      organizations. Greg brings a proactive, relationship-driven approach to
+      every engagement, helping clients understand the financial implications
+      of their decisions and empowering them to move forward with clarity and
+      confidence.
 
 
-      Greg works with individuals and business owners in areas of tax planning
-      and preparation, accounting and assurance, and consulting services.  He
-      has experience in a variety of industries including real estate, banking,
-      and non-profit organizations.
+      With a strong background in both technical tax matters and business
+      valuation, Greg frequently assists clients with entity structuring,
+      transaction planning, and the analysis of complex financial data. His
+      ability to combine analytical depth with practical insight enables him to
+      deliver thoughtful, actionable guidance tailored to each client’s goals.
+      
+
+      Greg began his public accounting career with a national accounting firm,
+      where he gained experience working with a diverse group of clients
+      and developing practical solutions to their tax and accounting
+      matters. He joined the firm in 2021 and has continued to expand his
+      expertise while maintaining a strong commitment to personalized
+      client service.
 
 
-      Greg is married with a daughter and loves to spend time with family and
-      friends.  He is an avid runner and loves to travel.
+      Outside the office, Greg is married with two daughters and loves to spend
+      time with family and friends.  He is an avid runner and enjoys
+      traveling.
 
+
+      **Professional Memberships and Credentials**
+      
+
+      - American Institute of Certified Public Accountants (AICPA)
+      - Nebraska Society of Certified Publics Accountants (NESCPA)
+      - National Association of Certified Valuators and Analysts (NACVA)
+      - Certified Public Accountant (CPA)
+      - Certified Valuation Analyst (CVA)
 
 
       **Education**
 
 
-      University of Nebraska-Lincoln, BSBA – Accounting and Finance
+      - University of Nebraska-Lincoln, BSBA Accounting &amp; Finance
+      - University of Nebraska-Lincoln, Master of Professional Accountancy 
 
 
-      University of Nebraska-Lincoln, Masters Degree in Professional Accountancy
+      **Community**
+
+
+      - Board Member, Lincoln Children’s Museum
   - permalink: false
     name: Aubrey Kendall
     short_name: Aubrey Kendall
