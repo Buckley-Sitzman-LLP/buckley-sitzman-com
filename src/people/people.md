@@ -290,9 +290,13 @@ members:
       
 
       - American Institute of Certified Public Accountants (AICPA)
+
       - Nebraska Society of Certified Publics Accountants (NESCPA)
+
       - National Association of Certified Valuators and Analysts (NACVA)
+
       - Certified Public Accountant (CPA)
+
       - Certified Valuation Analyst (CVA)
 
 
@@ -300,6 +304,7 @@ members:
 
 
       - University of Nebraska-Lincoln, BSBA Accounting &amp; Finance
+
       - University of Nebraska-Lincoln, Master of Professional Accountancy 
 
 
