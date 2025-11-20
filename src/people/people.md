@@ -291,7 +291,7 @@ members:
 
       - American Institute of Certified Public Accountants (AICPA)
 
-      - Nebraska Society of Certified Publics Accountants (NESCPA)
+      - Nebraska Society of Certified Public Accountants (NESCPA)
 
       - National Association of Certified Valuators and Analysts (NACVA)
 
