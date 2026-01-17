@@ -195,7 +195,7 @@ members:
 
       **Education**
 
-      - University of Nebraska-Lincoln, BSBA Accounting (minors-Finance &amp; Sociology)
+      - University of Nebraska-Lincoln, BSBA Accounting (minors: Finance &amp; Sociology)
 
       - University of Nebraska-Lincoln, Masters Degree in Professional Accountancy
 
@@ -246,7 +246,7 @@ members:
     image: /img/people/madisyn.jpeg
     body: Madisyn grew up in Minden, Nebraska.  She graduated from Doane University,
       in Crete, Nebraska, with a Bachelor of Arts degree in both Accounting and
-      Business Administration in May 2019. She joined Buckley & Sitzman after
+      Business Administration in May 2019. She joined Buckley &amp; Sitzman after
       graduation. She is a member of the Nebraska Society of Certified Public
       Accountants. Madisyn resides in Lincoln with her husband and two dogs. She
       enjoys walking her dogs, game night with friends, and Ryan Reynolds
@@ -318,13 +318,13 @@ members:
     job_title: ""
     image: /img/people/aubrey.jpeg
     body: >-
-      Aubrey joined Buckley & Sitzman in August 2015.  Aubrey graduated from the
+      Aubrey joined Buckley &amp; Sitzman in August 2015.  Aubrey graduated from the
       University of Nebraska-Lincoln in 2014 with a Bachelors of Arts Degree in
       Professional Accounting.  She provides services in accounting and payroll.
 
 
       Aubrey grew up in the Omaha area, where she resides with her husband Tim,
-      and two daughters.  Aubrey enjoys spending time with family and friends,
+      and two daughters. Aubrey enjoys spending time with family and friends,
       Husker Football, and shopping.
   - permalink: false
     name: Michelle Farley
@@ -343,14 +343,14 @@ members:
 
 
       Michelle currently resides in Lincoln, NE with her husband, Doug Carlson,
-      and two dogs, Keegan & Pepper.
+      and two dogs, Keegan and Pepper.
   - permalink: false
     name: Jarred Russell
     short_name: Jarred Russell
     job_title: ""
     image: /img/people/jarred_russell.jpg
     body: >-
-      Jarred joined Buckley & Sitzman in 2023 after spending a few years with a
+      Jarred joined Buckley &amp; Sitzman in 2023 after spending a few years with a
       Big Four international accounting firm. He was born and raised in
       Cheyenne, Wyoming, but came to Hastings College to run cross-country and
       track. He graduated in 2021 with a degree in both Accounting and Business
@@ -362,12 +362,30 @@ members:
       a number of influential thinkers across the ages. He lives in Lincoln,
       Nebraska.
   - permalink: false
+    name: Mark Mahdi
+    short_name: Mark Mahdi
+    job_title: ""
+    image: ""
+    body: >-
+        Mark Mahdi was born in Iraq, moved to Malaysia for most of his
+        childhood, then landed in Nebraska shortly after. Mark started his
+        accounting career working as an intern in the Nebraska Department of
+        Revenue in 2024 before coming to Buckley &amp; Sitzman in 2025 right
+        after graduating with a Bachelor of Business Administration in
+        Accounting and a minor in Music Technology. 
+
+
+        Outside of work, Mark enjoys the thrills of travel, adventure and all
+        sorts of storytelling: comics, music, videogames, and those deep
+        late-night discussions. He finds delight in learning new things and
+        forming new experiences.
+  - permalink: false
     name: Cameron Cox
     short_name: Cameron Cox
     job_title: ""
     image: /img/people/cameron_cox.jpg
     body: >-
-      Cameron grew up in North Platte, Nebraska, and joined Buckley & Sitzman in
+      Cameron grew up in North Platte, Nebraska, and joined Buckley &amp; Sitzman in
       2023 after graduating from Chadron State College with a degree in
       Accounting. He previously worked for a year in public accounting while
       finishing his degree, and lives in Lincoln.
@@ -376,4 +394,94 @@ members:
       When not at work, Cameron likes to spend quality time with family and
       friends. He also enjoys physical activities like running, lifting weights,
       and playing tennis. He's a passionate fan of Husker sports.
+  - permalink: false
+    name: Zach Turner
+    short_name: Zach Turner
+    job_title: ""
+    image: ""
+    body: >-
+        Zach joined Buckley &amp; Sitzman in 2025 after spending almost two years with the firm as
+        an intern. Zach grew up in Crete and is the youngest of five siblings. He graduated from
+        Doane University in 2024 with degrees in Accounting and Business Administration.
+        While at Doane, he was a member of the Track and Field team, competing in sprints
+        and hurdles and serving as team captain for three years. Outside the office, Zach
+        enjoys spending time with friends and family, staying active through running, and
+        working to improve his golf game. He’s excited to continue learning and building strong
+        relationships with clients.
+  - permalink: false
+    name: Michele Jakub
+    short_name: Michele Jakub
+    job_title: ""
+    image: ""
+    body: >-
+        Michele was born and raised in David City, NE, and moved to Lincoln in
+        2008. She attended Doane University, where she studied accounting. In
+        2025, she joined Buckley &amp; Sitzman as a Bookkeeper and Payroll
+        Specialist after building a progressive career in the field.
+
+
+        Now residing in Lincoln, Michele enjoys life with her two kids, Scarlett and Pryor, along
+        with their Maine coon cat, Lulu. She loves taking her kids back to David City, spending
+        time with her family, catching live concerts and events, and takes great pride in her
+        awesome circle of friends.
+  - permalink: false
+    name: Nikki Turner
+    short_name: Nikki Turner
+    job_title: ""
+    image: ""
+    body: >-
+        Nikki joined the Buckley &amp; Sitzman team in 2025 and brings a strong background in
+        operations and relationship building. She is originally from the Omaha, NE area and
+        graduated from the University of Nebraska with a Bachelor of Science in Marketing.
+        Nikki is passionate about creating meaningful connections and contributing to projects
+        that make a positive impact.
+        
+
+        Today, Nikki resides in Lincoln, NE with her husband, Nick, and their two sons. Outside
+        of work, she enjoys spending time with family and friends, traveling to new places,
+        planning events, and shopping. Nikki also loves exploring local restaurants and finding
+        creative ways to make everyday moments special.
+  - name: Tammy Kennedy
+    short_name: Tammy Kennedy
+    permalink: false
+    job_title: ""
+    image: ""
+    body: >-
+      Originally from Lincoln, Nebraska. Tammy served 6 years in the United States Army
+      Reserves while also beginning her 32-year career in Omaha working for a Human
+      Services Agency, the last 22 years as a Residential Program Coordinator. She now calls
+      Lincoln home, again, where she enjoys life with her husband and their dog, Zoey. In her
+      spare time, Tammy enjoys camping and boating with friends and spending time with her
+      two grandchildren. She joined Buckley &amp; Sitzman, LLP in 2024.
+  - permalink: false
+    name: Gabrielle Garrison
+    short_name: Gabrielle Garrison
+    job_title: ""
+    image: ""
+    body: >-
+      Gabrielle joined Buckley &amp; Sitzman in December 2023. A graduate of the
+      University of Nebraska–Lincoln, she brings over a decade of experience in
+      administrative support, accounts receivable and client relations. Her strong
+      organizational skills and attention to detail make her an invaluable resource
+      to our organization.
+
+
+      A Lincoln native, Gabrielle enjoys spending her free time with her Pomeranian,
+      Memphis, shopping and traveling to her favorite destination, Colorado.
+  - permalink: false
+    name: Ben Gregan
+    short_name: Ben Gregan
+    job_title: ""
+    image: ""
+    body: >-
+      Ben grew up in Omaha, Nebraska, and joined Buckley &amp; Sitzman in 2023 as an
+      Intern. After graduating from the University of Nebraska-Lincoln with a degree
+      in Accounting, Ben chose to remain here in Lincoln and continue his career with
+      the firm as a full-time member.
+
+
+      Outside of work, Ben enjoys spending time with family and friends, staying
+      active through running or working out, and traveling around the country. Ben is
+      also a big fan of Husker Football and enjoys attending games both at home and
+      on the road.
 ---
