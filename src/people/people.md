@@ -29,7 +29,7 @@ members:
       software companies, transportation and warehousing companies, non-profit
       organizations, and individuals.
     email_address: lbuckley@bsncpa.com
-    image: /img/people/lester.jpeg
+    image: /img/people/lester_buckley.jpg
   - permalink: false
     name: Suman Vallabhbhai CPA, CGMA
     short_name: Suman Vallabhbhai
@@ -81,12 +81,12 @@ members:
 
 
       University of Nebraska-Omaha, Masters Degree in Professional Accountancy
-    image: /img/people/suman.jpeg
+    image: /img/people/suman_vallabhbhai.jpg
   - permalink: false
     name: Grant H. Buckley, CPA, CFE
     short_name: Grant Buckley
     job_title: Partner
-    image: /img/people/grant.jpeg
+    image: /img/people/grant_buckley.jpg
     body: >-
       Grant’s detail-oriented focus has led to serving clients in a variety of
       accounting capacities including tax planning and research, estate
@@ -206,13 +206,13 @@ members:
 
       - Co-Chair &amp; Committee Member for United Way’s Annual Fundraiser
 
-    image: /img/people/tyler.jpeg
+    image: /img/people/tyler_denker.jpg
     email_address: tdenker@bsncpa.com
   - permalink: false
     name: Mark Nave, CPA
     short_name: Mark Nave
     job_title: Partner
-    image: /img/people/mark_nave.jpeg
+    image: /img/people/mark_nave.jpg
     body: >-
       Mark joined Buckley &amp; Sitzman in December 2022. He began his
       accounting career in 2010 following graduation from the Hastings
@@ -243,7 +243,7 @@ members:
     name: Madisyn L. Matthews, CPA
     short_name: Madisyn Matthews
     job_title: ""
-    image: /img/people/madisyn.jpeg
+    image: /img/people/madisyn_matthews.jpg
     body: Madisyn grew up in Minden, Nebraska.  She graduated from Doane University,
       in Crete, Nebraska, with a Bachelor of Arts degree in both Accounting and
       Business Administration in May 2019. She joined Buckley &amp; Sitzman after
@@ -254,7 +254,7 @@ members:
   - permalink: false
     name: Greg Buckley, CPA
     short_name: Greg Buckley
-    image: /img/people/greg.jpg
+    image: /img/people/greg_buckley.jpg
     body: >-
       Greg works closely with individuals and business owners in the areas of
       tax planning and research, accounting and assurance, consulting, and
@@ -316,7 +316,7 @@ members:
     name: Aubrey Kendall
     short_name: Aubrey Kendall
     job_title: ""
-    image: /img/people/aubrey.jpeg
+    image: /img/people/aubrey_kendall.jpg
     body: >-
       Aubrey joined Buckley &amp; Sitzman in August 2015.  Aubrey graduated from the
       University of Nebraska-Lincoln in 2014 with a Bachelors of Arts Degree in
@@ -330,7 +330,7 @@ members:
     name: Michelle Farley
     short_name: Michelle Farley
     job_title: ""
-    image: /img/people/michelle_f.jpeg
+    image: /img/people/michelle_farley.jpg
     body: >-
       Michelle Farley was born and raised in Boone, Iowa. She went to college at
       DMACC and majored in accounting while playing on the Golf Team. While
@@ -365,7 +365,7 @@ members:
     name: Mark Mahdi
     short_name: Mark Mahdi
     job_title: ""
-    image: ""
+    image: /img/people/mark_mahdi.jpg
     body: >-
         Mark Mahdi was born in Iraq, moved to Malaysia for most of his
         childhood, then landed in Nebraska shortly after. Mark started his
@@ -398,7 +398,7 @@ members:
     name: Zach Turner
     short_name: Zach Turner
     job_title: ""
-    image: ""
+    image: /img/people/zach_turner.jpg
     body: >-
         Zach joined Buckley &amp; Sitzman in 2025 after spending almost two years with the firm as
         an intern. Zach grew up in Crete and is the youngest of five siblings. He graduated from
@@ -412,7 +412,7 @@ members:
     name: Michele Jakub
     short_name: Michele Jakub
     job_title: ""
-    image: ""
+    image: /img/people/michele_jakub.jpg
     body: >-
         Michele was born and raised in David City, NE, and moved to Lincoln in
         2008. She attended Doane University, where she studied accounting. In
@@ -428,7 +428,7 @@ members:
     name: Nikki Turner
     short_name: Nikki Turner
     job_title: ""
-    image: ""
+    image: /img/people/nikki_turner.jpg
     body: >-
         Nikki joined the Buckley &amp; Sitzman team in 2025 and brings a strong background in
         operations and relationship building. She is originally from the Omaha, NE area and
@@ -445,7 +445,7 @@ members:
     short_name: Tammy Kennedy
     permalink: false
     job_title: ""
-    image: ""
+    image: /img/people/tammy_kennedy.jpg
     body: >-
       Originally from Lincoln, Nebraska. Tammy served 6 years in the United States Army
       Reserves while also beginning her 32-year career in Omaha working for a Human
@@ -457,7 +457,7 @@ members:
     name: Gabrielle Garrison
     short_name: Gabrielle Garrison
     job_title: ""
-    image: ""
+    image: /img/people/gabrielle_garrison.jpg
     body: >-
       Gabrielle joined Buckley &amp; Sitzman in December 2023. A graduate of the
       University of Nebraska–Lincoln, she brings over a decade of experience in
@@ -472,7 +472,7 @@ members:
     name: Ben Gregan
     short_name: Ben Gregan
     job_title: ""
-    image: ""
+    image: /img/people/ben_gregan.jpg
     body: >-
       Ben grew up in Omaha, Nebraska, and joined Buckley &amp; Sitzman in 2023 as an
       Intern. After graduating from the University of Nebraska-Lincoln with a degree
