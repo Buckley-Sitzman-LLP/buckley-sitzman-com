@@ -3,34 +3,6 @@ title: People
 permalink: false
 members:
   - permalink: false
-    name: Lester F. Buckley, CPA
-    short_name: Lester Buckley
-    job_title: Partner Emeritus
-    body: >-
-      A third-generation accounting professional practicing in Lincoln,
-      Nebraska, Les graduated with a B.S. in Business Administration in May
-      1977. After nearly four years with a national accounting firm, he joined
-      Buckley & Sitzman in March of 1981 and became a partner in the firm later
-      that year. He is a member of the American Institute of Certified Public
-      Accountants (AICPA) and the Nebraska Society of Certified Public
-      Accountants.
-
-
-      Les loves to spend time with his wife Nancy and their three children,
-      their spouses, and six grandchildren. He also loves to play golf and
-      bicycle. He has served in a volunteer capacity with many non-profit
-      organizations over the years, including as board member and Treasurer of
-      the Lancaster County Chapter of the American Red Cross, as well as a
-      member of the Community Action board.
-
-
-      Les provides tax, audit and consulting services to a diverse clientele
-      including banks, agri-businesses, contractors, physicians, computer
-      software companies, transportation and warehousing companies, non-profit
-      organizations, and individuals.
-    email_address: lbuckley@bsncpa.com
-    image: /img/people/lester_buckley.jpg
-  - permalink: false
     name: Suman Vallabhbhai CPA, CGMA
     short_name: Suman Vallabhbhai
     job_title: Partner
@@ -38,18 +10,18 @@ members:
     body: >-
       Suman has over 30 years of accounting experience and serves clients in
       numerous areas, including tax planning, consulting and preparation,
-      advisory, assurance, bookkeeping and transactional work.  He works closely
+      advisory, assurance, bookkeeping and transactional work.  He works closely
       with individuals, privately-held entities, trusts and estates, and
       multi-state businesses in a variety of capacities to provide advisory
       services, improve accounting processes and operations, and implement tax
-      planning strategies.  He has experience in a variety of industries and
+      planning strategies.  He has experience in a variety of industries and
       professions, such as real estate, hospitality, physician practices,
       construction, agriculture, non-profit organizations, professional athletes
       and entertainers.
 
 
       Suman was born in Panama, and moved to Nebraska in 1993, where he resides
-      with his family.  He joined the firm in December 1997.
+      with his family.  He joined the firm in December 1997.
 
 
       He loves to spend time with his family and friends. He is a nationally
@@ -88,25 +60,25 @@ members:
     job_title: Partner
     image: /img/people/grant_buckley.jpg
     body: >-
-      Grant’s detail-oriented focus has led to serving clients in a variety of
+      Grant's detail-oriented focus has led to serving clients in a variety of
       accounting capacities including tax planning and research, estate
       planning, audit and assurance, forensic accounting, consulting and
-      transactional work.  Grant works closely with both individuals and
+      transactional work.  Grant works closely with both individuals and
       privately-held entities in a variety of business structures to provide
       guidance, enhance accounting operations and efficiently implement tax
-      planning strategies.  Grant has extensive experience in real estate,
+      planning strategies.  Grant has extensive experience in real estate,
       transportation, physician and dental offices, agriculture and ranching.
 
 
       Grant joined the firm in 2013 after spending several years in with a Big
       Four public accounting firm, becoming a fourth generation accounting
-      professional practicing at the firm. 
+      professional practicing at the firm.
 
 
       Outside of the office, Grant loves to spend time with friends and family.
-      His wife, Kelsey, is a Dentist and together they share two beautiful
+      His wife, Kelsey, is a dentist and together they share two beautiful
       daughters, Libby and Claire. Grant enjoys time on the golf course,
-      traveling, and hopes to one day see the Huskers return to glory.  
+      traveling, and hopes to one day see the Huskers return to glory.
 
 
 
@@ -154,14 +126,14 @@ members:
       Tyler joined Buckley &amp; Sitzman in 2013, after starting his public
       accounting career in Omaha, with a Big Four International accounting firm.
       Tyler, who is a Lincoln native, is happy to once again call Lincoln home
-      where he’s started to raise his own family, with his wife Cortney and
+      where he's started to raise his own family, with his wife Cortney and
       three amazing children.
 
 
-      When not at the office, you’ll likely find Tyler spending time with his
+      When not at the office, you'll likely find Tyler spending time with his
       family or friends, if not at the golf course. Tyler, who is a graduate of
       the University of Nebraska-Lincoln, is a dedicated supporter of all
-      Nebraska athletics, and doesn’t miss many opportunities to head downtown
+      Nebraska athletics, and doesn't miss many opportunities to head downtown
       to support the Huskers, despite their recent struggles. Outside of work,
       Tyler also enjoys traveling, spending time at the lake and is an avid
       sports fan, as evidenced by his ownership in the Green Bay Packers.
@@ -204,7 +176,7 @@ members:
 
       - Past Board Member & Treasurer, Lincoln Children's Museum
 
-      - Co-Chair &amp; Committee Member for United Way’s Annual Fundraiser
+      - Co-Chair &amp; Committee Member for United Way's Annual Fundraiser
 
     image: /img/people/tyler_denker.jpg
     email_address: tdenker@bsncpa.com
@@ -217,13 +189,13 @@ members:
       Mark joined Buckley &amp; Sitzman in December 2022. He began his
       accounting career in 2010 following graduation from the Hastings
       College, where he received a Bachelor of Arts in Professional
-      Accountancy, while captaining the men’s soccer team.
+      Accountancy, while captaining the men's soccer team.
 
 
       Mark, is a Lincoln native, where he currently resides with his wife
       Brooke, and their three beautiful children. When not at the office,
-      you’ll likely find Mark spending time with his family or friends,
-      enjoying his kid’s sporting events, or at the golf course.
+      you'll likely find Mark spending time with his family or friends,
+      enjoying his kid's sporting events, or at the golf course.
 
 
       Mark is a current member of the American Institute of Certified Public
@@ -240,25 +212,41 @@ members:
       providing audit, review and compilation services.
     email_address: mnave@bsncpa.com
   - permalink: false
-    name: Madisyn L. Matthews, CPA
-    short_name: Madisyn Matthews
-    job_title: ""
-    image: /img/people/madisyn_matthews.jpg
-    body: Madisyn grew up in Minden, Nebraska.  She graduated from Doane University,
-      in Crete, Nebraska, with a Bachelor of Arts degree in both Accounting and
-      Business Administration in May 2019. She joined Buckley &amp; Sitzman after
-      graduation. She is a member of the Nebraska Society of Certified Public
-      Accountants. Madisyn resides in Lincoln with her husband and two dogs. She
-      enjoys walking her dogs, game night with friends, and Ryan Reynolds
-      movies.
+    name: Lester F. Buckley, CPA
+    short_name: Lester Buckley
+    job_title: Partner Emeritus
+    body: >-
+      A third-generation accounting professional practicing in Lincoln,
+      Nebraska, Les graduated with a B.S. in Business Administration in May
+      1977. After nearly four years with a national accounting firm, he joined
+      Buckley & Sitzman in March of 1981 and became a partner in the firm later
+      that year. He is a member of the American Institute of Certified Public
+      Accountants (AICPA) and the Nebraska Society of Certified Public
+      Accountants.
+
+
+      Les loves to spend time with his wife Nancy and their three children,
+      their spouses, and six grandchildren. He also loves to play golf and
+      bicycle. He has served in a volunteer capacity with many non-profit
+      organizations over the years, including as board member and Treasurer of
+      the Lancaster County Chapter of the American Red Cross, as well as a
+      member of the Community Action board.
+
+
+      Les provides tax, audit and consulting services to a diverse clientele
+      including banks, agri-businesses, contractors, physicians, computer
+      software companies, transportation and warehousing companies, non-profit
+      organizations, and individuals.
+    email_address: lbuckley@bsncpa.com
+    image: /img/people/lester_buckley.jpg
   - permalink: false
-    name: Greg Buckley, CPA
+    name: Greg Buckley, CPA, CVA
     short_name: Greg Buckley
     image: /img/people/greg_buckley.jpg
     body: >-
       Greg works closely with individuals and business owners in the areas of
       tax planning and research, accounting and assurance, consulting, and
-      valuation services.  His practice spans a broad range of industries,
+      valuation services.  His practice spans a broad range of industries,
       including real estate, construction, banking, and nonprofit
       organizations. Greg brings a proactive, relationship-driven approach to
       every engagement, helping clients understand the financial implications
@@ -270,8 +258,8 @@ members:
       valuation, Greg frequently assists clients with entity structuring,
       transaction planning, and the analysis of complex financial data. His
       ability to combine analytical depth with practical insight enables him to
-      deliver thoughtful, actionable guidance tailored to each client’s goals.
-      
+      deliver thoughtful, actionable guidance tailored to each client's goals.
+
 
       Greg began his public accounting career with a national accounting firm,
       where he gained experience working with a diverse group of clients
@@ -282,12 +270,12 @@ members:
 
 
       Outside the office, Greg is married with two daughters and loves to spend
-      time with family and friends.  He is an avid runner and enjoys
+      time with family and friends.  He is an avid runner and enjoys
       traveling.
 
 
       **Professional Memberships and Credentials**
-      
+
 
       - American Institute of Certified Public Accountants (AICPA)
 
@@ -305,22 +293,34 @@ members:
 
       - University of Nebraska-Lincoln, BSBA Accounting &amp; Finance
 
-      - University of Nebraska-Lincoln, Master of Professional Accountancy 
+      - University of Nebraska-Lincoln, Master of Professional Accountancy
 
 
       **Community**
 
 
-      - Board Member, Lincoln Children’s Museum
+      - Board Member, Lincoln Children's Museum
+  - permalink: false
+    name: Madisyn L. Matthews, CPA
+    short_name: Madisyn Matthews
+    job_title: ""
+    image: /img/people/madisyn_matthews.jpg
+    body: Madisyn grew up in Minden, Nebraska.  She graduated from Doane University,
+      in Crete, Nebraska, with a Bachelor of Arts degree in both Accounting and
+      Business Administration in May 2019. She joined Buckley &amp; Sitzman after
+      graduation. She is a member of the Nebraska Society of Certified Public
+      Accountants. Madisyn resides in Lincoln with her husband and two dogs. She
+      enjoys walking her dogs, game night with friends, and Ryan Reynolds
+      movies.
   - permalink: false
     name: Aubrey Kendall
     short_name: Aubrey Kendall
     job_title: ""
     image: /img/people/aubrey_kendall.jpg
     body: >-
-      Aubrey joined Buckley &amp; Sitzman in August 2015.  Aubrey graduated from the
+      Aubrey joined Buckley &amp; Sitzman in August 2015.  Aubrey graduated from the
       University of Nebraska-Lincoln in 2014 with a Bachelors of Arts Degree in
-      Professional Accounting.  She provides services in accounting and payroll.
+      Professional Accounting.  She provides services in accounting and payroll.
 
 
       Aubrey grew up in the Omaha area, where she resides with her husband Tim,
@@ -345,6 +345,40 @@ members:
       Michelle currently resides in Lincoln, NE with her husband, Doug Carlson,
       and two dogs, Keegan and Pepper.
   - permalink: false
+    name: Mark Mahdi
+    short_name: Mark Mahdi
+    job_title: ""
+    image: /img/people/mark_mahdi.jpg
+    body: >-
+        Mark Mahdi was born in Iraq, moved to Malaysia for most of his
+        childhood, then landed in Nebraska shortly after. Mark started his
+        accounting career working as an intern in the Nebraska Department of
+        Revenue in 2024 before coming to Buckley &amp; Sitzman in 2025 right
+        after graduating with a Bachelor of Business Administration in
+        Accounting and a minor in Music Technology.
+
+
+        Outside of work, Mark enjoys the thrills of travel, adventure and all
+        sorts of storytelling: comics, music, videogames, and those deep
+        late-night discussions. He finds delight in learning new things and
+        forming new experiences.
+  - permalink: false
+    name: Michele Jakub
+    short_name: Michele Jakub
+    job_title: ""
+    image: /img/people/michele_jakub.jpg
+    body: >-
+        Michele was born and raised in David City, NE, and moved to Lincoln in
+        2008. She attended Doane University, where she studied accounting. In
+        2025, she joined Buckley &amp; Sitzman as a Bookkeeper and Payroll
+        Specialist after building a progressive career in the field.
+
+
+        Now residing in Lincoln, Michele enjoys life with her two kids, Scarlett and Pryor, along
+        with their Maine coon cat, Lulu. She loves taking her kids back to David City, spending
+        time with her family, catching live concerts and events, and takes great pride in her
+        awesome circle of friends.
+  - permalink: false
     name: Jarred Russell
     short_name: Jarred Russell
     job_title: ""
@@ -361,24 +395,6 @@ members:
       Jarred continues to run, plays volleyball, enjoys video games, and studies
       a number of influential thinkers across the ages. He lives in Lincoln,
       Nebraska.
-  - permalink: false
-    name: Mark Mahdi
-    short_name: Mark Mahdi
-    job_title: ""
-    image: /img/people/mark_mahdi.jpg
-    body: >-
-        Mark Mahdi was born in Iraq, moved to Malaysia for most of his
-        childhood, then landed in Nebraska shortly after. Mark started his
-        accounting career working as an intern in the Nebraska Department of
-        Revenue in 2024 before coming to Buckley &amp; Sitzman in 2025 right
-        after graduating with a Bachelor of Business Administration in
-        Accounting and a minor in Music Technology. 
-
-
-        Outside of work, Mark enjoys the thrills of travel, adventure and all
-        sorts of storytelling: comics, music, videogames, and those deep
-        late-night discussions. He finds delight in learning new things and
-        forming new experiences.
   - permalink: false
     name: Cameron Cox
     short_name: Cameron Cox
@@ -406,68 +422,8 @@ members:
         While at Doane, he was a member of the Track and Field team, competing in sprints
         and hurdles and serving as team captain for three years. Outside the office, Zach
         enjoys spending time with friends and family, staying active through running, and
-        working to improve his golf game. He’s excited to continue learning and building strong
+        working to improve his golf game. He's excited to continue learning and building strong
         relationships with clients.
-  - permalink: false
-    name: Michele Jakub
-    short_name: Michele Jakub
-    job_title: ""
-    image: /img/people/michele_jakub.jpg
-    body: >-
-        Michele was born and raised in David City, NE, and moved to Lincoln in
-        2008. She attended Doane University, where she studied accounting. In
-        2025, she joined Buckley &amp; Sitzman as a Bookkeeper and Payroll
-        Specialist after building a progressive career in the field.
-
-
-        Now residing in Lincoln, Michele enjoys life with her two kids, Scarlett and Pryor, along
-        with their Maine coon cat, Lulu. She loves taking her kids back to David City, spending
-        time with her family, catching live concerts and events, and takes great pride in her
-        awesome circle of friends.
-  - permalink: false
-    name: Nikki Turner
-    short_name: Nikki Turner
-    job_title: ""
-    image: /img/people/nikki_turner.jpg
-    body: >-
-        Nikki joined the Buckley &amp; Sitzman team in 2025 and brings a strong background in
-        operations and relationship building. She is originally from the Omaha, NE area and
-        graduated from the University of Nebraska with a Bachelor of Science in Marketing.
-        Nikki is passionate about creating meaningful connections and contributing to projects
-        that make a positive impact.
-        
-
-        Today, Nikki resides in Lincoln, NE with her husband, Nick, and their two sons. Outside
-        of work, she enjoys spending time with family and friends, traveling to new places,
-        planning events, and shopping. Nikki also loves exploring local restaurants and finding
-        creative ways to make everyday moments special.
-  - name: Tammy Kennedy
-    short_name: Tammy Kennedy
-    permalink: false
-    job_title: ""
-    image: /img/people/tammy_kennedy.jpg
-    body: >-
-      Originally from Lincoln, Nebraska. Tammy served 6 years in the United States Army
-      Reserves while also beginning her 32-year career in Omaha working for a Human
-      Services Agency, the last 22 years as a Residential Program Coordinator. She now calls
-      Lincoln home, again, where she enjoys life with her husband and their dog, Zoey. In her
-      spare time, Tammy enjoys camping and boating with friends and spending time with her
-      two grandchildren. She joined Buckley &amp; Sitzman, LLP in 2024.
-  - permalink: false
-    name: Gabrielle Garrison
-    short_name: Gabrielle Garrison
-    job_title: ""
-    image: /img/people/gabrielle_garrison.jpg
-    body: >-
-      Gabrielle joined Buckley &amp; Sitzman in December 2023. A graduate of the
-      University of Nebraska–Lincoln, she brings over a decade of experience in
-      administrative support, accounts receivable and client relations. Her strong
-      organizational skills and attention to detail make her an invaluable resource
-      to our organization.
-
-
-      A Lincoln native, Gabrielle enjoys spending her free time with her Pomeranian,
-      Memphis, shopping and traveling to her favorite destination, Colorado.
   - permalink: false
     name: Ben Gregan
     short_name: Ben Gregan
@@ -484,4 +440,51 @@ members:
       active through running or working out, and traveling around the country. Ben is
       also a big fan of Husker Football and enjoys attending games both at home and
       on the road.
+  - permalink: false
+    name: Nikki Turner
+    short_name: Nikki Turner
+    job_title: ""
+    image: /img/people/nikki_turner.jpg
+    body: >-
+        Nikki joined the Buckley &amp; Sitzman team in 2025 and brings a strong background in
+        operations and relationship building. She is originally from the Omaha, NE area and
+        graduated from the University of Nebraska with a Bachelor of Science in Marketing.
+        Nikki is passionate about creating meaningful connections and contributing to projects
+        that make a positive impact.
+
+
+        Today, Nikki resides in Lincoln, NE with her husband, Nick, and their two sons. Outside
+        of work, she enjoys spending time with family and friends, traveling to new places,
+        planning events, and shopping. Nikki also loves exploring local restaurants and finding
+        creative ways to make everyday moments special.
+  - name: Tammy Kennedy
+    short_name: Tammy Kennedy
+    permalink: false
+    job_title: ""
+    image: /img/people/tammy_kennedy.jpg
+    body: >-
+      Tammy Kennedy has 40+ years of experience in administrative support, human
+      resources, and management. She specializes in office operations, HR coordination,
+      staff onboarding, and process improvement, providing consistent, dependable support
+      to leadership and teams.
+
+
+      Tammy enjoys camping and boating with her husband, their dog Zoey, and friends, and
+      especially cherishes time spent with her two grandchildren. She joined Buckley &amp;
+      Sitzman, LLP in 2024.
+  - permalink: false
+    name: Gabrielle Garrison
+    short_name: Gabrielle Garrison
+    job_title: ""
+    image: /img/people/gabrielle_garrison.jpg
+    body: >-
+      Gabrielle joined Buckley &amp; Sitzman in December 2023. A graduate of the
+      University of Nebraska–Lincoln, she brings over a decade of experience in
+      administrative support, accounts receivable and client relations. Her strong
+      organizational skills and attention to detail make her an invaluable resource
+      to our organization.
+
+
+      A Lincoln native, Gabrielle enjoys spending her free time with her Pomeranian,
+      Memphis, shopping and traveling to her favorite destination, Colorado.
 ---
