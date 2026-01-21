@@ -5,7 +5,7 @@ members:
   - permalink: false
     name: Lester F. Buckley, CPA
     short_name: Lester Buckley
-    job_title: Partner
+    job_title: Partner Emeritus
     body: >-
       A third-generation accounting professional practicing in Lincoln,
       Nebraska, Les graduated with a B.S. in Business Administration in May
@@ -202,15 +202,15 @@ members:
 
       **Community**
 
-      - Board Member &amp; Past Treasurer, Lincoln Children’s Museum
+      - Past Board Member & Treasurer, Lincoln Children's Museum
 
       - Co-Chair &amp; Committee Member for United Way’s Annual Fundraiser
 
     image: /img/people/tyler_denker.jpg
     email_address: tdenker@bsncpa.com
   - permalink: false
-    name: Mark Nave, CPA
-    short_name: Mark Nave
+    name: Mark A. Nave, CPA
+    short_name: Mark A. Nave
     job_title: Partner
     image: /img/people/mark_nave.jpg
     body: >-

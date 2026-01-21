@@ -10,4 +10,6 @@ members:
     name: Ryan Kramer (Intern)
   - permalink: false
     name: Evan Werner (Intern)
+  - permalink: false
+    name: Carson Chochon (Intern)
 ---
