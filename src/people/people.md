@@ -48,11 +48,9 @@ members:
 
       **Education**
 
+      - University of Louisville, BSBA – Management and Human Resources (minor in Computer Science), High Honors
 
-      University of Louisville, BSBA – Management and Human Resources (minor-Computer Science), High Honors
-
-
-      University of Nebraska-Omaha, Masters Degree in Professional Accountancy
+      - University of Nebraska-Omaha, Masters Degree in Professional Accountancy
     image: /img/people/suman_vallabhbhai.jpg
   - permalink: false
     name: Grant H. Buckley, CPA, CFE
@@ -101,22 +99,16 @@ members:
 
       **Education**
 
+      - University of Nebraska-Lincoln, BSBA Accounting (minors in Finance & Sociology), Highest Distinction
 
-      University of Nebraska-Lincoln, BSBA Accounting (minors-Finance & Sociology), Highest Distinction
-
-
-      University of Nebraska-Lincoln, Masters Degree in Professional Accountancy, Highest Distinction
-
-
+      - University of Nebraska-Lincoln, Masters Degree in Professional Accountancy, Highest Distinction
 
 
       **Community**
 
+      - Board Member & Treasurer, Community Action Partnership of Lancaster and Saunders Counties
 
-      Board Member & Treasurer, Community Action Partnership of Lancaster and Saunders Counties
-
-
-      The University of Nebraska-Lincoln School of Accountancy Junior Advisory Board
+      - The University of Nebraska-Lincoln School of Accountancy Junior Advisory Board
     email_address: gbuckley@bsncpa.com
   - permalink: false
     name: Tyler M. Denker, CPA, CFE
@@ -167,7 +159,7 @@ members:
 
       **Education**
 
-      - University of Nebraska-Lincoln, BSBA Accounting (minors: Finance &amp; Sociology)
+      - University of Nebraska-Lincoln, BSBA Accounting (minors in Finance &amp; Sociology)
 
       - University of Nebraska-Lincoln, Masters Degree in Professional Accountancy
 
