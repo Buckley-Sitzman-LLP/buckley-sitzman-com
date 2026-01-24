@@ -9,25 +9,38 @@
 
 ## Phase 1: Setup & Automated Testing
 
-### Tool Setup
-- [ ] Research required tools (pa11y, axe-core, lighthouse CLI)
+### Tool Setup - Pa11y (Current)
+- [x] Research required tools (pa11y, axe-core, lighthouse CLI)
+- [x] Add pa11y as devDependency to package.json
+- [x] Add npm script to run pa11y (`yarn a11y <url>`)
+- [x] Verify pa11y works against deploy preview
 - [ ] Create `scripts/setup-a11y-tools.sh` script for Mac that:
   - Checks for Node.js/npm
-  - Installs required npm packages (globally or as devDependencies)
+  - Runs npm install
   - Verifies installations
   - Provides clear success/failure output
-- [ ] Add devDependencies to package.json if appropriate
 - [ ] Update README.md with:
   - Section on accessibility testing tools
   - Instructions to run setup script
-  - Manual installation steps as fallback
   - Commands to run audits locally
+
+### Tool Setup - axe-core (Later)
+- [ ] Add @axe-core/cli as devDependency
+- [ ] Add npm script to run axe-core
+- [ ] Verify axe-core works against deploy preview
+- [ ] Update setup script and README
+
+### Tool Setup - Lighthouse (Later)
+- [ ] Add lighthouse as devDependency
+- [ ] Add npm script to run lighthouse accessibility audit
+- [ ] Verify lighthouse works against deploy preview
+- [ ] Update setup script and README
 
 ### Run Automated Audits
 - [ ] Run pa11y against deploy preview (all pages)
-- [ ] Run axe-core CLI against deploy preview
-- [ ] Run Lighthouse accessibility audit
-- [ ] Collect and parse JSON output from each tool
+- [ ] Run axe-core CLI against deploy preview (after setup)
+- [ ] Run Lighthouse accessibility audit (after setup)
+- [ ] Collect and parse output from each tool
 
 ---
 
