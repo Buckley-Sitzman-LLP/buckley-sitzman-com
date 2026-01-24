@@ -55,6 +55,10 @@ AlpineJS handles all interactivity (mobile menu, service card expansion, scroll 
 - `admin/config.yml` - Netlify CMS field definitions
 - `netlify.toml` - Deployment configuration
 
+## Plans
+
+All project plans and checklists are stored in the `plans/` directory. When working on a planned task, reference the corresponding plan file for context and to track progress.
+
 ## Debugging
 
 Use `{{ someObject | dump }}` filter in Nunjucks templates to inspect data.
