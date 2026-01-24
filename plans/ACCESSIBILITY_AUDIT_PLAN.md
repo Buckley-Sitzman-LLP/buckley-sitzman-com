@@ -7,6 +7,45 @@
 
 ---
 
+## Session Notes
+
+### 2025-01-24 - Set initial plan and installed pa11y
+
+Created audit plan and set up pa11y for automated accessibility testing.
+
+**Commits:**
+- `c6c1b07` - Add accessibility audit plan checklist
+- `a704683` - Move audit plan to plans/ directory and document in CLAUDE.md
+- `13b3cf6` - Add pa11y for accessibility testing
+
+**Decisions:**
+- Using yarn (not npm) for package management
+- Installing tools as devDependencies (not global)
+- Starting with pa11y only; axe-core and Lighthouse to follow
+
+**Initial pa11y findings (homepage only):**
+| Issue | Type | Element |
+|-------|------|---------|
+| Missing `alt` attribute | Image | Header logo (`hex_logo.svg`) |
+| Missing `alt` attribute | Image | Page body logo (`hex_logo.svg`) |
+| Insufficient contrast (1.94:1, needs 4.5:1) | Color | Heading with `text-secondary-500` |
+| Insufficient contrast (1.94:1, needs 4.5:1) | Color | "Services" heading with `text-secondary-500` |
+
+**Commands:**
+- `yarn a11y <url>` - Run pa11y against a URL
+
+**Next steps:**
+1. Create setup script (`scripts/setup-a11y-tools.sh`)
+2. Update README with accessibility testing docs
+3. Set up axe-core and Lighthouse
+4. Run full audit across all pages
+
+**Open questions:**
+- Need to identify all pages on the site for full audit
+- Should we fix issues as we find them, or complete full audit first?
+
+---
+
 ## Phase 1: Setup & Automated Testing
 
 ### Tool Setup - Pa11y (Current)
