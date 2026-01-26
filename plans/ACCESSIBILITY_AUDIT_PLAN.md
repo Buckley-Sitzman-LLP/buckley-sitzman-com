@@ -9,6 +9,26 @@
 
 ## Session Notes
 
+### 2025-01-25 - Generated sitemap.xml
+
+Added automatic sitemap generation to help with SEO and to identify all pages for accessibility auditing.
+
+**Commits:**
+- `36b93c9` - Add sitemap.xml generation
+
+**What was done:**
+- Created `src/sitemap.njk` template that generates `sitemap.xml` at build time
+- Sitemap includes all main pages: homepage, about, services, careers, contact
+- Uses Eleventy's data cascade to automatically generate URLs
+- Sitemap is excluded from the navigation and sitemap itself (prevents recursion)
+
+**How this helps the accessibility audit:**
+- Provides a definitive list of all pages that need to be audited
+- Can be used programmatically to run pa11y against all pages
+- Ensures no pages are missed during manual or automated testing
+
+---
+
 ### 2025-01-24 - Set initial plan and installed pa11y
 
 Created audit plan and set up pa11y for automated accessibility testing.
@@ -41,7 +61,7 @@ Created audit plan and set up pa11y for automated accessibility testing.
 4. Run full audit across all pages
 
 **Open questions:**
-- Need to identify all pages on the site for full audit
+- ~~Need to identify all pages on the site for full audit~~ (Resolved: sitemap.xml now lists all pages)
 - Should we fix issues as we find them, or complete full audit first?
 
 ---
@@ -116,10 +136,11 @@ Created audit plan and set up pa11y for automated accessibility testing.
 
 ## Phase 3: Rendered HTML Analysis
 
-- [ ] Fetch and analyze homepage
+Pages to audit (from sitemap.xml):
+- [ ] Fetch and analyze homepage (/)
 - [ ] Fetch and analyze /about page
 - [ ] Fetch and analyze /services page
-- [ ] Fetch and analyze /careers page (if exists)
+- [ ] Fetch and analyze /careers page
 - [ ] Fetch and analyze /contact page
 - [ ] Verify semantic landmarks in rendered output
 - [ ] Check interactive component ARIA states
