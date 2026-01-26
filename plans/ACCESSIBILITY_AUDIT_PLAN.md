@@ -9,6 +9,25 @@
 
 ## Session Notes
 
+### 2025-01-26 - ARIA attributes audit
+
+**ARIA Audit Results:**
+Audited all AlpineJS interactive components across the site:
+
+**✅ Excellent implementations:**
+- Mobile menu has proper ARIA attributes (role="dialog", aria-modal, aria-expanded)
+- Menu buttons have proper labels and keyboard support
+- Focus management automatically moves to close button when opened
+
+**⚠️ Issues identified (not fixed yet):**
+- Service card expansion on /services/ lacks keyboard accessibility
+- Missing role="button", tabindex, aria-expanded, and keyboard handlers
+- Violates WCAG 2.1 Level A (2.1.1 Keyboard)
+
+**Decision:** Documented issues for future resolution. Not fixing service cards in this session.
+
+---
+
 ### 2025-01-26 - Form label audit and heading hierarchy fixes
 
 **Form Audit Results:**
@@ -192,9 +211,20 @@ Created audit plan and set up pa11y for automated accessibility testing.
 
 ### Forms & Interactive Elements
 - [x] Audit form labels and input associations *(Contact form: excellent - all labels properly associated, ARIA attributes correct, focus states visible)*
-- [ ] Check ARIA attributes on AlpineJS components
+- [x] Check ARIA attributes on AlpineJS components *(See findings below)*
 - [ ] Verify focus states are visible in CSS
 - [x] Check mobile menu accessibility (keyboard, screen reader) *(Fixed in commit 4bad522)*
+
+**ARIA Attributes Audit Findings:**
+- ✅ **Mobile menu** (default.njk) - Excellent: proper role, aria-expanded, aria-modal, keyboard support, focus management
+- ⚠️ **Service card expansion** (services.njk:25-53) - Issues found:
+  - Missing role="button" on interactive div
+  - Missing tabindex="0" for keyboard access
+  - Missing aria-expanded attribute
+  - No keyboard handlers (Enter/Space)
+  - Not keyboard accessible (WCAG 2.1 Level A violation)
+- ✅ **Animation triggers** (index.njk, careers.njk) - OK: decorative only, no interaction
+- ℹ️ **Team member cards** (meet-our-team.njk) - Note: unused x-data variable, no accessibility impact
 
 ### Links & Navigation
 - [ ] Audit link text (no "click here" patterns)
