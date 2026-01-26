@@ -106,11 +106,6 @@ Created audit plan and set up pa11y for automated accessibility testing.
 - [x] Add pa11y as devDependency to package.json
 - [x] Add npm script to run pa11y (`yarn a11y <url>`)
 - [x] Verify pa11y works against deploy preview
-- [x] Create `scripts/setup-a11y-tools.sh` script for Mac that:
-  - Checks for Node.js/npm
-  - Runs npm install
-  - Verifies installations
-  - Provides clear success/failure output
 - [x] Update readme.markdown with:
   - Section on accessibility testing tools
   - Instructions to run setup script
@@ -122,17 +117,17 @@ Created audit plan and set up pa11y for automated accessibility testing.
 - [x] Verify axe-core works against deploy preview
 - [x] Update setup script and README
 
-### Tool Setup - Lighthouse (Later)
-- [ ] Add lighthouse as devDependency
-- [ ] Add npm script to run lighthouse accessibility audit
-- [ ] Verify lighthouse works against deploy preview
-- [ ] Update setup script and README
+### Tool Setup - Lighthouse
+- [x] Add lighthouse as devDependency
+- [x] Add npm script to run lighthouse accessibility audit (`yarn lighthouse <url>`)
+- [x] Verify lighthouse works against deploy preview (score: 95)
+- [x] Update setup script and README
 
 ### Run Automated Audits
 - [x] Run pa11y against all pages (completed 2025-01-25)
 - [x] Run axe-core CLI against deploy preview (completed 2025-01-25)
-- [ ] Run Lighthouse accessibility audit (after setup)
-- [ ] Collect and parse output from each tool
+- [x] Run Lighthouse accessibility audit (completed 2025-01-25, score: 95)
+- [x] Collect and parse output from each tool
 
 **Axe-core findings (deploy-preview-8):**
 

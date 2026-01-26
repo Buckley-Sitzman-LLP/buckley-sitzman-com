@@ -270,13 +270,7 @@ This project includes tools for automated accessibility auditing to help ensure 
 
 ### Setup
 
-Run the setup script to verify dependencies and install tools:
-
-```bash
-./scripts/setup-a11y-tools.sh
-```
-
-Or simply run `yarn install` if you already have Node.js and yarn installed.
+Run `yarn install` to install accessibility testing tools along with other dependencies.
 
 ### Running Audits
 
@@ -304,6 +298,16 @@ yarn axe http://localhost:8080
 
 # Test multiple pages
 yarn axe http://localhost:8080 http://localhost:8080/services/
+```
+
+**Lighthouse** - Google's accessibility audit (generates HTML report):
+
+```bash
+# Run accessibility audit (generates .report.html file)
+yarn lighthouse https://deploy-preview-5--buckley-sitzman-llp.netlify.app/
+
+# Test local dev server
+yarn lighthouse http://localhost:8080
 ```
 
 ### Interpreting Results

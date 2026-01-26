@@ -11,7 +11,8 @@
     "start": "eleventy --serve & postcss ./src/assets/styles/tailwind.css --o _site/style.css --watch",
     "build": "NODE_ENV=production ELEVENTY_ENV=production eleventy & postcss ./src/assets/styles/tailwind.css --o _site/style.css",
     "a11y": "pa11y",
-    "axe": "axe"
+    "axe": "axe",
+    "lighthouse": "lighthouse --only-categories=accessibility --chrome-flags=\"--headless\""
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.2",
@@ -23,6 +24,7 @@
     "@tailwindcss/typography": "^0.5.19",
     "autoprefixer": "^10.4.21",
     "html-minifier": "^4.0.0",
+    "lighthouse": "^13.0.1",
     "pa11y": "^9.0.1",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
