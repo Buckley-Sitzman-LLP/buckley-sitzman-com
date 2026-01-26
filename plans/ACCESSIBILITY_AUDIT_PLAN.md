@@ -9,6 +9,23 @@
 
 ## Session Notes
 
+### 2025-01-26 - Form label audit and heading hierarchy fixes
+
+**Form Audit Results:**
+Audited contact form at `/contact-us/`. Found **0 violations** in axe-core. Manual review confirms:
+- ✅ All 9 form fields have properly associated labels (for/id matching)
+- ✅ ARIA attributes correctly used (phone field has aria-describedby)
+- ✅ Required fields marked with required attribute
+- ✅ Appropriate input types (email uses type="email")
+- ✅ All fields have autocomplete attributes (given-name, family-name, email, tel)
+- ✅ Focus states visible on all inputs and buttons
+- ✅ Semantic HTML (form, label, button elements)
+- ✅ Section has sr-only h2 heading
+
+**No changes needed** - form is excellently implemented for accessibility.
+
+---
+
 ### 2025-01-26 - Fix heading hierarchy on services page
 
 **Commits:**
@@ -174,10 +191,10 @@ Created audit plan and set up pa11y for automated accessibility testing.
 - [ ] Check page `<title>` elements
 
 ### Forms & Interactive Elements
-- [ ] Audit form labels and input associations
+- [x] Audit form labels and input associations *(Contact form: excellent - all labels properly associated, ARIA attributes correct, focus states visible)*
 - [ ] Check ARIA attributes on AlpineJS components
 - [ ] Verify focus states are visible in CSS
-- [ ] Check mobile menu accessibility (keyboard, screen reader)
+- [x] Check mobile menu accessibility (keyboard, screen reader) *(Fixed in commit 4bad522)*
 
 ### Links & Navigation
 - [ ] Audit link text (no "click here" patterns)
