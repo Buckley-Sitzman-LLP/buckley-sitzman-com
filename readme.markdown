@@ -263,3 +263,61 @@ members:
 |-------|----------|-------------|
 | `permalink` | Yes | Always set to `false` |
 | `name` | Yes | Name with optional credentials or role in parentheses |
+
+## Accessibility Testing
+
+This project includes tools for automated accessibility auditing to help ensure WCAG 2.1 AA compliance.
+
+### Setup
+
+Run the setup script to verify dependencies and install tools:
+
+```bash
+./scripts/setup-a11y-tools.sh
+```
+
+Or simply run `yarn install` if you already have Node.js and yarn installed.
+
+### Running Audits
+
+**Pa11y** - HTML CodeSniffer-based testing:
+
+```bash
+# Test against deploy preview
+yarn a11y https://deploy-preview-5--buckley-sitzman-llp.netlify.app/
+
+# Test against local dev server (start server first with yarn start)
+yarn a11y http://localhost:8080
+
+# Test a specific page
+yarn a11y http://localhost:8080/services/
+```
+
+**Axe-core** - Deque's accessibility engine (uses Chrome headless):
+
+```bash
+# Test a URL
+yarn axe https://deploy-preview-5--buckley-sitzman-llp.netlify.app/
+
+# Test local dev server
+yarn axe http://localhost:8080
+
+# Test multiple pages
+yarn axe http://localhost:8080 http://localhost:8080/services/
+```
+
+### Interpreting Results
+
+Pa11y reports issues by WCAG level:
+- **Error** - Definite accessibility barrier
+- **Warning** - Potential issue that needs manual review
+- **Notice** - Best practice suggestion
+
+Common issues and fixes:
+- **Missing alt attribute** - Add `alt="description"` for informative images or `alt=""` for decorative images
+- **Insufficient contrast** - Check color combinations in `tailwind.config.js`
+- **Missing form labels** - Ensure all inputs have associated `<label>` elements
+
+### Documentation
+
+See `plans/ACCESSIBILITY_AUDIT_PLAN.md` for the full audit checklist and session notes.

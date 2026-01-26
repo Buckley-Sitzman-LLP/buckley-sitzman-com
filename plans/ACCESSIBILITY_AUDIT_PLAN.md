@@ -106,21 +106,21 @@ Created audit plan and set up pa11y for automated accessibility testing.
 - [x] Add pa11y as devDependency to package.json
 - [x] Add npm script to run pa11y (`yarn a11y <url>`)
 - [x] Verify pa11y works against deploy preview
-- [ ] Create `scripts/setup-a11y-tools.sh` script for Mac that:
+- [x] Create `scripts/setup-a11y-tools.sh` script for Mac that:
   - Checks for Node.js/npm
   - Runs npm install
   - Verifies installations
   - Provides clear success/failure output
-- [ ] Update README.md with:
+- [x] Update readme.markdown with:
   - Section on accessibility testing tools
   - Instructions to run setup script
   - Commands to run audits locally
 
-### Tool Setup - axe-core (Later)
-- [ ] Add @axe-core/cli as devDependency
-- [ ] Add npm script to run axe-core
-- [ ] Verify axe-core works against deploy preview
-- [ ] Update setup script and README
+### Tool Setup - axe-core
+- [x] Add @axe-core/cli as devDependency
+- [x] Add npm script to run axe-core (`yarn axe <url>`)
+- [x] Verify axe-core works against deploy preview
+- [x] Update setup script and README
 
 ### Tool Setup - Lighthouse (Later)
 - [ ] Add lighthouse as devDependency
@@ -130,9 +130,22 @@ Created audit plan and set up pa11y for automated accessibility testing.
 
 ### Run Automated Audits
 - [x] Run pa11y against all pages (completed 2025-01-25)
-- [ ] Run axe-core CLI against deploy preview (after setup)
+- [x] Run axe-core CLI against deploy preview (completed 2025-01-25)
 - [ ] Run Lighthouse accessibility audit (after setup)
 - [ ] Collect and parse output from each tool
+
+**Axe-core findings (deploy-preview-8):**
+
+| Page | Issues | Type |
+|------|--------|------|
+| `/` | 2 | Color contrast (false positive - large text) |
+| `/services/` | 1 | Heading order (h3 without h2) |
+| `/careers/` | 1 | Color contrast (false positive - large text) |
+| `/contact-us/` | 0 | Clean |
+| `/meet-our-team/` | 2 | Color contrast + Heading order |
+
+**Known issues to address later:**
+- **Heading order** on `/services/` and `/meet-our-team/` - h3 elements appear without preceding h2, violating heading hierarchy. Service cards and team member cards use h3 but pages skip from h1 to h3.
 
 ---
 
@@ -144,7 +157,7 @@ Created audit plan and set up pa11y for automated accessibility testing.
 - [x] Check for decorative images (should have `alt=""`)
 
 ### Document Structure
-- [ ] Verify proper heading hierarchy (h1 → h2 → h3)
+- [ ] Verify proper heading hierarchy (h1 → h2 → h3) *(axe found issues on /services/ and /meet-our-team/)*
 - [ ] Check for skip-link implementation
 - [ ] Verify `lang` attribute on `<html>` element
 - [ ] Check page `<title>` elements

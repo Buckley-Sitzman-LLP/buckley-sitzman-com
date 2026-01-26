@@ -50,6 +50,7 @@ AlpineJS handles all interactivity (mobile menu, service card expansion, scroll 
 
 ## Key Files
 
+- `readme.markdown` - Project README (not README.md)
 - `.eleventy.js` - Eleventy config, collection definitions, shortcodes
 - `tailwind.config.js` - Custom theme configuration
 - `admin/config.yml` - Netlify CMS field definitions
