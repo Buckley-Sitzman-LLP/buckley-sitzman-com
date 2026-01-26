@@ -209,7 +209,7 @@ members:
     image: /img/people/tyler.jpeg
     email_address: tdenker@bsncpa.com
   - permalink: false
-    name: Mark Nave, CPA
+    name: Mark A. Nave, CPA
     short_name: Mark Nave
     job_title: Partner
     image: /img/people/mark_nave.jpeg
