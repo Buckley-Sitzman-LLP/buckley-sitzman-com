@@ -9,6 +9,22 @@
 
 ## Session Notes
 
+### 2025-01-26 - Fix heading hierarchy on services page
+
+**Commits:**
+- `ee10413` - Fix heading hierarchy on services page
+
+**Issue fixed:**
+Changed service card titles from `<h3>` to `<h2>` to establish proper heading hierarchy. The page structure is now:
+- H1: "Services" (page title)
+- H2: Individual service names (Tax Planning, Bookkeeping, etc.)
+
+**Verification:**
+- Ran axe-core against http://localhost:8080/services/ and confirmed **0 violations**
+- Also verified /meet-our-team/ page - heading hierarchy was already fixed in commit d6f35a8 (added sr-only h2)
+
+---
+
 ### 2025-01-25 - Full pa11y audit and fixes
 
 Ran pa11y across all pages and fixed identified issues.
@@ -139,8 +155,8 @@ Created audit plan and set up pa11y for automated accessibility testing.
 | `/contact-us/` | 0 | Clean |
 | `/meet-our-team/` | 2 | Color contrast + Heading order |
 
-**Known issues to address later:**
-- **Heading order** on `/services/` and `/meet-our-team/` - h3 elements appear without preceding h2, violating heading hierarchy. Service cards and team member cards use h3 but pages skip from h1 to h3.
+**Known issues (now resolved):**
+- ~~**Heading order** on `/services/` and `/meet-our-team/`~~ - Fixed in commits d6f35a8 (meet-our-team) and ee10413 (services).
 
 ---
 
@@ -152,9 +168,9 @@ Created audit plan and set up pa11y for automated accessibility testing.
 - [x] Check for decorative images (should have `alt=""`)
 
 ### Document Structure
-- [ ] Verify proper heading hierarchy (h1 → h2 → h3) *(axe found issues on /services/ and /meet-our-team/)*
-- [ ] Check for skip-link implementation
-- [ ] Verify `lang` attribute on `<html>` element
+- [x] Verify proper heading hierarchy (h1 → h2 → h3) *(Fixed: /services/ now uses h2 for service titles)*
+- [x] Check for skip-link implementation *(Added in commit 4bad522)*
+- [x] Verify `lang` attribute on `<html>` element *(Confirmed present in default.njk:2)*
 - [ ] Check page `<title>` elements
 
 ### Forms & Interactive Elements
