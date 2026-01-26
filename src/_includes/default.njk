@@ -43,6 +43,9 @@
     {% block head %}{% endblock %}
   </head>
   <body>
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:rounded focus:shadow-lg focus:ring-2 focus:ring-primary-500">
+      Skip to main content
+    </a>
     <header class="sticky top-0 bg-white z-10 pt-8 pb-8" x-data="{menu_open: false}">
       <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
         <nav class="relative flex items-center justify-between sm:h-10 lg:justify-end">
@@ -54,7 +57,7 @@
               </a>
               <div class="-mr-2 flex items-center lg:hidden">
                 <!-- Mobile Menu Expand -->
-                <button type="button" class="inline-flex items-center justify-center p-2 rounded-lg text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" id="main-menu" aria-label="Main menu" aria-haspopup="true" @click="menu_open = true">
+                <button type="button" class="inline-flex items-center justify-center p-2 rounded-lg text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" id="main-menu" aria-label="Main menu" aria-haspopup="true" :aria-expanded="menu_open" @click="menu_open = true">
                   <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
@@ -126,6 +129,7 @@
       -->
       <div
         x-show="menu_open"
+        @keydown.escape.window="menu_open = false"
         x-transition:enter="duration-150 ease-out"
         x-transition:enter-start="opacity-0 scale-95"
         x-transition:enter-end="opacity-100 scale-100"
@@ -133,15 +137,18 @@
         x-transition:leave-start="opacity-100 scale-100"
         x-transition:leave-end="opacity-0 scale-95"
         class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden z-50"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Mobile navigation"
       >
         <div class="rounded-lg shadow-md">
-          <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+          <div class="rounded-lg bg-white shadow-xs overflow-hidden">
             <div class="px-5 pt-4 flex items-center justify-between">
               <div>
                 <img class="w-96" src="/assets/logo.svg" alt="Logo">
               </div>
           <div class="-mr-2">
-            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu" @click="menu_open = false">
+            <button x-ref="closeButton" x-init="$watch('menu_open', value => { if(value) $nextTick(() => $refs.closeButton.focus()) })" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu" @click="menu_open = false">
               <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
@@ -149,22 +156,22 @@
           </div>
             </div>
             <div class="px-2 pt-2 pb-3">
-              <a href="/" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+              <a href="/" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                 Home
               </a>
-              <a href="/pay-my-bill" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+              <a href="/pay-my-bill" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                 Pay My Bill
               </a>
-              <a href="/services" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+              <a href="/services" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                 Services
               </a>
-              <a href="/meet-our-team" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+              <a href="/meet-our-team" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                 Meet Our Team
               </a>
-              <a href="/careers" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+              <a href="/careers" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                 Careers
               </a>
-              <a href="/contact-us" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">
+              <a href="/contact-us" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                 Contact Us
               </a>
             </div>
@@ -175,7 +182,7 @@
     <div class="bg-white flex flex-col justify-between min-h-screen">
       <div class="relative">
 
-        <main class="flex-1">
+        <main id="main-content" tabindex="-1" class="flex-1">
           {% if feature_image %}
             <div class="mb-12 max-h-96 lg:max-h-128 xl:max-h-144 w-full overflow-y-hidden">
               <img src="{{feature_image}}" alt="{{title}}" class="w-full object-center" />
