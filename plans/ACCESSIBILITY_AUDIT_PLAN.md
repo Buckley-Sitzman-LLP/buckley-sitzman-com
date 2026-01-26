@@ -207,6 +207,30 @@ Pages to audit (from sitemap.xml):
 
 ---
 
+## Phase 6: Custom Claude Accessibility Agent
+
+Create a custom Claude Code agent that automates accessibility auditing by running all three tools and producing a consolidated report.
+
+### Agent Design
+- [ ] Define agent prompt and capabilities
+- [ ] Agent should accept a URL (or list of URLs) as input
+- [ ] Agent runs pa11y, axe-core, and Lighthouse against each URL
+- [ ] Agent parses and consolidates results from all tools
+
+### Reporting
+- [ ] Deduplicate issues found by multiple tools
+- [ ] Categorize by severity (Critical, Serious, Moderate, Minor)
+- [ ] Identify false positives (e.g., large text contrast issues)
+- [ ] Produce summary with issue counts per page
+- [ ] Provide actionable remediation suggestions
+
+### Integration
+- [ ] Add agent to project's Claude Code configuration
+- [ ] Document usage in readme.markdown
+- [ ] Consider adding as a slash command (e.g., `/a11y-audit`)
+
+---
+
 ## WCAG 2.1 AA Checklist Reference
 
 Key principles being evaluated:
