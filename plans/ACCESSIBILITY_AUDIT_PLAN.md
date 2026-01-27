@@ -9,6 +9,42 @@
 
 ## Session Notes
 
+### 2025-01-26 - External link warnings and careers page audit
+
+**Commits:**
+- `ebc20c1` - Add external link indicator to job application links
+
+**External Link Warnings:**
+Implemented icon + screen reader text pattern for job application "Apply" buttons:
+- Added external link icon (arrow out of box) next to "Apply" text
+- Added sr-only text "(opens in new tab)" for screen readers
+- Icon marked with aria-hidden="true" to prevent duplicate announcements
+
+**Pattern used (Option 3 - Icon + Screen Reader Text):**
+```html
+<a href="..." target="_blank">
+  Apply
+  <svg aria-hidden="true"><!-- external link icon --></svg>
+  <span class="sr-only">(opens in new tab)</span>
+</a>
+```
+
+**Careers Page Audit:**
+Performed comprehensive accessibility audit of careers page with temporary job listing:
+- ✅ Proper heading hierarchy (H1 → H2 → H3)
+- ✅ All images have appropriate alt text
+- ✅ External links have clear warnings
+- ✅ Keyboard accessible throughout
+- ✅ Focus indicators present
+- ✅ Job posting content structure accessible
+- ⚠️ 1 false positive (gold heading meets large text contrast requirements)
+
+**Result:** Careers page fully accessible, ready for real job postings.
+
+Improves WCAG 3.2.5 Change on Request (Level AAA).
+
+---
+
 ### 2025-01-26 - Link text audit and target="_blank" fixes
 
 **Commits:**
@@ -281,7 +317,7 @@ Created audit plan and set up pa11y for automated accessibility testing.
 
 ### Links & Navigation
 - [x] Audit link text (no "click here" patterns) *(Fixed in commit 88065c5)*
-- [ ] Check for links that open in new tabs (need warning) *(External job links need warnings)*
+- [x] Check for links that open in new tabs (need warning) *(Fixed in commit ebc20c1)*
 - [ ] Verify navigation landmarks
 
 ### Color & Contrast
