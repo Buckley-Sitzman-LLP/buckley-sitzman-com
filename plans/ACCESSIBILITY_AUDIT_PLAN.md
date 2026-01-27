@@ -296,7 +296,7 @@ Created audit plan and set up pa11y for automated accessibility testing.
 - [x] Verify proper heading hierarchy (h1 → h2 → h3) *(Fixed: /services/ now uses h2 for service titles)*
 - [x] Check for skip-link implementation *(Added in commit 4bad522)*
 - [x] Verify `lang` attribute on `<html>` element *(Confirmed present in default.njk:2)*
-- [ ] Check page `<title>` elements
+- [x] Check page `<title>` elements *(Confirmed working in default.njk:4-6)*
 
 ### Forms & Interactive Elements
 - [x] Audit form labels and input associations *(Contact form: excellent - all labels properly associated, ARIA attributes correct, focus states visible)*
@@ -323,7 +323,7 @@ Created audit plan and set up pa11y for automated accessibility testing.
 ### Color & Contrast
 - [x] Review color values in tailwind.config.js
 - [x] Check text/background contrast ratios (fixed gold headings + gray links)
-- [ ] Verify focus indicator visibility
+- [x] Verify focus indicator visibility *(Fixed in commit 0e0e620)*
 
 ---
 
@@ -335,7 +335,6 @@ Pages to audit (from sitemap.xml):
 - [ ] Fetch and analyze /services page
 - [ ] Fetch and analyze /careers page
 - [ ] Fetch and analyze /contact page
-- [ ] Verify semantic landmarks in rendered output
 - [ ] Check interactive component ARIA states
 
 ---
