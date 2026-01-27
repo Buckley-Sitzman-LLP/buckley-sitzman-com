@@ -10,9 +10,9 @@
   "scripts": {
     "start": "eleventy --serve & postcss ./src/assets/styles/tailwind.css --o _site/style.css --watch",
     "build": "NODE_ENV=production ELEVENTY_ENV=production eleventy & postcss ./src/assets/styles/tailwind.css --o _site/style.css",
-    "a11y": "pa11y",
-    "axe": "axe",
-    "lighthouse": "lighthouse --only-categories=accessibility --chrome-flags=\"--headless\""
+    "a11y": "pa11y --reporter json > a11y_reports/pa11y-report.json",
+    "axe": "axe --save a11y_reports/axe-report.json",
+    "lighthouse": "lighthouse --only-categories=accessibility --chrome-flags=\"--headless\" --output json --output-path=a11y_reports/lighthouse-report"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.2",

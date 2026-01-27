@@ -289,8 +289,25 @@ Created audit plan and set up pa11y for automated accessibility testing.
 
 ### Images & Media
 - [x] Audit all `alt` attributes in templates (.njk files)
-- [ ] Audit alt text in content files (people, services, etc.)
+- [x] Audit alt text in content files (people, services, etc.)
 - [x] Check for decorative images (should have `alt=""`)
+
+**Content Files Alt Text Audit (2026-01-26):**
+- ✅ **people.md**: All person images rendered with `alt="{{person.name}}"` in templates (meet-our-team.njk:21, person.njk:16)
+- ✅ **services.md**: No images in service data
+- ✅ **job_postings.md**: Template ready with `alt="{{posting.name}}"` (careers.njk:49), currently no postings
+- ✅ **other_people.md**: No images
+
+**All Template Images:**
+- ✅ Person portraits: Use person names (excellent)
+- ✅ Feature images: Use page title (default.njk:194)
+- ✅ Homepage staff photo: "Staff Photo" (index.njk:39, has TODO for improvement)
+- ✅ Lester Buckley testimonial photo: "Lester F. Buckley" (index.njk:71)
+- ⚠️ Logo images: Use "Logo" - could be more descriptive like "Buckley & Sitzman LLP" (default.njk:56, 154)
+- ✅ NESCPA badge: "NESCPA 100% Membership" (default.njk:230)
+- ✅ Decorative hex logos: Properly use `alt=""` throughout
+
+**Result:** All images have alt attributes. Most are excellent. Logo alt text could be improved but is acceptable.
 
 ### Document Structure
 - [x] Verify proper heading hierarchy (h1 → h2 → h3) *(Fixed: /services/ now uses h2 for service titles)*
@@ -318,7 +335,17 @@ Created audit plan and set up pa11y for automated accessibility testing.
 ### Links & Navigation
 - [x] Audit link text (no "click here" patterns) *(Fixed in commit 88065c5)*
 - [x] Check for links that open in new tabs (need warning) *(Fixed in commit ebc20c1)*
-- [ ] Verify navigation landmarks
+- [x] Verify navigation landmarks
+
+**Navigation Landmarks Audit (2026-01-26):**
+Verified proper HTML5 landmarks in default.njk:
+- ✅ `<header>` (line 49) - Site header with sticky navigation
+- ✅ `<nav>` (line 51) - Desktop navigation menu
+- ✅ `<main id="main-content">` (line 191) - Main content with ID for skip-link target
+- ✅ `<footer>` (line 208) - Site footer with contact info
+- ✅ Mobile menu uses `role="dialog"` with proper ARIA attributes (semantically correct)
+
+**Result:** Excellent landmark structure. All major page regions properly marked.
 
 ### Color & Contrast
 - [x] Review color values in tailwind.config.js
