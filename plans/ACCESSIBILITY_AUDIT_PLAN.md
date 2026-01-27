@@ -9,6 +9,30 @@
 
 ## Session Notes
 
+### 2025-01-26 - Link text audit and target="_blank" fixes
+
+**Commits:**
+- `88065c5` - Remove unnecessary target="_blank" from internal and mailto links
+
+**Link Text Audit:**
+Audited all links across the site for descriptive text and proper usage.
+
+**Good news:**
+- ✅ No "click here", "read more", or other non-descriptive link patterns found
+- ✅ All navigation links are clear and descriptive
+- ✅ All CTA buttons have meaningful text
+- ✅ Team member links labeled as "Email" and "Bio"
+- ✅ Image links have proper alt text
+
+**Issues found and fixed:**
+- Removed `target="_blank"` from mailto links (opens email client, doesn't need new tab)
+- Removed `target="_blank"` from internal /contact-us link on careers page
+
+**Remaining:**
+- External job application links still have `target="_blank"` (appropriate) but need new tab warnings
+
+---
+
 ### 2025-01-26 - Focus states audit and fixes
 
 **Commits:**
@@ -256,8 +280,8 @@ Created audit plan and set up pa11y for automated accessibility testing.
 - ℹ️ **Team member cards** (meet-our-team.njk) - Note: unused x-data variable, no accessibility impact
 
 ### Links & Navigation
-- [ ] Audit link text (no "click here" patterns)
-- [ ] Check for links that open in new tabs (need warning)
+- [x] Audit link text (no "click here" patterns) *(Fixed in commit 88065c5)*
+- [ ] Check for links that open in new tabs (need warning) *(External job links need warnings)*
 - [ ] Verify navigation landmarks
 
 ### Color & Contrast
