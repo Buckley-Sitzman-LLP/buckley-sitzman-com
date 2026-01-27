@@ -9,6 +9,35 @@
 
 ## Session Notes
 
+### 2025-01-26 - Focus states audit and fixes
+
+**Commits:**
+- `0e0e620` - Add focus states to match hover states across site
+
+**Focus States Audit:**
+Audited all interactive elements to ensure keyboard users have visible focus indicators.
+
+**Issues found and fixed:**
+- Logo link: Added padding and primary ring for better visibility
+- Desktop navigation (6 links): Added focus:text-secondary-500 and focus:border-b-secondary-500 to match hover
+- Footer links (3 links): Added focus:ring-2 focus:ring-primary-500
+- Team member Email/Bio links: Added focus:ring-2 focus:ring-secondary-400
+- Contact sidebar links (2 links): Added focus:ring-2 focus:ring-primary-500
+
+**Pattern consistency:**
+Focus states follow established site patterns:
+- Navigation links → Color/border changes (no rings, matches mobile menu)
+- CTAs/buttons → Secondary rings
+- Utility links → Primary rings
+- Form inputs → Blue rings
+
+**Verification:**
+Ran axe-core on multiple pages - no new violations introduced.
+
+Improves WCAG 2.4.7 Focus Visible (Level AA) compliance.
+
+---
+
 ### 2025-01-26 - ARIA attributes audit
 
 **ARIA Audit Results:**
@@ -212,7 +241,7 @@ Created audit plan and set up pa11y for automated accessibility testing.
 ### Forms & Interactive Elements
 - [x] Audit form labels and input associations *(Contact form: excellent - all labels properly associated, ARIA attributes correct, focus states visible)*
 - [x] Check ARIA attributes on AlpineJS components *(See findings below)*
-- [ ] Verify focus states are visible in CSS
+- [x] Verify focus states are visible in CSS *(Fixed in commit 0e0e620)*
 - [x] Check mobile menu accessibility (keyboard, screen reader) *(Fixed in commit 4bad522)*
 
 **ARIA Attributes Audit Findings:**
