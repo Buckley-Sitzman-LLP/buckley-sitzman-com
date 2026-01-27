@@ -1,0 +1,1400 @@
+{
+  "metadata": {
+    "generatedAt": "2026-01-27T04:08:14.049Z",
+    "sitemapUrl": "http://localhost:8080/sitemap.xml",
+    "pagesAudited": 26,
+    "tools": [
+      "pa11y",
+      "axe-core",
+      "lighthouse"
+    ]
+  },
+  "summary": {
+    "totalPages": 26,
+    "totalIssues": 4,
+    "issuesBySeverity": {
+      "critical": 4,
+      "serious": 0,
+      "moderate": 0,
+      "minor": 0
+    },
+    "issuesByPage": {
+      "http://localhost:8080/privacy/": 1,
+      "http://localhost:8080/": 1,
+      "http://localhost:8080/careers/": 1,
+      "http://localhost:8080/meet-our-team/": 1
+    },
+    "mostCommonIssues": [
+      {
+        "type": "color-contrast",
+        "count": 3,
+        "severity": "critical"
+      },
+      {
+        "type": "list",
+        "count": 1,
+        "severity": "critical"
+      }
+    ]
+  },
+  "categorized": {
+    "bySeverity": {
+      "critical": [
+        {
+          "tool": "lighthouse",
+          "url": "http://localhost:8080/privacy/",
+          "type": "list",
+          "message": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "selector": "div.relative > div.relative > div.prose > ol",
+          "context": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).",
+          "severity": "critical",
+          "wcag": [],
+          "raw": {
+            "id": "list",
+            "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+            "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).",
+            "score": 0,
+            "scoreDisplayMode": "binary",
+            "details": {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "subItemsHeading": {
+                    "key": "relatedNode",
+                    "valueType": "node"
+                  },
+                  "label": "Failing Elements"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "1-0-OL",
+                    "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,2,DIV,0,DIV,0,DIV,5,OL",
+                    "selector": "div.relative > div.relative > div.prose > ol",
+                    "boundingRect": {
+                      "top": 1619,
+                      "bottom": 1867,
+                      "left": 16,
+                      "right": 396,
+                      "width": 380,
+                      "height": 248
+                    },
+                    "snippet": "<ol>",
+                    "nodeLabel": "Applications, tax preparation worksheets and any other documents that you may h…",
+                    "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: #text"
+                  }
+                }
+              ],
+              "debugData": {
+                "type": "debugdata",
+                "impact": "serious",
+                "tags": [
+                  "cat.structure",
+                  "wcag2a",
+                  "wcag131",
+                  "EN-301-549",
+                  "EN-9.1.3.1",
+                  "RGAAv4",
+                  "RGAA-9.3.1"
+                ]
+              }
+            }
+          },
+          "detectedBy": [
+            "lighthouse"
+          ]
+        },
+        {
+          "tool": "lighthouse",
+          "url": "http://localhost:8080/",
+          "type": "color-contrast",
+          "message": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "selector": "div.pb-24 > div.mx-auto > div > h2.text-lg, main#main-content > div.bg-white > div.mx-auto > h2.text-lg",
+          "context": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "severity": "critical",
+          "wcag": [],
+          "raw": {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+            "score": 0,
+            "scoreDisplayMode": "binary",
+            "details": {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "subItemsHeading": {
+                    "key": "relatedNode",
+                    "valueType": "node"
+                  },
+                  "label": "Failing Elements"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "1-0-H2",
+                    "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,2,DIV,0,DIV,0,DIV,0,H2",
+                    "selector": "div.pb-24 > div.mx-auto > div > h2.text-lg",
+                    "boundingRect": {
+                      "top": 547,
+                      "bottom": 603,
+                      "left": 16,
+                      "right": 396,
+                      "width": 380,
+                      "height": 56
+                    },
+                    "snippet": "<h2 class=\"text-lg text-center font-semibold tracking-wider\n        text-secondary-50…\">",
+                    "nodeLabel": "PERSONAL ACCOUNTING SERVICE FROM A LOCAL FIRM",
+                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #ebb11a, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+                  },
+                  "subItems": {
+                    "type": "subitems",
+                    "items": [
+                      {
+                        "relatedNode": {
+                          "type": "node",
+                          "lhId": "1-1-DIV",
+                          "path": "1,HTML,1,BODY,2,DIV",
+                          "selector": "body > div.bg-white",
+                          "boundingRect": {
+                            "top": 104,
+                            "bottom": 3380,
+                            "left": 0,
+                            "right": 412,
+                            "width": 412,
+                            "height": 3276
+                          },
+                          "snippet": "<div class=\"bg-white flex flex-col justify-between min-h-screen\">",
+                          "nodeLabel": "Buckley & Sitzman\nPERSONAL ACCOUNTING SERVICE FROM A LOCAL FIRM\n\nBuckley & Sitz…"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "1-2-H2",
+                    "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,4,DIV,0,DIV,0,H2",
+                    "selector": "main#main-content > div.bg-white > div.mx-auto > h2.text-lg",
+                    "boundingRect": {
+                      "top": 2044,
+                      "bottom": 2072,
+                      "left": 16,
+                      "right": 396,
+                      "width": 380,
+                      "height": 28
+                    },
+                    "snippet": "<h2 class=\"text-lg font-semibold tracking-wider text-secondary-500 uppercase\">",
+                    "nodeLabel": "SERVICES",
+                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #ebb11a, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+                  },
+                  "subItems": {
+                    "type": "subitems",
+                    "items": [
+                      {
+                        "relatedNode": {
+                          "type": "node",
+                          "lhId": "1-3-DIV",
+                          "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,4,DIV",
+                          "selector": "div.bg-white > div.relative > main#main-content > div.bg-white",
+                          "boundingRect": {
+                            "top": 1980,
+                            "bottom": 2624,
+                            "left": 0,
+                            "right": 412,
+                            "width": 412,
+                            "height": 644
+                          },
+                          "snippet": "<div class=\"bg-white py-16 sm:py-24 lg:py-32\">",
+                          "nodeLabel": "SERVICES\n\nKeep Things Simple and Focus on the Right Things\n\nBuckley & Sitzman, …"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "debugData": {
+                "type": "debugdata",
+                "impact": "serious",
+                "tags": [
+                  "cat.color",
+                  "wcag2aa",
+                  "wcag143",
+                  "TTv5",
+                  "TT13.c",
+                  "EN-301-549",
+                  "EN-9.1.4.3",
+                  "ACT",
+                  "RGAAv4",
+                  "RGAA-3.2.1"
+                ]
+              }
+            }
+          },
+          "detectedBy": [
+            "lighthouse"
+          ]
+        },
+        {
+          "tool": "lighthouse",
+          "url": "http://localhost:8080/careers/",
+          "type": "color-contrast",
+          "message": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "selector": "main#main-content > div.bg-white > div.mx-auto > h2.text-lg",
+          "context": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "severity": "critical",
+          "wcag": [],
+          "raw": {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+            "score": 0,
+            "scoreDisplayMode": "binary",
+            "details": {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "subItemsHeading": {
+                    "key": "relatedNode",
+                    "valueType": "node"
+                  },
+                  "label": "Failing Elements"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "1-0-H2",
+                    "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,3,DIV,0,DIV,0,H2",
+                    "selector": "main#main-content > div.bg-white > div.mx-auto > h2.text-lg",
+                    "boundingRect": {
+                      "top": 867,
+                      "bottom": 895,
+                      "left": 16,
+                      "right": 396,
+                      "width": 380,
+                      "height": 28
+                    },
+                    "snippet": "<h2 class=\"text-lg text-center font-semibold tracking-wider text-secondary-500 upperc…\">",
+                    "nodeLabel": "CURRENT OPENINGS",
+                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #ebb11a, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+                  },
+                  "subItems": {
+                    "type": "subitems",
+                    "items": [
+                      {
+                        "relatedNode": {
+                          "type": "node",
+                          "lhId": "1-1-DIV",
+                          "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,3,DIV",
+                          "selector": "div.bg-white > div.relative > main#main-content > div.bg-white",
+                          "boundingRect": {
+                            "top": 835,
+                            "bottom": 1363,
+                            "left": 0,
+                            "right": 412,
+                            "width": 412,
+                            "height": 528
+                          },
+                          "snippet": "<div class=\"bg-white py-8\">",
+                          "nodeLabel": "CURRENT OPENINGS\n\nTo apply for an opening, please send your résumé and a cover …"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "debugData": {
+                "type": "debugdata",
+                "impact": "serious",
+                "tags": [
+                  "cat.color",
+                  "wcag2aa",
+                  "wcag143",
+                  "TTv5",
+                  "TT13.c",
+                  "EN-301-549",
+                  "EN-9.1.4.3",
+                  "ACT",
+                  "RGAAv4",
+                  "RGAA-3.2.1"
+                ]
+              }
+            }
+          },
+          "detectedBy": [
+            "lighthouse"
+          ]
+        },
+        {
+          "tool": "lighthouse",
+          "url": "http://localhost:8080/meet-our-team/",
+          "type": "color-contrast",
+          "message": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "selector": "div.relative > main#main-content > div.mt-16 > h2.text-lg",
+          "context": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "severity": "critical",
+          "wcag": [],
+          "raw": {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+            "score": 0,
+            "scoreDisplayMode": "binary",
+            "details": {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "subItemsHeading": {
+                    "key": "relatedNode",
+                    "valueType": "node"
+                  },
+                  "label": "Failing Elements"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "1-0-H2",
+                    "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,3,DIV,0,H2",
+                    "selector": "div.relative > main#main-content > div.mt-16 > h2.text-lg",
+                    "boundingRect": {
+                      "top": 14263,
+                      "bottom": 14291,
+                      "left": 0,
+                      "right": 412,
+                      "width": 412,
+                      "height": 28
+                    },
+                    "snippet": "<h2 class=\"text-lg text-center font-semibold tracking-wider\n               text-secon…\">",
+                    "nodeLabel": "OTHER PROFESSIONALS",
+                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #ebb11a, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+                  },
+                  "subItems": {
+                    "type": "subitems",
+                    "items": [
+                      {
+                        "relatedNode": {
+                          "type": "node",
+                          "lhId": "1-1-DIV",
+                          "path": "1,HTML,1,BODY,2,DIV",
+                          "selector": "body > div.bg-white",
+                          "boundingRect": {
+                            "top": 104,
+                            "bottom": 15699,
+                            "left": 0,
+                            "right": 412,
+                            "width": 412,
+                            "height": 15595
+                          },
+                          "snippet": "<div class=\"bg-white flex flex-col justify-between min-h-screen\">",
+                          "nodeLabel": "Meet Our Team\nOur Team\nSuman Vallabhbhai CPA, CGMA\n\nPartner\n\nEmail\nBio\nGrant H.…"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "debugData": {
+                "type": "debugdata",
+                "impact": "serious",
+                "tags": [
+                  "cat.color",
+                  "wcag2aa",
+                  "wcag143",
+                  "TTv5",
+                  "TT13.c",
+                  "EN-301-549",
+                  "EN-9.1.4.3",
+                  "ACT",
+                  "RGAAv4",
+                  "RGAA-3.2.1"
+                ]
+              }
+            }
+          },
+          "detectedBy": [
+            "lighthouse"
+          ]
+        }
+      ],
+      "serious": [],
+      "moderate": [],
+      "minor": []
+    },
+    "byType": {
+      "list": [
+        {
+          "tool": "lighthouse",
+          "url": "http://localhost:8080/privacy/",
+          "type": "list",
+          "message": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "selector": "div.relative > div.relative > div.prose > ol",
+          "context": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).",
+          "severity": "critical",
+          "wcag": [],
+          "raw": {
+            "id": "list",
+            "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+            "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).",
+            "score": 0,
+            "scoreDisplayMode": "binary",
+            "details": {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "subItemsHeading": {
+                    "key": "relatedNode",
+                    "valueType": "node"
+                  },
+                  "label": "Failing Elements"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "1-0-OL",
+                    "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,2,DIV,0,DIV,0,DIV,5,OL",
+                    "selector": "div.relative > div.relative > div.prose > ol",
+                    "boundingRect": {
+                      "top": 1619,
+                      "bottom": 1867,
+                      "left": 16,
+                      "right": 396,
+                      "width": 380,
+                      "height": 248
+                    },
+                    "snippet": "<ol>",
+                    "nodeLabel": "Applications, tax preparation worksheets and any other documents that you may h…",
+                    "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: #text"
+                  }
+                }
+              ],
+              "debugData": {
+                "type": "debugdata",
+                "impact": "serious",
+                "tags": [
+                  "cat.structure",
+                  "wcag2a",
+                  "wcag131",
+                  "EN-301-549",
+                  "EN-9.1.3.1",
+                  "RGAAv4",
+                  "RGAA-9.3.1"
+                ]
+              }
+            }
+          },
+          "detectedBy": [
+            "lighthouse"
+          ]
+        }
+      ],
+      "color-contrast": [
+        {
+          "tool": "lighthouse",
+          "url": "http://localhost:8080/",
+          "type": "color-contrast",
+          "message": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "selector": "div.pb-24 > div.mx-auto > div > h2.text-lg, main#main-content > div.bg-white > div.mx-auto > h2.text-lg",
+          "context": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "severity": "critical",
+          "wcag": [],
+          "raw": {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+            "score": 0,
+            "scoreDisplayMode": "binary",
+            "details": {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "subItemsHeading": {
+                    "key": "relatedNode",
+                    "valueType": "node"
+                  },
+                  "label": "Failing Elements"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "1-0-H2",
+                    "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,2,DIV,0,DIV,0,DIV,0,H2",
+                    "selector": "div.pb-24 > div.mx-auto > div > h2.text-lg",
+                    "boundingRect": {
+                      "top": 547,
+                      "bottom": 603,
+                      "left": 16,
+                      "right": 396,
+                      "width": 380,
+                      "height": 56
+                    },
+                    "snippet": "<h2 class=\"text-lg text-center font-semibold tracking-wider\n        text-secondary-50…\">",
+                    "nodeLabel": "PERSONAL ACCOUNTING SERVICE FROM A LOCAL FIRM",
+                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #ebb11a, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+                  },
+                  "subItems": {
+                    "type": "subitems",
+                    "items": [
+                      {
+                        "relatedNode": {
+                          "type": "node",
+                          "lhId": "1-1-DIV",
+                          "path": "1,HTML,1,BODY,2,DIV",
+                          "selector": "body > div.bg-white",
+                          "boundingRect": {
+                            "top": 104,
+                            "bottom": 3380,
+                            "left": 0,
+                            "right": 412,
+                            "width": 412,
+                            "height": 3276
+                          },
+                          "snippet": "<div class=\"bg-white flex flex-col justify-between min-h-screen\">",
+                          "nodeLabel": "Buckley & Sitzman\nPERSONAL ACCOUNTING SERVICE FROM A LOCAL FIRM\n\nBuckley & Sitz…"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "1-2-H2",
+                    "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,4,DIV,0,DIV,0,H2",
+                    "selector": "main#main-content > div.bg-white > div.mx-auto > h2.text-lg",
+                    "boundingRect": {
+                      "top": 2044,
+                      "bottom": 2072,
+                      "left": 16,
+                      "right": 396,
+                      "width": 380,
+                      "height": 28
+                    },
+                    "snippet": "<h2 class=\"text-lg font-semibold tracking-wider text-secondary-500 uppercase\">",
+                    "nodeLabel": "SERVICES",
+                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #ebb11a, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+                  },
+                  "subItems": {
+                    "type": "subitems",
+                    "items": [
+                      {
+                        "relatedNode": {
+                          "type": "node",
+                          "lhId": "1-3-DIV",
+                          "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,4,DIV",
+                          "selector": "div.bg-white > div.relative > main#main-content > div.bg-white",
+                          "boundingRect": {
+                            "top": 1980,
+                            "bottom": 2624,
+                            "left": 0,
+                            "right": 412,
+                            "width": 412,
+                            "height": 644
+                          },
+                          "snippet": "<div class=\"bg-white py-16 sm:py-24 lg:py-32\">",
+                          "nodeLabel": "SERVICES\n\nKeep Things Simple and Focus on the Right Things\n\nBuckley & Sitzman, …"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "debugData": {
+                "type": "debugdata",
+                "impact": "serious",
+                "tags": [
+                  "cat.color",
+                  "wcag2aa",
+                  "wcag143",
+                  "TTv5",
+                  "TT13.c",
+                  "EN-301-549",
+                  "EN-9.1.4.3",
+                  "ACT",
+                  "RGAAv4",
+                  "RGAA-3.2.1"
+                ]
+              }
+            }
+          },
+          "detectedBy": [
+            "lighthouse"
+          ]
+        },
+        {
+          "tool": "lighthouse",
+          "url": "http://localhost:8080/careers/",
+          "type": "color-contrast",
+          "message": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "selector": "main#main-content > div.bg-white > div.mx-auto > h2.text-lg",
+          "context": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "severity": "critical",
+          "wcag": [],
+          "raw": {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+            "score": 0,
+            "scoreDisplayMode": "binary",
+            "details": {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "subItemsHeading": {
+                    "key": "relatedNode",
+                    "valueType": "node"
+                  },
+                  "label": "Failing Elements"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "1-0-H2",
+                    "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,3,DIV,0,DIV,0,H2",
+                    "selector": "main#main-content > div.bg-white > div.mx-auto > h2.text-lg",
+                    "boundingRect": {
+                      "top": 867,
+                      "bottom": 895,
+                      "left": 16,
+                      "right": 396,
+                      "width": 380,
+                      "height": 28
+                    },
+                    "snippet": "<h2 class=\"text-lg text-center font-semibold tracking-wider text-secondary-500 upperc…\">",
+                    "nodeLabel": "CURRENT OPENINGS",
+                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #ebb11a, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+                  },
+                  "subItems": {
+                    "type": "subitems",
+                    "items": [
+                      {
+                        "relatedNode": {
+                          "type": "node",
+                          "lhId": "1-1-DIV",
+                          "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,3,DIV",
+                          "selector": "div.bg-white > div.relative > main#main-content > div.bg-white",
+                          "boundingRect": {
+                            "top": 835,
+                            "bottom": 1363,
+                            "left": 0,
+                            "right": 412,
+                            "width": 412,
+                            "height": 528
+                          },
+                          "snippet": "<div class=\"bg-white py-8\">",
+                          "nodeLabel": "CURRENT OPENINGS\n\nTo apply for an opening, please send your résumé and a cover …"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "debugData": {
+                "type": "debugdata",
+                "impact": "serious",
+                "tags": [
+                  "cat.color",
+                  "wcag2aa",
+                  "wcag143",
+                  "TTv5",
+                  "TT13.c",
+                  "EN-301-549",
+                  "EN-9.1.4.3",
+                  "ACT",
+                  "RGAAv4",
+                  "RGAA-3.2.1"
+                ]
+              }
+            }
+          },
+          "detectedBy": [
+            "lighthouse"
+          ]
+        },
+        {
+          "tool": "lighthouse",
+          "url": "http://localhost:8080/meet-our-team/",
+          "type": "color-contrast",
+          "message": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "selector": "div.relative > main#main-content > div.mt-16 > h2.text-lg",
+          "context": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "severity": "critical",
+          "wcag": [],
+          "raw": {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+            "score": 0,
+            "scoreDisplayMode": "binary",
+            "details": {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "subItemsHeading": {
+                    "key": "relatedNode",
+                    "valueType": "node"
+                  },
+                  "label": "Failing Elements"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "1-0-H2",
+                    "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,3,DIV,0,H2",
+                    "selector": "div.relative > main#main-content > div.mt-16 > h2.text-lg",
+                    "boundingRect": {
+                      "top": 14263,
+                      "bottom": 14291,
+                      "left": 0,
+                      "right": 412,
+                      "width": 412,
+                      "height": 28
+                    },
+                    "snippet": "<h2 class=\"text-lg text-center font-semibold tracking-wider\n               text-secon…\">",
+                    "nodeLabel": "OTHER PROFESSIONALS",
+                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #ebb11a, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+                  },
+                  "subItems": {
+                    "type": "subitems",
+                    "items": [
+                      {
+                        "relatedNode": {
+                          "type": "node",
+                          "lhId": "1-1-DIV",
+                          "path": "1,HTML,1,BODY,2,DIV",
+                          "selector": "body > div.bg-white",
+                          "boundingRect": {
+                            "top": 104,
+                            "bottom": 15699,
+                            "left": 0,
+                            "right": 412,
+                            "width": 412,
+                            "height": 15595
+                          },
+                          "snippet": "<div class=\"bg-white flex flex-col justify-between min-h-screen\">",
+                          "nodeLabel": "Meet Our Team\nOur Team\nSuman Vallabhbhai CPA, CGMA\n\nPartner\n\nEmail\nBio\nGrant H.…"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "debugData": {
+                "type": "debugdata",
+                "impact": "serious",
+                "tags": [
+                  "cat.color",
+                  "wcag2aa",
+                  "wcag143",
+                  "TTv5",
+                  "TT13.c",
+                  "EN-301-549",
+                  "EN-9.1.4.3",
+                  "ACT",
+                  "RGAAv4",
+                  "RGAA-3.2.1"
+                ]
+              }
+            }
+          },
+          "detectedBy": [
+            "lighthouse"
+          ]
+        }
+      ]
+    },
+    "byPage": {
+      "http://localhost:8080/privacy/": [
+        {
+          "tool": "lighthouse",
+          "url": "http://localhost:8080/privacy/",
+          "type": "list",
+          "message": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "selector": "div.relative > div.relative > div.prose > ol",
+          "context": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).",
+          "severity": "critical",
+          "wcag": [],
+          "raw": {
+            "id": "list",
+            "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+            "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).",
+            "score": 0,
+            "scoreDisplayMode": "binary",
+            "details": {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "subItemsHeading": {
+                    "key": "relatedNode",
+                    "valueType": "node"
+                  },
+                  "label": "Failing Elements"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "1-0-OL",
+                    "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,2,DIV,0,DIV,0,DIV,5,OL",
+                    "selector": "div.relative > div.relative > div.prose > ol",
+                    "boundingRect": {
+                      "top": 1619,
+                      "bottom": 1867,
+                      "left": 16,
+                      "right": 396,
+                      "width": 380,
+                      "height": 248
+                    },
+                    "snippet": "<ol>",
+                    "nodeLabel": "Applications, tax preparation worksheets and any other documents that you may h…",
+                    "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: #text"
+                  }
+                }
+              ],
+              "debugData": {
+                "type": "debugdata",
+                "impact": "serious",
+                "tags": [
+                  "cat.structure",
+                  "wcag2a",
+                  "wcag131",
+                  "EN-301-549",
+                  "EN-9.1.3.1",
+                  "RGAAv4",
+                  "RGAA-9.3.1"
+                ]
+              }
+            }
+          },
+          "detectedBy": [
+            "lighthouse"
+          ]
+        }
+      ],
+      "http://localhost:8080/": [
+        {
+          "tool": "lighthouse",
+          "url": "http://localhost:8080/",
+          "type": "color-contrast",
+          "message": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "selector": "div.pb-24 > div.mx-auto > div > h2.text-lg, main#main-content > div.bg-white > div.mx-auto > h2.text-lg",
+          "context": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "severity": "critical",
+          "wcag": [],
+          "raw": {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+            "score": 0,
+            "scoreDisplayMode": "binary",
+            "details": {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "subItemsHeading": {
+                    "key": "relatedNode",
+                    "valueType": "node"
+                  },
+                  "label": "Failing Elements"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "1-0-H2",
+                    "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,2,DIV,0,DIV,0,DIV,0,H2",
+                    "selector": "div.pb-24 > div.mx-auto > div > h2.text-lg",
+                    "boundingRect": {
+                      "top": 547,
+                      "bottom": 603,
+                      "left": 16,
+                      "right": 396,
+                      "width": 380,
+                      "height": 56
+                    },
+                    "snippet": "<h2 class=\"text-lg text-center font-semibold tracking-wider\n        text-secondary-50…\">",
+                    "nodeLabel": "PERSONAL ACCOUNTING SERVICE FROM A LOCAL FIRM",
+                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #ebb11a, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+                  },
+                  "subItems": {
+                    "type": "subitems",
+                    "items": [
+                      {
+                        "relatedNode": {
+                          "type": "node",
+                          "lhId": "1-1-DIV",
+                          "path": "1,HTML,1,BODY,2,DIV",
+                          "selector": "body > div.bg-white",
+                          "boundingRect": {
+                            "top": 104,
+                            "bottom": 3380,
+                            "left": 0,
+                            "right": 412,
+                            "width": 412,
+                            "height": 3276
+                          },
+                          "snippet": "<div class=\"bg-white flex flex-col justify-between min-h-screen\">",
+                          "nodeLabel": "Buckley & Sitzman\nPERSONAL ACCOUNTING SERVICE FROM A LOCAL FIRM\n\nBuckley & Sitz…"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "1-2-H2",
+                    "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,4,DIV,0,DIV,0,H2",
+                    "selector": "main#main-content > div.bg-white > div.mx-auto > h2.text-lg",
+                    "boundingRect": {
+                      "top": 2044,
+                      "bottom": 2072,
+                      "left": 16,
+                      "right": 396,
+                      "width": 380,
+                      "height": 28
+                    },
+                    "snippet": "<h2 class=\"text-lg font-semibold tracking-wider text-secondary-500 uppercase\">",
+                    "nodeLabel": "SERVICES",
+                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #ebb11a, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+                  },
+                  "subItems": {
+                    "type": "subitems",
+                    "items": [
+                      {
+                        "relatedNode": {
+                          "type": "node",
+                          "lhId": "1-3-DIV",
+                          "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,4,DIV",
+                          "selector": "div.bg-white > div.relative > main#main-content > div.bg-white",
+                          "boundingRect": {
+                            "top": 1980,
+                            "bottom": 2624,
+                            "left": 0,
+                            "right": 412,
+                            "width": 412,
+                            "height": 644
+                          },
+                          "snippet": "<div class=\"bg-white py-16 sm:py-24 lg:py-32\">",
+                          "nodeLabel": "SERVICES\n\nKeep Things Simple and Focus on the Right Things\n\nBuckley & Sitzman, …"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "debugData": {
+                "type": "debugdata",
+                "impact": "serious",
+                "tags": [
+                  "cat.color",
+                  "wcag2aa",
+                  "wcag143",
+                  "TTv5",
+                  "TT13.c",
+                  "EN-301-549",
+                  "EN-9.1.4.3",
+                  "ACT",
+                  "RGAAv4",
+                  "RGAA-3.2.1"
+                ]
+              }
+            }
+          },
+          "detectedBy": [
+            "lighthouse"
+          ]
+        }
+      ],
+      "http://localhost:8080/careers/": [
+        {
+          "tool": "lighthouse",
+          "url": "http://localhost:8080/careers/",
+          "type": "color-contrast",
+          "message": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "selector": "main#main-content > div.bg-white > div.mx-auto > h2.text-lg",
+          "context": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "severity": "critical",
+          "wcag": [],
+          "raw": {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+            "score": 0,
+            "scoreDisplayMode": "binary",
+            "details": {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "subItemsHeading": {
+                    "key": "relatedNode",
+                    "valueType": "node"
+                  },
+                  "label": "Failing Elements"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "1-0-H2",
+                    "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,3,DIV,0,DIV,0,H2",
+                    "selector": "main#main-content > div.bg-white > div.mx-auto > h2.text-lg",
+                    "boundingRect": {
+                      "top": 867,
+                      "bottom": 895,
+                      "left": 16,
+                      "right": 396,
+                      "width": 380,
+                      "height": 28
+                    },
+                    "snippet": "<h2 class=\"text-lg text-center font-semibold tracking-wider text-secondary-500 upperc…\">",
+                    "nodeLabel": "CURRENT OPENINGS",
+                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #ebb11a, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+                  },
+                  "subItems": {
+                    "type": "subitems",
+                    "items": [
+                      {
+                        "relatedNode": {
+                          "type": "node",
+                          "lhId": "1-1-DIV",
+                          "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,3,DIV",
+                          "selector": "div.bg-white > div.relative > main#main-content > div.bg-white",
+                          "boundingRect": {
+                            "top": 835,
+                            "bottom": 1363,
+                            "left": 0,
+                            "right": 412,
+                            "width": 412,
+                            "height": 528
+                          },
+                          "snippet": "<div class=\"bg-white py-8\">",
+                          "nodeLabel": "CURRENT OPENINGS\n\nTo apply for an opening, please send your résumé and a cover …"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "debugData": {
+                "type": "debugdata",
+                "impact": "serious",
+                "tags": [
+                  "cat.color",
+                  "wcag2aa",
+                  "wcag143",
+                  "TTv5",
+                  "TT13.c",
+                  "EN-301-549",
+                  "EN-9.1.4.3",
+                  "ACT",
+                  "RGAAv4",
+                  "RGAA-3.2.1"
+                ]
+              }
+            }
+          },
+          "detectedBy": [
+            "lighthouse"
+          ]
+        }
+      ],
+      "http://localhost:8080/meet-our-team/": [
+        {
+          "tool": "lighthouse",
+          "url": "http://localhost:8080/meet-our-team/",
+          "type": "color-contrast",
+          "message": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "selector": "div.relative > main#main-content > div.mt-16 > h2.text-lg",
+          "context": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "severity": "critical",
+          "wcag": [],
+          "raw": {
+            "id": "color-contrast",
+            "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+            "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+            "score": 0,
+            "scoreDisplayMode": "binary",
+            "details": {
+              "type": "table",
+              "headings": [
+                {
+                  "key": "node",
+                  "valueType": "node",
+                  "subItemsHeading": {
+                    "key": "relatedNode",
+                    "valueType": "node"
+                  },
+                  "label": "Failing Elements"
+                }
+              ],
+              "items": [
+                {
+                  "node": {
+                    "type": "node",
+                    "lhId": "1-0-H2",
+                    "path": "1,HTML,1,BODY,2,DIV,0,DIV,0,MAIN,3,DIV,0,H2",
+                    "selector": "div.relative > main#main-content > div.mt-16 > h2.text-lg",
+                    "boundingRect": {
+                      "top": 14263,
+                      "bottom": 14291,
+                      "left": 0,
+                      "right": 412,
+                      "width": 412,
+                      "height": 28
+                    },
+                    "snippet": "<h2 class=\"text-lg text-center font-semibold tracking-wider\n               text-secon…\">",
+                    "nodeLabel": "OTHER PROFESSIONALS",
+                    "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #ebb11a, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+                  },
+                  "subItems": {
+                    "type": "subitems",
+                    "items": [
+                      {
+                        "relatedNode": {
+                          "type": "node",
+                          "lhId": "1-1-DIV",
+                          "path": "1,HTML,1,BODY,2,DIV",
+                          "selector": "body > div.bg-white",
+                          "boundingRect": {
+                            "top": 104,
+                            "bottom": 15699,
+                            "left": 0,
+                            "right": 412,
+                            "width": 412,
+                            "height": 15595
+                          },
+                          "snippet": "<div class=\"bg-white flex flex-col justify-between min-h-screen\">",
+                          "nodeLabel": "Meet Our Team\nOur Team\nSuman Vallabhbhai CPA, CGMA\n\nPartner\n\nEmail\nBio\nGrant H.…"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "debugData": {
+                "type": "debugdata",
+                "impact": "serious",
+                "tags": [
+                  "cat.color",
+                  "wcag2aa",
+                  "wcag143",
+                  "TTv5",
+                  "TT13.c",
+                  "EN-301-549",
+                  "EN-9.1.4.3",
+                  "ACT",
+                  "RGAAv4",
+                  "RGAA-3.2.1"
+                ]
+              }
+            }
+          },
+          "detectedBy": [
+            "lighthouse"
+          ]
+        }
+      ]
+    },
+    "byWcag": {}
+  },
+  "rawResults": [
+    {
+      "url": "http://localhost:8080/meet-our-team/suman-vallabhbhai/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/grant-buckley/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/tyler-denker/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/mark-nave/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/lester-buckley/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/greg-buckley/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/madisyn-matthews/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/aubrey-kendall/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/michelle-farley/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/mark-mahdi/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/michele-jakub/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/jarred-russell/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/cameron-cox/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/zach-turner/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/ben-gregan/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/nikki-turner/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/tammy-kennedy/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/gabrielle-garrison/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/contact-us/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/pay-my-bill/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/privacy/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 0.96
+    },
+    {
+      "url": "http://localhost:8080/transparency/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    },
+    {
+      "url": "http://localhost:8080/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 0.95
+    },
+    {
+      "url": "http://localhost:8080/careers/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 0.95
+    },
+    {
+      "url": "http://localhost:8080/meet-our-team/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 0.96
+    },
+    {
+      "url": "http://localhost:8080/services/",
+      "pa11yIssueCount": 0,
+      "axeIssueCount": 0,
+      "lighthouseScore": 1
+    }
+  ]
+}

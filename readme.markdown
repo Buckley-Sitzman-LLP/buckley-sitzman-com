@@ -322,6 +322,33 @@ Common issues and fixes:
 - **Insufficient contrast** - Check color combinations in `tailwind.config.js`
 - **Missing form labels** - Ensure all inputs have associated `<label>` elements
 
+### Comprehensive Audit (All Tools)
+
+Run a complete accessibility audit across all pages in your sitemap:
+
+```bash
+# Audit all pages from the sitemap
+yarn audit:a11y http://localhost:8080/sitemap.xml
+
+# Or against deploy preview
+yarn audit:a11y https://deploy-preview-5--buckley-sitzman-llp.netlify.app/sitemap.xml
+```
+
+This automated script will:
+1. Parse the sitemap and extract all page URLs
+2. Run pa11y, axe-core, and lighthouse against each page
+3. Normalize and deduplicate results across all three tools
+4. Categorize issues by severity (critical, serious, moderate, minor)
+5. Generate a consolidated JSON report at `a11y_reports/consolidated-report.json`
+
+The consolidated report includes:
+- Summary statistics (total issues, issues per page, issues per severity)
+- Issues organized by severity, type, page, and WCAG criterion
+- Detection information (which tools found each issue)
+- Most common issues across the site
+
+**Note:** Make sure your dev server is running (`yarn start`) if testing against `localhost:8080`.
+
 ### Documentation
 
 See `plans/ACCESSIBILITY_AUDIT_PLAN.md` for the full audit checklist and session notes.

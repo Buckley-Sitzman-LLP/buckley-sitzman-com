@@ -385,27 +385,65 @@ Pages to audit (from sitemap.xml):
 
 ---
 
-## Phase 6: Custom Claude Accessibility Agent
+## Phase 6: Custom Accessibility Audit Automation
 
-Create a custom Claude Code agent that automates accessibility auditing by running all three tools and producing a consolidated report.
+Create automation that runs all three tools and produces a consolidated report.
 
-### Agent Design
-- [ ] Define agent prompt and capabilities
-- [ ] Agent should accept a URL (or list of URLs) as input
-- [ ] Agent runs pa11y, axe-core, and Lighthouse against each URL
-- [ ] Agent parses and consolidates results from all tools
+### Implementation - Completed 2026-01-26
 
-### Reporting
-- [ ] Deduplicate issues found by multiple tools
-- [ ] Categorize by severity (Critical, Serious, Moderate, Minor)
-- [ ] Identify false positives (e.g., large text contrast issues)
-- [ ] Produce summary with issue counts per page
-- [ ] Provide actionable remediation suggestions
+**Created:** `scripts/audit-accessibility.js` - Comprehensive automation script
 
-### Integration
-- [ ] Add agent to project's Claude Code configuration
-- [ ] Document usage in readme.markdown
-- [ ] Consider adding as a slash command (e.g., `/a11y-audit`)
+**Features implemented:**
+- [x] Accepts sitemap URL as input
+- [x] Parses sitemap XML to extract all page URLs
+- [x] Runs pa11y, axe-core, and Lighthouse against each URL in parallel
+- [x] Parses and normalizes JSON output from all three tools
+- [x] Deduplicates issues found by multiple tools
+- [x] Categorizes by severity (Critical, Serious, Moderate, Minor)
+- [x] Organizes issues by type, page, and WCAG criterion
+- [x] Produces comprehensive summary statistics
+- [x] Writes consolidated JSON report to `a11y_reports/consolidated-report.json`
+- [x] Added npm script: `yarn audit:a11y <sitemap-url>`
+- [x] Documented usage in readme.markdown
+
+**Dependencies added:**
+- `xml2js` for sitemap parsing
+
+**Report structure:**
+```json
+{
+  "metadata": {
+    "generatedAt": "ISO timestamp",
+    "sitemapUrl": "url",
+    "pagesAudited": 5,
+    "tools": ["pa11y", "axe-core", "lighthouse"]
+  },
+  "summary": {
+    "totalPages": 5,
+    "totalIssues": 12,
+    "issuesBySeverity": { "critical": 2, "serious": 4, ... },
+    "issuesByPage": { "url": count, ... },
+    "mostCommonIssues": [...]
+  },
+  "categorized": {
+    "bySeverity": { "critical": [...], "serious": [...], ... },
+    "byType": { "issue-type": [...], ... },
+    "byPage": { "url": [...], ... },
+    "byWcag": { "wcag2.4.1": [...], ... }
+  },
+  "rawResults": [...]
+}
+```
+
+**Usage:**
+```bash
+yarn audit:a11y http://localhost:8080/sitemap.xml
+```
+
+**Next steps (future enhancements):**
+- [ ] Create Claude Code skill for conversational audit results
+- [ ] Add option to generate HTML/Markdown reports from JSON
+- [ ] Integrate with CI/CD pipeline (GitHub Actions)
 
 ---
 
