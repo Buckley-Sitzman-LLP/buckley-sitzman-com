@@ -441,9 +441,62 @@ yarn audit:a11y http://localhost:8080/sitemap.xml
 ```
 
 **Next steps (future enhancements):**
-- [ ] Create Claude Code skill for conversational audit results
+- [x] Create Claude Code skill for conversational audit results *(Completed 2026-01-26)*
 - [ ] Add option to generate HTML/Markdown reports from JSON
 - [ ] Integrate with CI/CD pipeline (GitHub Actions)
+
+---
+
+## Phase 7: Claude Code Skill for Remediation Planning
+
+Created a custom Claude Code skill that analyzes accessibility audit results and generates actionable remediation plans.
+
+### Implementation - Completed 2026-01-26
+
+**Created:** `.claude/skills/a11y-report/` - Claude Code skill for accessibility reporting
+
+**Skill name:** `a11y-report`
+
+**Invocation:** `/a11y-report`
+
+**What it does:**
+1. Checks for existing `a11y_reports/consolidated-report.json`
+2. Optionally prompts user to run fresh audit with `yarn audit:a11y`
+3. Analyzes the consolidated report:
+   - Parses JSON and extracts key statistics
+   - Identifies patterns across issues
+   - Distinguishes real issues from potential false positives
+   - Groups similar issues for efficient fixing
+4. Generates a dated markdown remediation plan in `plans/`
+5. Saves as `plans/YYYY-MM-DD-ACCESSIBILITY_REMEDIATION.md`
+
+**Remediation plan structure:**
+- Executive summary with issue counts by severity
+- Issues organized by severity level (Critical → Minor)
+- For each issue:
+  - Clear description of the problem
+  - Affected pages with links
+  - Recommended fixes with code examples
+  - Relevant WCAG criteria
+- Analysis section explaining patterns and priorities
+- Recommendations for fix order and approach
+
+**Benefits:**
+- Transforms raw JSON audit data into human-readable action items
+- Provides context and recommendations, not just raw violations
+- Creates a dated audit trail of accessibility work
+- Helps prioritize fixes by severity and scope
+- Can be run after any audit to track progress
+
+**Usage example:**
+```bash
+# In Claude Code CLI
+/a11y-report
+```
+
+**Files created by this phase:**
+- `.claude/skills/a11y-report/skill.json` - Skill manifest
+- `.claude/skills/a11y-report/prompt.md` - Skill instructions
 
 ---
 

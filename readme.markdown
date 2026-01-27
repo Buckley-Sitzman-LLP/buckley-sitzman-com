@@ -349,6 +349,28 @@ The consolidated report includes:
 
 **Note:** Make sure your dev server is running (`yarn start`) if testing against `localhost:8080`.
 
+### Generating Remediation Plans (Claude Code)
+
+If you're using [Claude Code](https://claude.ai/code), you can generate human-readable remediation plans from audit results:
+
+```bash
+# In the Claude Code CLI
+/a11y-report
+```
+
+This skill will:
+1. Check for existing audit results or optionally run a fresh audit
+2. Analyze the consolidated report for patterns and priorities
+3. Generate a dated markdown remediation plan in `plans/YYYY-MM-DD-ACCESSIBILITY_REMEDIATION.md`
+4. Provide actionable recommendations with fix priorities
+
+The remediation plan includes:
+- Executive summary with issue counts
+- Issues organized by severity (Critical → Minor)
+- Affected pages and recommended fixes
+- WCAG criteria references
+- Analysis of patterns and fix priorities
+
 ### Documentation
 
 See `plans/ACCESSIBILITY_AUDIT_PLAN.md` for the full audit checklist and session notes.
