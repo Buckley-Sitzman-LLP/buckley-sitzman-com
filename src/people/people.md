@@ -4,7 +4,7 @@ permalink: false
 members:
   - name: Lester F. Buckley, CPA
     short_name: Lester Buckley
-    job_title: Partner Emeritus
+    job_title: Partner
     email_address: lbuckley@bsncpa.com
     image: /img/people/lester.jpeg
     body: |-
