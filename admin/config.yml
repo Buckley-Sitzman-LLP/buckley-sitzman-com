@@ -1,6 +1,6 @@
-# Sveltia CMS Config
-# Compatible with Netlify CMS config format
-# More here: https://github.com/sveltia/sveltia-cms
+# Decap CMS Config
+# Official successor to Netlify CMS
+# More here: https://decapcms.org/docs/intro/
 
 # Authentication Options
 backend:
