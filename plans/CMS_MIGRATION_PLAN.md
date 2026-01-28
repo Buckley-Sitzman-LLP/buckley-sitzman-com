@@ -1,13 +1,14 @@
-# CMS Migration Plan: Netlify CMS → Sveltia CMS
+# CMS Migration Plan: Netlify CMS → Decap CMS
 
 **Date:** 2026-01-27
-**Status:** Draft - Awaiting approval
+**Status:** Phase 1 Complete - Ready for Phase 2
+**Current Step:** Pausing before GitHub OAuth setup for production
 
 ## Overview
 
-Migrate from deprecated Netlify CMS to Sveltia CMS, a modern drop-in replacement that uses the same configuration format. This will fix production issues and provide better image handling.
+Migrated from deprecated Netlify CMS to Decap CMS, the official successor that supports editorial workflow. This fixes production authentication issues and enables PR-based content editing.
 
-**Fallback option:** If Sveltia CMS doesn't meet needs, we can migrate to Decap CMS (official Netlify CMS successor) with similar ease.
+**What happened:** Initially tried Sveltia CMS, but discovered editorial workflow is a planned feature (not yet implemented). Switched to Decap CMS which has full editorial workflow support.
 
 ## Current Issues
 
@@ -27,55 +28,58 @@ Migrate from deprecated Netlify CMS to Sveltia CMS, a modern drop-in replacement
 - Current config saves to `img/` directory which exists
 - May be related to media_folder path or public_folder configuration
 
-## Migration Approach: Sveltia CMS
+## Migration Approach: Decap CMS
 
-**Why Sveltia:**
-- Drop-in replacement - uses existing `admin/config.yml` unchanged
-- Actively maintained and modern
-- Better performance and image handling
-- Simpler GitHub OAuth setup
-- Same content structure - no data migration needed
+**Why Decap CMS:**
+- Official Netlify CMS successor with same config format
+- Full editorial workflow support (creates PRs for content edits)
+- Drop-in replacement - minimal config changes needed
+- Actively maintained by the community
+- Same content structure - no data migration required
+
+**Why not Sveltia CMS:**
+- Editorial workflow is planned but not yet implemented (as of 2026-01-27)
+- See: https://sveltiacms.app/en/docs/workflows/editorial
+- May revisit in future when feature is available
 
 ## Implementation Steps
 
-### Phase 1: Local Migration & Testing
+### Phase 1: Local Migration & Testing ✅ COMPLETE
 
-1. **Update admin/index.html**
-   - Replace Netlify CMS script with Sveltia CMS CDN
-   - Update page title if needed
-   - Keep GitHub auth provider script
+1. **Update admin/index.html** ✅
+   - Replaced Netlify CMS script with Decap CMS CDN
+   - Updated comments to reflect Decap usage
 
-2. **Verify/Update config.yml**
-   - Review current configuration
-   - Add `public_folder` setting for proper image paths
-   - Confirm media_folder configuration
+2. **Update config.yml** ✅
+   - Added `publish_mode: editorial_workflow` for PR-based edits
+   - Added `public_folder: "/img/"` for proper image paths
+   - Updated comments to reference Decap documentation
 
-3. **Local Testing**
-   - Test CMS loads at `/admin`
-   - Verify all three collections appear (People, Services, Job Postings)
-   - Test adding/editing/removing people
-   - Test image uploads and verify correct paths
-   - Confirm changes commit to Git properly
+3. **Local Testing** ✅
+   - CMS loads successfully at `localhost:8080/admin`
+   - All collections appear (People, Services, Job Postings)
+   - Editorial workflow confirmed working
+   - Test edit created PR successfully (not direct commit to main)
+   - Workflow board visible with Draft/In Review/Ready columns
 
-### Phase 2: GitHub OAuth Setup
+### Phase 2: GitHub OAuth Setup ⏸️ NEXT
 
-1. **Create GitHub OAuth App**
+1. **Create GitHub OAuth App** ⏸️ TODO
    - Go to GitHub → Settings → Developer settings → OAuth Apps
    - Create new app with:
      - Homepage URL: `https://buckleysitzman.com`
      - Authorization callback URL: `https://api.netlify.com/auth/done`
    - Note Client ID and generate Client Secret
 
-2. **Configure Netlify**
+2. **Configure Netlify** ⏸️ TODO
    - Add environment variables in Netlify dashboard:
      - `GITHUB_OAUTH_CLIENT_ID`
      - `GITHUB_OAUTH_CLIENT_SECRET`
-   - Or enable Git Gateway as alternative
 
-3. **Update config.yml for production**
-   - Verify backend configuration points to correct repo
-   - Ensure branch is set to `main`
-   - Enable editorial workflow for PR-based edits (publish_mode: editorial_workflow)
+3. **Merge to main** ⏸️ TODO
+   - Push `fix-netlify-cms-maybe` branch
+   - Create and merge PR to main
+   - Config already has editorial workflow enabled
 
 ### Phase 3: Production Deployment & Testing
 
@@ -113,14 +117,14 @@ Migrate from deprecated Netlify CMS to Sveltia CMS, a modern drop-in replacement
 ## Testing Checklist
 
 ### Functionality Tests
-- [ ] CMS loads at `/admin` locally
+- [x] CMS loads at `/admin` locally
 - [ ] CMS loads at `/admin` on production
-- [ ] GitHub OAuth authentication works
-- [ ] People collection displays correctly
-- [ ] Services collection displays correctly
-- [ ] Job Postings collection displays correctly
+- [x] GitHub OAuth authentication works (locally)
+- [x] People collection displays correctly
+- [x] Services collection displays correctly
+- [x] Job Postings collection displays correctly
 - [ ] Can add new person with image
-- [ ] Can edit existing person
+- [x] Can edit existing person (tested)
 - [ ] Can remove person
 - [ ] Can add new service
 - [ ] Can edit existing service
@@ -129,9 +133,9 @@ Migrate from deprecated Netlify CMS to Sveltia CMS, a modern drop-in replacement
 - [ ] Images upload successfully
 - [ ] Image paths are correct in markdown files
 - [ ] Images display on built site
-- [ ] Changes create PRs (not direct commits to main)
-- [ ] PRs have proper descriptions and file changes
-- [ ] Only authorized users can access CMS
+- [x] Changes create PRs (not direct commits to main)
+- [x] PRs have proper descriptions and file changes
+- [ ] Only authorized users can access CMS (production test pending)
 
 ### Image Handling Tests
 - [ ] Upload image for person - verify path
@@ -212,10 +216,22 @@ If Sveltia CMS has issues:
 
 ## Notes
 
-- Existing `config.yml` should work with minimal changes
+- Config required minimal changes (added `publish_mode` and `public_folder`)
 - No content migration required - files stay as-is
-- Sveltia CMS has better i18n support if needed in future
-- Editorial workflow (PR-based) will be enabled from the start
+- Decap CMS is well-established with good community support
+- Editorial workflow (PR-based) working successfully in local testing
+
+## Implementation Log
+
+**2026-01-27:**
+- ✅ Created migration plan
+- ✅ Updated `admin/index.html` to use Sveltia CMS
+- ✅ Updated `admin/config.yml` with editorial workflow settings
+- ⚠️ Discovered Sveltia CMS editorial workflow is planned, not implemented
+- ✅ Switched to Decap CMS (script tag change)
+- ✅ Local testing successful - editorial workflow confirmed working
+- ✅ Test PR created successfully
+- ⏸️ Pausing before Phase 2 (OAuth setup and production deployment)
 
 ---
 
@@ -223,4 +239,10 @@ If Sveltia CMS has issues:
 
 - [x] Review and approve this plan
 - [x] Answer key questions (auth method, branch workflow, media provider timing)
-- [ ] Begin Phase 1 implementation
+- [x] Complete Phase 1 implementation
+- [ ] Resume Phase 2: Set up GitHub OAuth App
+- [ ] Configure Netlify environment variables
+- [ ] Merge changes to main
+- [ ] Test in production
+- [ ] Complete image upload testing
+- [ ] Phase 4: Update CLAUDE.md documentation
