@@ -1,5 +1,6 @@
-# NETLIFY CMS Config Options
-# More here: https://www.netlifycms.org/docs/configuration-options/
+# Sveltia CMS Config
+# Compatible with Netlify CMS config format
+# More here: https://github.com/sveltia/sveltia-cms
 
 # Authentication Options
 backend:
@@ -7,8 +8,12 @@ backend:
   repo: Buckley-Sitzman-LLP/buckley-sitzman-com
   branch: main
 
-# Store images uploaded w/ Netlify CMS
-media_folder: "img/"
+# Editorial workflow - creates PRs instead of direct commits
+publish_mode: editorial_workflow
+
+# Image storage configuration
+media_folder: "img/"           # Where images are stored in repo
+public_folder: "/img/"         # Path to images in built site
 display_url: "https://buckleysitzman.com"
 site_url: "https://buckleysitzman.com"
 search: false
