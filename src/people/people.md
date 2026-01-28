@@ -83,10 +83,9 @@ members:
 
       **Professional Memberships and Credentials**
 
+      * Board Member & Treasurer of Nebraska Society of CPAs (NESCPA)
 
       * American Institute of Certified Public Accountants (AICPA)
-
-      * Nebraska Society of Certified Public Accountants (NESCPA)
 
       * Association of Certified Fraud Examiners (ACFE)
 
