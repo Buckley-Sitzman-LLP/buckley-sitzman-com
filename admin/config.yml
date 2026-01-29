@@ -1,15 +1,12 @@
-# Decap CMS Config
-# Official successor to Netlify CMS
-# More here: https://decapcms.org/docs/intro/
+# Sveltia CMS Config
+# Modern replacement for Netlify CMS
+# More here: https://sveltiacms.app/
 
 # Authentication Options
 backend:
   name: github
   repo: Buckley-Sitzman-LLP/buckley-sitzman-com
   branch: main
-
-# Editorial workflow - creates PRs instead of direct commits
-publish_mode: editorial_workflow
 
 # Image storage configuration
 media_folder: "img/"           # Where images are stored in repo
