@@ -16,9 +16,20 @@ up in the browser at `localhost:8080`
 
 ## Content Management
 
-Visiting `/admin` will send you to the admin dashboard. As a caveat, this pull
-content from the current `main` branch on GitHub, rather than locally. You'll
-need to authenticate with your GitHub account.
+The site uses **Sveltia CMS**, a modern Git-based content management system.
+
+**Access:** Visit `/admin` locally (`localhost:8080/admin`) or in production (`https://buckleysitzman.com/admin`)
+
+**Authentication:**
+- Production requires GitHub OAuth authentication
+- Only GitHub repository collaborators can access the CMS
+- Local development works with the same GitHub authentication
+
+**Important Notes:**
+- The CMS pulls content from and commits to the `main` branch on GitHub
+- Changes made in the CMS commit directly to `main` (no pull request workflow)
+- All collections are stored as single files with YAML arrays (see sections below for file locations)
+- Empty collections are preserved with empty arrays to prevent site crashes
 
 ## Debugging
 

@@ -17,7 +17,7 @@ The start command runs Eleventy in watch mode and PostCSS watcher in parallel.
 - **Templating:** Nunjucks (.njk files)
 - **Styling:** TailwindCSS with forms, typography, and aspect-ratio plugins
 - **Client Interactivity:** AlpineJS (via CDN)
-- **CMS:** Netlify CMS (Git-backed, admin at `/admin`)
+- **CMS:** Sveltia CMS (Git-backed, admin at `/admin`)
 - **Deployment:** Netlify (deploys `_site/` directory)
 
 ## Architecture
@@ -53,8 +53,39 @@ AlpineJS handles all interactivity (mobile menu, service card expansion, scroll 
 - `readme.markdown` - Project README (not README.md)
 - `.eleventy.js` - Eleventy config, collection definitions, shortcodes
 - `tailwind.config.js` - Custom theme configuration
-- `admin/config.yml` - Netlify CMS field definitions
+- `admin/config.yml` - Sveltia CMS field definitions
+- `admin/index.html` - Sveltia CMS loader
 - `netlify.toml` - Deployment configuration
+
+## Content Management System
+
+### Sveltia CMS Configuration
+
+The site uses Sveltia CMS, a modern replacement for Netlify CMS. Access the admin interface at `/admin` (both locally and in production).
+
+**Authentication:**
+- Production uses GitHub OAuth (configured in Netlify environment variables)
+- Only GitHub repository collaborators can access the CMS
+- GitHub OAuth App callback URL: `https://api.netlify.com/auth/done`
+
+**Collection Structure:**
+Collections are configured as **file collections** (not folder collections) in `admin/config.yml`. Each collection points to a single file containing an array:
+- Services: `src/services/services.md` with `items` array
+- Job Postings: `src/job_postings/job_postings.md` with `items` array
+- People: `src/people/people.md` with `members` array
+- Other People: `src/other_people/other-people.md` with `members` array
+
+**Important Notes:**
+- All list fields have `required: false` to allow empty arrays
+- File collections prevent Sveltia from deleting files when arrays become empty
+- Images are stored in the `img/` directory and committed to Git
+- Changes commit directly to the `main` branch (no PR workflow)
+
+### Troubleshooting
+
+**Empty collections:** If a collection becomes empty, the file will be preserved with an empty array (e.g., `items: []`). This is intentional to prevent site crashes.
+
+**Image uploads:** Images should upload to the `img/` directory. Verify the `media_folder` and `public_folder` settings in `admin/config.yml` if issues occur.
 
 ## Plans
 
