@@ -60,13 +60,15 @@ Migrating from deprecated Netlify CMS to Sveltia CMS, a modern, performant repla
    - Updated comments to reference Sveltia documentation
    - Backend configuration verified (GitHub repo settings)
 
-3. **Local Testing** 🔄 IN PROGRESS
+3. **Local Testing** ✅ COMPLETE
    - ✅ CMS loads successfully at `localhost:8080/admin`
-   - ⏸️ All collections appear (People, Services, Job Postings, Other People)
-   - ⏸️ Can edit existing content
-   - ⏸️ Can add new content
-   - ⏸️ Image uploads work correctly
-   - ⏸️ Changes commit directly to main branch (no PR workflow)
+   - ✅ All collections appear (People, Services, Job Postings, Other People)
+   - ✅ Can edit existing content
+   - ✅ Can add new content
+   - ✅ Can delete items from collections
+   - ✅ Empty collections handled correctly (files not deleted)
+   - ⏸️ Image uploads work correctly (to be tested in production)
+   - ⏸️ Changes commit directly to main branch (to be tested in production)
 
 ### Phase 2: GitHub OAuth Setup ⏸️ NEXT
 
@@ -249,6 +251,14 @@ If Sveltia CMS has issues:
 - ✅ Updated migration plan to reflect Sveltia CMS approach
 - ⏸️ Ready to update admin files for Sveltia (awaiting user approval)
 
+**2026-01-29:**
+- ✅ Phase 1 local testing complete
+- ⚠️ Discovered issue: Sveltia deleted entire file when collection emptied
+- ✅ Fixed by converting from folder collections to file collections
+- ✅ Added `required: false` to all list fields to allow empty arrays
+- ✅ Verified collections can be emptied without file deletion
+- 🎯 Ready for Phase 2: GitHub OAuth setup
+
 ---
 
 ## Next Steps
@@ -257,10 +267,10 @@ If Sveltia CMS has issues:
 - [x] Answer key questions (auth method, branch workflow, media provider timing)
 - [x] Reassess editorial workflow requirement
 - [x] Update plan to reflect Sveltia CMS decision
-- [ ] Update `admin/index.html` with Sveltia CMS script
-- [ ] Update `admin/config.yml` (remove editorial workflow settings)
-- [ ] Complete Phase 1: Local testing with Sveltia
-- [ ] Resume Phase 2: Set up GitHub OAuth App
+- [x] Update `admin/index.html` with Sveltia CMS script
+- [x] Update `admin/config.yml` (convert to file collections, add required: false)
+- [x] Complete Phase 1: Local testing with Sveltia
+- [ ] Phase 2: Set up GitHub OAuth App
 - [ ] Configure Netlify environment variables
 - [ ] Merge changes to main
 - [ ] Test in production

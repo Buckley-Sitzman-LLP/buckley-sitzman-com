@@ -16,105 +16,113 @@ site_url: "https://buckleysitzman.com"
 search: false
 
 collections:
+  # File collections - each collection is a single file with an array of items
+  # This prevents Sveltia from deleting files when arrays become empty
+
   - name: "services"
     label: "Services"
-    label_singular: "Service"
-    folder: "src/services"
-    create: false
-    fields:
-      - label: "Name"
-        name: "title"
-        widget: "string"
-      - label: "Permalink"
-        name: "permalink"
-        widget: "hidden"
-        default: false
-      - label: "Items"
-        name: "items"
-        widget: "list"
-        collapsed: false
-        summary: "{{fields.title}}"
-        allow_add: true
+    files:
+      - label: "Services"
+        name: "services"
+        file: "src/services/services.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Summary", name: "summary", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - label: "Name"
+            name: "title"
+            widget: "string"
+          - label: "Permalink"
+            name: "permalink"
+            widget: "hidden"
+            default: false
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            required: false
+            collapsed: false
+            summary: "{{fields.title}}"
+            allow_add: true
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "string" }
+              - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "postings"
     label: "Job Postings"
-    label_singular: "Job Posting"
-    folder: "src/job_postings"
-    create: false
-    fields:
-      - label: "Name"
-        name: "name"
-        widget: "string"
-      - label: "Permalink"
-        name: "permalink"
-        widget: "hidden"
-        default: false
-      - label: "Items"
-        name: "items"
-        widget: "list"
-        collapsed: false
-        summary: "{{fields.name}}"
-        allow_add: true
+    files:
+      - label: "Job Postings"
+        name: "job_postings"
+        file: "src/job_postings/job_postings.md"
         fields:
-          - { label: "Job Title", name: "name", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-          - { label: "Link", name: "link", widget: "string", required: false }
-          - { label: "Image", name: "image", widget: "image", required: false}
+          - label: "Name"
+            name: "name"
+            widget: "string"
+          - label: "Permalink"
+            name: "permalink"
+            widget: "hidden"
+            default: false
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            required: false
+            collapsed: false
+            summary: "{{fields.name}}"
+            allow_add: true
+            fields:
+              - { label: "Job Title", name: "name", widget: "string" }
+              - { label: "Body", name: "body", widget: "markdown" }
+              - { label: "Link", name: "link", widget: "string", required: false }
+              - { label: "Image", name: "image", widget: "image", required: false}
 
   - name: "people"
     label: "People"
-    label_singular: "Person"
-    folder: "src/people"
-    identifier_field: "name"
-    create: false
-    slug: "{{slug}}"
-    fields:
-      - label: "Name"
-        name: "title"
-        widget: "string"
-      - label: "Permalink"
-        name: "permalink"
-        widget: "hidden"
-        default: false
-      - label: "Members"
-        name: "members"
-        widget: "list"
-        collapsed: false
-        summary: "{{fields.name}}"
-        allow_add: true
+    files:
+      - label: "People"
+        name: "people"
+        file: "src/people/people.md"
         fields:
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Path Name", name: "short_name", widget: "string" }
-          - { label: "Job Title", name: "job_title", widget: "string", required: false }
-          - { label: "Email", name: "email_address", widget: "string", required: false }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Bio", name: "body", widget: "markdown" }
-          - { label: "Permalink", name: "permalink", widget: "hidden", default: false }
+          - label: "Name"
+            name: "title"
+            widget: "string"
+          - label: "Permalink"
+            name: "permalink"
+            widget: "hidden"
+            default: false
+          - label: "Members"
+            name: "members"
+            widget: "list"
+            required: false
+            collapsed: false
+            summary: "{{fields.name}}"
+            allow_add: true
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Path Name", name: "short_name", widget: "string" }
+              - { label: "Job Title", name: "job_title", widget: "string", required: false }
+              - { label: "Email", name: "email_address", widget: "string", required: false }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Bio", name: "body", widget: "markdown" }
+              - { label: "Permalink", name: "permalink", widget: "hidden", default: false }
 
   - name: "other_people"
     label: "Other People"
-    label_singular: "Other Person"
-    folder: "src/other_people"
-    identifier_field: "name"
-    create: false
-    fields:
-      - label: "Name"
-        name: "title"
-        widget: "string"
-      - label: "Permalink"
-        name: "permalink"
-        widget: "hidden"
-        default: false
-      - label: "Members"
-        name: "members"
-        widget: "list"
-        collapsed: false
-        summary: "{{fields.name}}"
-        allow_add: true
+    files:
+      - label: "Other People"
+        name: "other_people"
+        file: "src/other_people/other-people.md"
         fields:
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Permalink", name: "permalink", widget: "hidden", default: false }
+          - label: "Name"
+            name: "title"
+            widget: "string"
+          - label: "Permalink"
+            name: "permalink"
+            widget: "hidden"
+            default: false
+          - label: "Members"
+            name: "members"
+            widget: "list"
+            required: false
+            collapsed: false
+            summary: "{{fields.name}}"
+            allow_add: true
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Permalink", name: "permalink", widget: "hidden", default: false }
