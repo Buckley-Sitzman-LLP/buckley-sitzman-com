@@ -56,21 +56,49 @@ module.exports = function(eleventyConfig) {
   /*********************** COLLECTIONS ***********************************/
   // Get all people
   eleventyConfig.addCollection("people", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/people/*.md")[0].data.members;
+    const files = collectionApi.getFilteredByGlob("src/people/*.md");
+    if (!files || files.length === 0) {
+      throw new Error("COLLECTION ERROR: No files found matching 'src/people/*.md'. The people collection requires at least one markdown file.");
+    }
+    if (!files[0].data || !files[0].data.members) {
+      throw new Error("COLLECTION ERROR: File 'src/people/*.md' is missing required 'members' array in frontmatter.");
+    }
+    return files[0].data.members;
   });
 
   eleventyConfig.addCollection("other_people", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/other_people/*.md")[0].data.members;
+    const files = collectionApi.getFilteredByGlob("src/other_people/*.md");
+    if (!files || files.length === 0) {
+      throw new Error("COLLECTION ERROR: No files found matching 'src/other_people/*.md'. The other_people collection requires at least one markdown file.");
+    }
+    if (!files[0].data || !files[0].data.members) {
+      throw new Error("COLLECTION ERROR: File 'src/other_people/*.md' is missing required 'members' array in frontmatter.");
+    }
+    return files[0].data.members;
   });
 
   // Get all services
   eleventyConfig.addCollection("services", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/services/*.md")[0].data.items;
+    const files = collectionApi.getFilteredByGlob("src/services/*.md");
+    if (!files || files.length === 0) {
+      throw new Error("COLLECTION ERROR: No files found matching 'src/services/*.md'. The services collection requires at least one markdown file.");
+    }
+    if (!files[0].data || !files[0].data.items) {
+      throw new Error("COLLECTION ERROR: File 'src/services/*.md' is missing required 'items' array in frontmatter.");
+    }
+    return files[0].data.items;
   });
 
   // Get all job postings
   eleventyConfig.addCollection("job_postings", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/job_postings/*.md")[0].data.items;
+    const files = collectionApi.getFilteredByGlob("src/job_postings/*.md");
+    if (!files || files.length === 0) {
+      throw new Error("COLLECTION ERROR: No files found matching 'src/job_postings/*.md'. The job_postings collection requires at least one markdown file.");
+    }
+    if (!files[0].data || !files[0].data.items) {
+      throw new Error("COLLECTION ERROR: File 'src/job_postings/*.md' is missing required 'items' array in frontmatter.");
+    }
+    return files[0].data.items;
   });
 
   // Minify HTML by removing whitespace, etc.
