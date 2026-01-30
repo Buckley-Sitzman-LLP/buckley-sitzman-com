@@ -1,6 +1,6 @@
 # Buckley Sitzman Site
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/73ecf749-2877-4199-8f15-ab6d162ce1db/deploy-status)](https://app.netlify.com/sites/thirsty-bassi-038c1d/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b28dc169-581e-4d55-86f5-cd23acdd6fc0/deploy-status)](https://app.netlify.com/projects/buckley-sitzman-llp/deploys)
 
 ## Install and Setup
 
