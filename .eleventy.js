@@ -30,6 +30,11 @@ module.exports = function(eleventyConfig) {
     return markdown.render(string);
   });
 
+  // Strip all non-digit characters — used to build tel: links from display phone numbers
+  eleventyConfig.addFilter("digitsOnly", string => {
+    return string.replace(/\D/g, '');
+  });
+
   // Human Readable published date
   eleventyConfig.addFilter("readableDate", (dateStr) => {
     return DateTime.fromJSDate(dateStr).toFormat("LLLL d, yyyy");

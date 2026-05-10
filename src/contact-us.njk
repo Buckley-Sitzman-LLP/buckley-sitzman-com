@@ -64,7 +64,7 @@ feature_image: "/img/splashes/desk_and_planner.jpeg"
           <svg class="flex-shrink-0 w-6 h-6 text-gray-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
           </svg>
-          <span class="ml-3"><a href="tel:{{ collections.contact_info.phone_digits }}" class="hover:underline focus:underline focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded">{{ collections.contact_info.phone_display }}</a></span>
+          <span class="ml-3"><a href="tel:{{ collections.contact_info.phone_display | digitsOnly }}" class="hover:underline focus:underline focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded">{{ collections.contact_info.phone_display }}</a></span>
         </dd>
 
         <dt><span class="sr-only">Email</span></dt>
@@ -83,8 +83,9 @@ feature_image: "/img/splashes/desk_and_planner.jpeg"
         <dd class="flex text-base text-gray-100">
           <svg class="flex-shrink-0 w-6 h-6 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
           <div class="ml-3">
-            <span>{{ collections.contact_info.address_line_1 }}</span>
-            <span>{{ collections.contact_info.address_line_2 }}</span>
+            <span>{{ collections.contact_info.address_1 }}</span>
+            {% if collections.contact_info.address_2 %}<span>{{ collections.contact_info.address_2 }}</span>{% endif %}
+            <span>{{ collections.contact_info.city }}, {{ collections.contact_info.state_code }} {{ collections.contact_info.zip }}</span>
           </div>
         </dd>
 
@@ -92,8 +93,9 @@ feature_image: "/img/splashes/desk_and_planner.jpeg"
         <dd class="flex text-base text-gray-100">
           <svg class="w-6 h-6 flex-shrink-0 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
           <div class="ml-3">
-            <span>{{ collections.contact_info.hours_line_1 }}</span>
-            <span>{{ collections.contact_info.hours_line_2 }}</span>
+            {% for entry in collections.contact_info.hours %}
+              <span>{{ entry.days }}: {{ entry.hours }}</span>
+            {% endfor %}
           </div>
         </dd>
       </dl>
