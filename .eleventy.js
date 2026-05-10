@@ -89,6 +89,15 @@ module.exports = function(eleventyConfig) {
     return files[0].data.items;
   });
 
+  // Get contact info
+  eleventyConfig.addCollection("contact_info", function(collectionApi) {
+    const files = collectionApi.getFilteredByGlob("src/contact_info/*.md");
+    if (!files || files.length === 0) {
+      throw new Error("COLLECTION ERROR: No files found matching 'src/contact_info/*.md'.");
+    }
+    return files[0].data;
+  });
+
   // Get all job postings
   eleventyConfig.addCollection("job_postings", function(collectionApi) {
     const files = collectionApi.getFilteredByGlob("src/job_postings/*.md");

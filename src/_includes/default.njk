@@ -226,9 +226,9 @@
             text-gray-500 flex flex-col sm:flex-row justify-between">
             <div class="px-8 md:px-0">
               <p><b>Buckley &amp; Sitzman, LLP</b></p>
-              <p>4240 Pioneer Woods Drive</p>
-              <p>Lincoln, NE, 68506</p>
-              <p><a href="tel:4024847676" class="underline hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">(402) 484-7676</a></p>
+              <p>{{ collections.contact_info.address_line_1 }}</p>
+              <p>{{ collections.contact_info.address_line_2 }}</p>
+              <p><a href="tel:{{ collections.contact_info.phone_digits }}" class="underline hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">{{ collections.contact_info.phone_display }}</a></p>
               <p class=""><a href="/privacy" class="underline hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">Privacy Policy</a></p>
               <p class=""><a href="/transparency" class="underline
                 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">Transparency in Coverage Files</a></p>
