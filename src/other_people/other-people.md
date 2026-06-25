@@ -4,8 +4,6 @@ permalink: false
 members:
   - name: Joanne Chartraw
     permalink: false
-  - name: Joo Sik Kim, CPA
-    permalink: false
   - name: Ryan Kramer (Intern)
     permalink: false
   - name: Evan Werner (Intern)
