@@ -218,6 +218,16 @@ members:
 
       Outside of work, Ben enjoys spending time with family and friends, staying active through running or working out, and traveling around the country. Ben is also a big fan of Husker Football and enjoys attending games both at home and on the road.
     permalink: false
+  - name: Ryan Kramer
+    short_name: Ryan Kramer
+    job_title: ''
+    email_address: ''
+    image: /img/Ryan.jpg
+    body: |-
+      Ryan grew up in Albion, Nebraska, and joined Buckley &amp; Sitzman as an intern in 2024 before transitioning to a full-time remote role in 2026. He earned his bachelor's degree in Business Administration from the University of Nebraska–Lincoln in 2025 and completed his Master of Public Accountancy in 2026.
+
+      Outside of work, Ryan enjoys spending time on the golf course, cheering on Husker athletics, and hanging out with family and friends.
+    permalink: false
   - name: Nikki Turner
     short_name: Nikki Turner
     job_title: ''
@@ -247,15 +257,5 @@ members:
       Gabrielle joined Buckley &amp; Sitzman in December 2023. A graduate of the University of Nebraska–Lincoln, she brings over a decade of experience in administrative support, accounts receivable and client relations. Her strong organizational skills and attention to detail make her an invaluable resource to our organization.
 
       A Lincoln native, Gabrielle enjoys spending her free time with her Pomeranian, Memphis, shopping and traveling to her favorite destination, Colorado.
-    permalink: false
-  - name: Ryan Kramer
-    short_name: Ryan Kramer
-    job_title: ''
-    email_address: ''
-    image: /img/Ryan.jpg
-    body: |-
-      Ryan grew up in Albion, Nebraska, and joined Buckley &amp; Sitzman as an intern in 2024 before transitioning to a full-time remote role in 2026. He earned his bachelor's degree in Business Administration from the University of Nebraska–Lincoln in 2025 and completed his Master of Public Accountancy in 2026.
-
-      Outside of work, Ryan enjoys spending time on the golf course, cheering on Husker athletics, and hanging out with family and friends.
     permalink: false
 ---
