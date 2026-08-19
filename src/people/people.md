@@ -204,6 +204,7 @@ members:
   - name: Zach Turner
     short_name: Zach Turner
     job_title: ''
+    email_address: ''
     image: /img/people/zach_turner.jpg
     body: Zach joined Buckley &amp; Sitzman in 2025 after spending almost two years with the firm as an intern. Zach grew up in Crete and is the youngest of five siblings. He graduated from Doane University in 2024 with degrees in Accounting and Business Administration. While at Doane, he was a member of the Track and Field team, competing in sprints and hurdles and serving as team captain for three years. Outside the office, Zach enjoys spending time with friends and family, staying active through running, and working to improve his golf game. He's excited to continue learning and building strong relationships with clients.
     permalink: false
@@ -246,5 +247,15 @@ members:
       Gabrielle joined Buckley &amp; Sitzman in December 2023. A graduate of the University of Nebraska–Lincoln, she brings over a decade of experience in administrative support, accounts receivable and client relations. Her strong organizational skills and attention to detail make her an invaluable resource to our organization.
 
       A Lincoln native, Gabrielle enjoys spending her free time with her Pomeranian, Memphis, shopping and traveling to her favorite destination, Colorado.
+    permalink: false
+  - name: Ryan Kramer
+    short_name: Ryan Kramer
+    job_title: ''
+    email_address: ''
+    image: /img/Ryan.jpg
+    body: |-
+      Ryan grew up in Albion, Nebraska, and joined Buckley &amp; Sitzman as an intern in 2024 before transitioning to a full-time remote role in 2026. He earned his bachelor's degree in Business Administration from the University of Nebraska–Lincoln in 2025 and completed his Master of Public Accountancy in 2026.
+
+      Outside of work, Ryan enjoys spending time on the golf course, cheering on Husker athletics, and hanging out with family and friends.
     permalink: false
 ---
