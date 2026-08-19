@@ -9,10 +9,8 @@ city: Lincoln
 state_code: NE
 zip: '68506'
 hours:
-  - days: Monday - Thursday
+  - days: Monday - Friday
     hours: 8am-5pm
-  - days: Friday
-    hours: 8am - 12pm
   - days: Saturday - Sunday
     hours: Closed
 ---
