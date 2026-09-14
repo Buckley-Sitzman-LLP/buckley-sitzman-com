@@ -4,6 +4,8 @@ permalink: false
 members:
   - name: Joanne Chartraw
     permalink: false
+  - name: Lindsey Emery
+    permalink: false
   - name: Evan Werner (Intern)
     permalink: false
   - name: Peyton Sanmann (Intern)
