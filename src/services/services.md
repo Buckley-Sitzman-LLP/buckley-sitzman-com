@@ -63,4 +63,7 @@ items:
       Business transactions and transitions are complicated affairs, and whether you're buying, selling, or considering a potential merger, Buckley & Sitzman, LLP can provide professional know-how to help you successfully structure and negotiate the deal. Buckley & Sitzman, LLP employs careful analysis and due diligence to determine a fair asking price, pinpoint the most favorable tax structures, evaluate financial and cash flow impact, and assess compatible business functions and tactics. Expanding or contracting your business is a huge undertaking. 
 
       With our expert advice, you can make the right business decisions for your business for optimum success.
+  - title: Company Valuations
+    summary: Unlock the true value of your business with credible, expert business valuations that support you.
+    body: Understanding the value of a business is essential for making informed financial decisions. Buckley & Sitzman, LLP provides business valuation services for succession planning, buy-sell agreements, estate and gift planning, litigation support, and other strategic needs. With our Certified Valuation Analyst (CVA), we apply recognized valuation standards and methodologies to provide objective and defensible valuation conclusions.
 ---
