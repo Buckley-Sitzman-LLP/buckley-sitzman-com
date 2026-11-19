@@ -13,6 +13,6 @@ hours:
     hours: 8am-5pm
   - days: Saturday - Sunday
     hours: Closed
-  - days: Please note our office will be closed on
-    hours: November 26th, November 27th, December 24th, December 25th, January 1st
+  - days: '**Please note our office will be closed on'
+    hours: November 26th, November 27th, December 11th, December 24th, December 25th, January 1st**
 ---
